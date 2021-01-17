@@ -17,10 +17,15 @@ namespace QLNHAHANG
         {
             InitializeComponent();
         }
-
+        
         private void frmLoaiSP_Load(object sender, EventArgs e)
         {
             load_AllGrid();
+            txt_MaLSP.Enabled = false;
+            txt_TenLSP.Enabled = false;
+            btnXoa.Enabled = false;
+            btnSua.Enabled = false;
+            btnLuu.Enabled = false;
         }
         void load_AllGrid()
         {
@@ -56,23 +61,28 @@ namespace QLNHAHANG
 
         private void dgrv_HienThiLoaiSP_SelectionChanged(object sender, EventArgs e)
         {
-            if (dgrv_HienThiLoaiSP.SelectedCells.Count > 0)
-            {
-                btnSua.Enabled = true;
-                btnXoa.Enabled = true;
-                int vitri = dgrv_HienThiLoaiSP.SelectedCells[0].RowIndex;
+            //if (dgrv_HienThiLoaiSP.SelectedCells.Count > 0)
+            //{
+            //    btnSua.Enabled = true;
+            //    btnXoa.Enabled = true;
+            //    int vitri = dgrv_HienThiLoaiSP.SelectedCells[0].RowIndex;
 
-                string MaLNL = dgrv_HienThiLoaiSP.Rows[vitri].Cells[0].Value.ToString().Trim();
-                string TenLNL = dgrv_HienThiLoaiSP.Rows[vitri].Cells[1].Value.ToString().Trim();
+            //    string MaLNL = dgrv_HienThiLoaiSP.Rows[vitri].Cells[0].Value.ToString().Trim();
+            //    string TenLNL = dgrv_HienThiLoaiSP.Rows[vitri].Cells[1].Value.ToString().Trim();
 
-                txt_MaLSP.Text = MaLNL;
-                txt_TenLSP.Text = TenLNL;
-            }
+            //    txt_MaLSP.Text = MaLNL;
+            //    txt_TenLSP.Text = TenLNL;
+            //}
         }
 
         private void btnThem_Click(object sender, EventArgs e)
         {
+            Random r = new Random();
+            int count = lsp.demSoLuong() + 1;
+            txt_MaLSP.Text = "LSP00" + count + r.Next(0, 99);
             load_AllGrid();
+            txt_MaLSP.Enabled = false;
+            txt_TenLSP.Enabled = true;
             btnXoa.Enabled = false;
             btnSua.Enabled = false;
             btnLuu.Enabled = true;
@@ -85,6 +95,10 @@ namespace QLNHAHANG
         {
             txt_MaLSP.Enabled = false;
             txt_TenLSP.Focus();
+            btnThem.Enabled = false;
+            btnXoa.Enabled = false;
+            btnLuu.Enabled = true;
+            txt_TenLSP.Enabled = true;
         }
 
         private void btnXoa_Click(object sender, EventArgs e)
@@ -110,6 +124,7 @@ namespace QLNHAHANG
             {
                 MessageBox.Show("Loại sản phẩm " + txt_MaLSP.Text + " không đạt điều kiện để xóa");
             }
+            frmLoaiSP_Load(sender, e);
         }
 
         private void btnLuu_Click(object sender, EventArgs e)
@@ -121,16 +136,18 @@ namespace QLNHAHANG
                     lsp.themLoaiSP(txt_MaLSP.Text, txt_TenLSP.Text);
                     load_AllGrid();
                     textboxVeNull();
-                    MessageBox.Show("Lưu thành công");
+                    MessageBox.Show("Thêm thành công");
                 }
                 else
                 {
                     lsp.suaLoaiSP(txt_MaLSP.Text.Trim(), txt_TenLSP.Text);
                     load_AllGrid();
                     textboxVeNull();
-                    MessageBox.Show("Lưu thành công");
+                    MessageBox.Show("Sửa thành công");
                 }
             }
+            frmLoaiSP_Load(sender, e);
+            btnThem.Enabled = true;
         }
 
         private void txtTimKiem_TextChanged(object sender, EventArgs e)
@@ -150,6 +167,23 @@ namespace QLNHAHANG
         {
             frmLoaiSP rp = new frmLoaiSP();
             rp.Show();
+        }
+        public void databingding(int rowindex)
+        {
+            string malsp = dgrv_HienThiLoaiSP.Rows[rowindex].Cells["MALSP"].FormattedValue.ToString();
+            string tenlsp = dgrv_HienThiLoaiSP.Rows[rowindex].Cells["TENLSP"].FormattedValue.ToString();
+            txt_MaLSP.Text = malsp;
+            txt_TenLSP.Text = tenlsp;
+        }
+        private void dgrv_HienThiLoaiSP_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            btnSua.Enabled = true;
+            btnXoa.Enabled = true;
+            if (dgrv_HienThiLoaiSP.Rows[e.RowIndex].Cells[e.ColumnIndex].Value != null)
+            {
+                dgrv_HienThiLoaiSP.CurrentRow.Selected = true;
+                databingding(e.RowIndex);
+            }
         }
     }
 }

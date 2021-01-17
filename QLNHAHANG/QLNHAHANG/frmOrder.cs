@@ -349,6 +349,7 @@ namespace QLNHAHANG
                 {
                     MessageBox.Show("In hoá đơn thất bại !");
                 }
+            frmOrder_Load(sender, e);
 
             
         }

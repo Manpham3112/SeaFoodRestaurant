@@ -97,6 +97,7 @@ namespace QLNHAHANG
             this.Column4.HeaderText = "Đơn giá";
             this.Column4.MinimumWidth = 8;
             this.Column4.Name = "Column4";
+            this.Column4.ReadOnly = true;
             // 
             // Column2
             // 
@@ -104,12 +105,14 @@ namespace QLNHAHANG
             this.Column2.HeaderText = "Tên Sản Phẩm";
             this.Column2.MinimumWidth = 8;
             this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
             // 
             // Cum
             // 
             this.Cum.HeaderText = "Column5";
             this.Cum.MinimumWidth = 8;
             this.Cum.Name = "Cum";
+            this.Cum.ReadOnly = true;
             this.Cum.Visible = false;
             // 
             // Column1
@@ -118,9 +121,12 @@ namespace QLNHAHANG
             this.Column1.HeaderText = "Mã Sản Phẩm";
             this.Column1.MinimumWidth = 8;
             this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
             // 
             // gvThongKeSP
             // 
+            this.gvThongKeSP.AllowUserToAddRows = false;
+            this.gvThongKeSP.AllowUserToDeleteRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
             this.gvThongKeSP.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.gvThongKeSP.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
@@ -154,13 +160,14 @@ namespace QLNHAHANG
             this.gvThongKeSP.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gvThongKeSP.EnableHeadersVisualStyles = false;
             this.gvThongKeSP.GridColor = System.Drawing.Color.MediumTurquoise;
-            this.gvThongKeSP.Location = new System.Drawing.Point(4, 24);
-            this.gvThongKeSP.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.gvThongKeSP.Location = new System.Drawing.Point(4, 19);
+            this.gvThongKeSP.Margin = new System.Windows.Forms.Padding(4);
             this.gvThongKeSP.Name = "gvThongKeSP";
+            this.gvThongKeSP.ReadOnly = true;
             this.gvThongKeSP.RowHeadersVisible = false;
             this.gvThongKeSP.RowHeadersWidth = 62;
             this.gvThongKeSP.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gvThongKeSP.Size = new System.Drawing.Size(1182, 190);
+            this.gvThongKeSP.Size = new System.Drawing.Size(1049, 153);
             this.gvThongKeSP.TabIndex = 0;
             this.gvThongKeSP.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
             this.gvThongKeSP.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
@@ -176,7 +183,7 @@ namespace QLNHAHANG
             this.gvThongKeSP.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
             this.gvThongKeSP.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.gvThongKeSP.ThemeStyle.HeaderStyle.Height = 40;
-            this.gvThongKeSP.ThemeStyle.ReadOnly = false;
+            this.gvThongKeSP.ThemeStyle.ReadOnly = true;
             this.gvThongKeSP.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
             this.gvThongKeSP.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.gvThongKeSP.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
@@ -191,6 +198,7 @@ namespace QLNHAHANG
             this.Column3.HeaderText = "Số lượng";
             this.Column3.MinimumWidth = 8;
             this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
             // 
             // label1
             // 
@@ -198,10 +206,10 @@ namespace QLNHAHANG
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(405, 24);
+            this.label1.Location = new System.Drawing.Point(360, 19);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(420, 40);
+            this.label1.Size = new System.Drawing.Size(352, 36);
             this.label1.TabIndex = 1;
             this.label1.Text = "THỐNG KÊ SẢN PHẨM";
             // 
@@ -211,11 +219,11 @@ namespace QLNHAHANG
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox1.Controls.Add(this.gvThongKeSP);
-            this.groupBox1.Location = new System.Drawing.Point(4, 160);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.groupBox1.Location = new System.Drawing.Point(4, 128);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.groupBox1.Size = new System.Drawing.Size(1190, 219);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBox1.Size = new System.Drawing.Size(1057, 176);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             // 
@@ -232,7 +240,8 @@ namespace QLNHAHANG
             this.dateTimePickerFrom.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.dateTimePickerFrom.ForeColor = System.Drawing.Color.Black;
             this.dateTimePickerFrom.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePickerFrom.Location = new System.Drawing.Point(114, 6);
+            this.dateTimePickerFrom.Location = new System.Drawing.Point(101, 5);
+            this.dateTimePickerFrom.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dateTimePickerFrom.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.dateTimePickerFrom.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.dateTimePickerFrom.Name = "dateTimePickerFrom";
@@ -241,7 +250,7 @@ namespace QLNHAHANG
             this.dateTimePickerFrom.OnHoverForeColor = System.Drawing.Color.Tomato;
             this.dateTimePickerFrom.OnPressedColor = System.Drawing.Color.Black;
             this.dateTimePickerFrom.Radius = 4;
-            this.dateTimePickerFrom.Size = new System.Drawing.Size(375, 37);
+            this.dateTimePickerFrom.Size = new System.Drawing.Size(332, 30);
             this.dateTimePickerFrom.TabIndex = 1;
             this.dateTimePickerFrom.Text = "03/08/2020";
             this.dateTimePickerFrom.Value = new System.DateTime(2020, 8, 3, 0, 0, 0, 0);
@@ -251,9 +260,9 @@ namespace QLNHAHANG
             // 
             this.gunaLabel1.AutoSize = true;
             this.gunaLabel1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gunaLabel1.Location = new System.Drawing.Point(12, 12);
+            this.gunaLabel1.Location = new System.Drawing.Point(11, 10);
             this.gunaLabel1.Name = "gunaLabel1";
-            this.gunaLabel1.Size = new System.Drawing.Size(76, 25);
+            this.gunaLabel1.Size = new System.Drawing.Size(62, 20);
             this.gunaLabel1.TabIndex = 0;
             this.gunaLabel1.Text = "Từ ngày";
             // 
@@ -262,9 +271,10 @@ namespace QLNHAHANG
             this.gunaPanel2.Controls.Add(this.dateTimePickerFrom);
             this.gunaPanel2.Controls.Add(this.gunaLabel1);
             this.gunaPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gunaPanel2.Location = new System.Drawing.Point(3, 3);
+            this.gunaPanel2.Location = new System.Drawing.Point(3, 2);
+            this.gunaPanel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.gunaPanel2.Name = "gunaPanel2";
-            this.gunaPanel2.Size = new System.Drawing.Size(492, 52);
+            this.gunaPanel2.Size = new System.Drawing.Size(436, 42);
             this.gunaPanel2.TabIndex = 0;
             // 
             // dateTimePickerTo
@@ -280,7 +290,8 @@ namespace QLNHAHANG
             this.dateTimePickerTo.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.dateTimePickerTo.ForeColor = System.Drawing.Color.Black;
             this.dateTimePickerTo.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePickerTo.Location = new System.Drawing.Point(114, 6);
+            this.dateTimePickerTo.Location = new System.Drawing.Point(101, 5);
+            this.dateTimePickerTo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dateTimePickerTo.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.dateTimePickerTo.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.dateTimePickerTo.Name = "dateTimePickerTo";
@@ -289,7 +300,7 @@ namespace QLNHAHANG
             this.dateTimePickerTo.OnHoverForeColor = System.Drawing.Color.Tomato;
             this.dateTimePickerTo.OnPressedColor = System.Drawing.Color.Black;
             this.dateTimePickerTo.Radius = 4;
-            this.dateTimePickerTo.Size = new System.Drawing.Size(374, 37);
+            this.dateTimePickerTo.Size = new System.Drawing.Size(331, 30);
             this.dateTimePickerTo.TabIndex = 2;
             this.dateTimePickerTo.Text = "03/08/2020";
             this.dateTimePickerTo.Value = new System.DateTime(2020, 8, 3, 0, 0, 0, 0);
@@ -299,9 +310,9 @@ namespace QLNHAHANG
             // 
             this.gunaLabel2.AutoSize = true;
             this.gunaLabel2.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gunaLabel2.Location = new System.Drawing.Point(22, 12);
+            this.gunaLabel2.Location = new System.Drawing.Point(20, 10);
             this.gunaLabel2.Name = "gunaLabel2";
-            this.gunaLabel2.Size = new System.Drawing.Size(88, 25);
+            this.gunaLabel2.Size = new System.Drawing.Size(72, 20);
             this.gunaLabel2.TabIndex = 1;
             this.gunaLabel2.Text = "Đến ngày";
             // 
@@ -310,9 +321,10 @@ namespace QLNHAHANG
             this.gunaPanel3.Controls.Add(this.dateTimePickerTo);
             this.gunaPanel3.Controls.Add(this.gunaLabel2);
             this.gunaPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gunaPanel3.Location = new System.Drawing.Point(501, 3);
+            this.gunaPanel3.Location = new System.Drawing.Point(445, 2);
+            this.gunaPanel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.gunaPanel3.Name = "gunaPanel3";
-            this.gunaPanel3.Size = new System.Drawing.Size(492, 52);
+            this.gunaPanel3.Size = new System.Drawing.Size(436, 42);
             this.gunaPanel3.TabIndex = 1;
             // 
             // tableLayoutPanel3
@@ -324,11 +336,12 @@ namespace QLNHAHANG
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel3.Controls.Add(this.gunaPanel3, 1, 0);
             this.tableLayoutPanel3.Controls.Add(this.gunaPanel2, 0, 0);
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(87, 94);
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(77, 75);
+            this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 1;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(996, 58);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(884, 46);
             this.tableLayoutPanel3.TabIndex = 5;
             // 
             // Column12
@@ -337,6 +350,7 @@ namespace QLNHAHANG
             this.Column12.HeaderText = "Column12";
             this.Column12.MinimumWidth = 8;
             this.Column12.Name = "Column12";
+            this.Column12.ReadOnly = true;
             this.Column12.Visible = false;
             // 
             // Column11
@@ -345,6 +359,7 @@ namespace QLNHAHANG
             this.Column11.HeaderText = "Column11";
             this.Column11.MinimumWidth = 8;
             this.Column11.Name = "Column11";
+            this.Column11.ReadOnly = true;
             this.Column11.Visible = false;
             // 
             // Column10
@@ -353,6 +368,7 @@ namespace QLNHAHANG
             this.Column10.HeaderText = "Column10";
             this.Column10.MinimumWidth = 8;
             this.Column10.Name = "Column10";
+            this.Column10.ReadOnly = true;
             this.Column10.Visible = false;
             // 
             // panel1
@@ -361,10 +377,10 @@ namespace QLNHAHANG
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.groupBox1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(4, 5);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.panel1.Location = new System.Drawing.Point(4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1200, 383);
+            this.panel1.Size = new System.Drawing.Size(1066, 307);
             this.panel1.TabIndex = 2;
             // 
             // tableLayoutPanel1
@@ -375,12 +391,12 @@ namespace QLNHAHANG
             this.tableLayoutPanel1.Controls.Add(this.panel1, 0, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 2;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 238F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1208, 631);
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 190F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1074, 505);
             this.tableLayoutPanel1.TabIndex = 1;
             // 
             // tableLayoutPanel2
@@ -393,12 +409,12 @@ namespace QLNHAHANG
             this.tableLayoutPanel2.Controls.Add(this.gunaGroupBox2, 1, 0);
             this.tableLayoutPanel2.Controls.Add(this.gunaGroupBox3, 2, 0);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(4, 398);
-            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(4, 319);
+            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(1200, 228);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(1066, 182);
             this.tableLayoutPanel2.TabIndex = 1;
             // 
             // gunaGroupBox1
@@ -410,16 +426,18 @@ namespace QLNHAHANG
             this.gunaGroupBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gunaGroupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaGroupBox1.LineColor = System.Drawing.Color.Gainsboro;
-            this.gunaGroupBox1.Location = new System.Drawing.Point(4, 5);
-            this.gunaGroupBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.gunaGroupBox1.Location = new System.Drawing.Point(4, 4);
+            this.gunaGroupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.gunaGroupBox1.Name = "gunaGroupBox1";
-            this.gunaGroupBox1.Size = new System.Drawing.Size(400, 218);
+            this.gunaGroupBox1.Size = new System.Drawing.Size(354, 174);
             this.gunaGroupBox1.TabIndex = 0;
             this.gunaGroupBox1.Text = "SẢN PHẨM BÁN CHẠY";
             this.gunaGroupBox1.TextLocation = new System.Drawing.Point(10, 8);
             // 
             // gvBanChay
             // 
+            this.gvBanChay.AllowUserToAddRows = false;
+            this.gvBanChay.AllowUserToDeleteRows = false;
             dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
             this.gvBanChay.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
             this.gvBanChay.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -430,7 +448,7 @@ namespace QLNHAHANG
             this.gvBanChay.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.gvBanChay.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(197)))), ((int)(((byte)(203)))));
             dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
@@ -450,13 +468,14 @@ namespace QLNHAHANG
             this.gvBanChay.DefaultCellStyle = dataGridViewCellStyle6;
             this.gvBanChay.EnableHeadersVisualStyles = false;
             this.gvBanChay.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.gvBanChay.Location = new System.Drawing.Point(0, 49);
-            this.gvBanChay.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.gvBanChay.Location = new System.Drawing.Point(0, 39);
+            this.gvBanChay.Margin = new System.Windows.Forms.Padding(4);
             this.gvBanChay.Name = "gvBanChay";
+            this.gvBanChay.ReadOnly = true;
             this.gvBanChay.RowHeadersVisible = false;
             this.gvBanChay.RowHeadersWidth = 62;
             this.gvBanChay.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gvBanChay.Size = new System.Drawing.Size(400, 288);
+            this.gvBanChay.Size = new System.Drawing.Size(354, 230);
             this.gvBanChay.TabIndex = 0;
             this.gvBanChay.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
             this.gvBanChay.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
@@ -466,13 +485,13 @@ namespace QLNHAHANG
             this.gvBanChay.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
             this.gvBanChay.ThemeStyle.BackColor = System.Drawing.Color.White;
             this.gvBanChay.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.gvBanChay.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.gvBanChay.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(197)))), ((int)(((byte)(203)))));
             this.gvBanChay.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.gvBanChay.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gvBanChay.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
             this.gvBanChay.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.gvBanChay.ThemeStyle.HeaderStyle.Height = 40;
-            this.gvBanChay.ThemeStyle.ReadOnly = false;
+            this.gvBanChay.ThemeStyle.ReadOnly = true;
             this.gvBanChay.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
             this.gvBanChay.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.gvBanChay.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -487,6 +506,7 @@ namespace QLNHAHANG
             this.Column6.HeaderText = "Cum";
             this.Column6.MinimumWidth = 8;
             this.Column6.Name = "Column6";
+            this.Column6.ReadOnly = true;
             this.Column6.Visible = false;
             // 
             // gunaGroupBox2
@@ -498,16 +518,18 @@ namespace QLNHAHANG
             this.gunaGroupBox2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gunaGroupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaGroupBox2.LineColor = System.Drawing.Color.Gainsboro;
-            this.gunaGroupBox2.Location = new System.Drawing.Point(412, 5);
-            this.gunaGroupBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.gunaGroupBox2.Location = new System.Drawing.Point(366, 4);
+            this.gunaGroupBox2.Margin = new System.Windows.Forms.Padding(4);
             this.gunaGroupBox2.Name = "gunaGroupBox2";
-            this.gunaGroupBox2.Size = new System.Drawing.Size(388, 218);
+            this.gunaGroupBox2.Size = new System.Drawing.Size(343, 174);
             this.gunaGroupBox2.TabIndex = 1;
             this.gunaGroupBox2.Text = "SẢN PHẨM BÁN BÌNH THƯỜNG";
             this.gunaGroupBox2.TextLocation = new System.Drawing.Point(10, 8);
             // 
             // gvBanBinhThuong
             // 
+            this.gvBanBinhThuong.AllowUserToAddRows = false;
+            this.gvBanBinhThuong.AllowUserToDeleteRows = false;
             dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
             this.gvBanBinhThuong.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
             this.gvBanBinhThuong.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -518,7 +540,7 @@ namespace QLNHAHANG
             this.gvBanBinhThuong.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.gvBanBinhThuong.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(197)))), ((int)(((byte)(203)))));
             dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
@@ -538,13 +560,14 @@ namespace QLNHAHANG
             this.gvBanBinhThuong.DefaultCellStyle = dataGridViewCellStyle9;
             this.gvBanBinhThuong.EnableHeadersVisualStyles = false;
             this.gvBanBinhThuong.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.gvBanBinhThuong.Location = new System.Drawing.Point(0, 49);
-            this.gvBanBinhThuong.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.gvBanBinhThuong.Location = new System.Drawing.Point(0, 39);
+            this.gvBanBinhThuong.Margin = new System.Windows.Forms.Padding(4);
             this.gvBanBinhThuong.Name = "gvBanBinhThuong";
+            this.gvBanBinhThuong.ReadOnly = true;
             this.gvBanBinhThuong.RowHeadersVisible = false;
             this.gvBanBinhThuong.RowHeadersWidth = 62;
             this.gvBanBinhThuong.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gvBanBinhThuong.Size = new System.Drawing.Size(388, 283);
+            this.gvBanBinhThuong.Size = new System.Drawing.Size(343, 226);
             this.gvBanBinhThuong.TabIndex = 1;
             this.gvBanBinhThuong.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
             this.gvBanBinhThuong.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
@@ -554,13 +577,13 @@ namespace QLNHAHANG
             this.gvBanBinhThuong.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
             this.gvBanBinhThuong.ThemeStyle.BackColor = System.Drawing.Color.White;
             this.gvBanBinhThuong.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.gvBanBinhThuong.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.gvBanBinhThuong.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(197)))), ((int)(((byte)(203)))));
             this.gvBanBinhThuong.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.gvBanBinhThuong.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gvBanBinhThuong.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
             this.gvBanBinhThuong.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.gvBanBinhThuong.ThemeStyle.HeaderStyle.Height = 40;
-            this.gvBanBinhThuong.ThemeStyle.ReadOnly = false;
+            this.gvBanBinhThuong.ThemeStyle.ReadOnly = true;
             this.gvBanBinhThuong.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
             this.gvBanBinhThuong.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.gvBanBinhThuong.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -575,6 +598,7 @@ namespace QLNHAHANG
             this.Column5.HeaderText = "Cum";
             this.Column5.MinimumWidth = 8;
             this.Column5.Name = "Column5";
+            this.Column5.ReadOnly = true;
             this.Column5.Visible = false;
             // 
             // gunaGroupBox3
@@ -586,16 +610,18 @@ namespace QLNHAHANG
             this.gunaGroupBox3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gunaGroupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaGroupBox3.LineColor = System.Drawing.Color.Gainsboro;
-            this.gunaGroupBox3.Location = new System.Drawing.Point(808, 5);
-            this.gunaGroupBox3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.gunaGroupBox3.Location = new System.Drawing.Point(717, 4);
+            this.gunaGroupBox3.Margin = new System.Windows.Forms.Padding(4);
             this.gunaGroupBox3.Name = "gunaGroupBox3";
-            this.gunaGroupBox3.Size = new System.Drawing.Size(388, 218);
+            this.gunaGroupBox3.Size = new System.Drawing.Size(345, 174);
             this.gunaGroupBox3.TabIndex = 2;
             this.gunaGroupBox3.Text = "SẢN PHẨM HẾT NGUYÊN LIỆU";
             this.gunaGroupBox3.TextLocation = new System.Drawing.Point(10, 8);
             // 
             // gvBanCham
             // 
+            this.gvBanCham.AllowUserToAddRows = false;
+            this.gvBanCham.AllowUserToDeleteRows = false;
             dataGridViewCellStyle10.BackColor = System.Drawing.Color.White;
             this.gvBanCham.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle10;
             this.gvBanCham.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -606,7 +632,7 @@ namespace QLNHAHANG
             this.gvBanCham.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.gvBanCham.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(197)))), ((int)(((byte)(203)))));
             dataGridViewCellStyle11.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle11.ForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
@@ -633,13 +659,14 @@ namespace QLNHAHANG
             this.gvBanCham.DefaultCellStyle = dataGridViewCellStyle12;
             this.gvBanCham.EnableHeadersVisualStyles = false;
             this.gvBanCham.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.gvBanCham.Location = new System.Drawing.Point(4, 49);
-            this.gvBanCham.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.gvBanCham.Location = new System.Drawing.Point(4, 39);
+            this.gvBanCham.Margin = new System.Windows.Forms.Padding(4);
             this.gvBanCham.Name = "gvBanCham";
+            this.gvBanCham.ReadOnly = true;
             this.gvBanCham.RowHeadersVisible = false;
             this.gvBanCham.RowHeadersWidth = 62;
             this.gvBanCham.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gvBanCham.Size = new System.Drawing.Size(384, 274);
+            this.gvBanCham.Size = new System.Drawing.Size(341, 219);
             this.gvBanCham.TabIndex = 1;
             this.gvBanCham.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
             this.gvBanCham.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
@@ -649,13 +676,13 @@ namespace QLNHAHANG
             this.gvBanCham.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
             this.gvBanCham.ThemeStyle.BackColor = System.Drawing.Color.White;
             this.gvBanCham.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.gvBanCham.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.gvBanCham.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(197)))), ((int)(((byte)(203)))));
             this.gvBanCham.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.gvBanCham.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gvBanCham.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
             this.gvBanCham.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.gvBanCham.ThemeStyle.HeaderStyle.Height = 40;
-            this.gvBanCham.ThemeStyle.ReadOnly = false;
+            this.gvBanCham.ThemeStyle.ReadOnly = true;
             this.gvBanCham.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
             this.gvBanCham.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.gvBanCham.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -670,6 +697,7 @@ namespace QLNHAHANG
             this.Column7.HeaderText = "Cum";
             this.Column7.MinimumWidth = 8;
             this.Column7.Name = "Column7";
+            this.Column7.ReadOnly = true;
             this.Column7.Visible = false;
             // 
             // Column13
@@ -678,6 +706,7 @@ namespace QLNHAHANG
             this.Column13.HeaderText = "QL_Loai";
             this.Column13.MinimumWidth = 8;
             this.Column13.Name = "Column13";
+            this.Column13.ReadOnly = true;
             this.Column13.Visible = false;
             // 
             // Column14
@@ -686,6 +715,7 @@ namespace QLNHAHANG
             this.Column14.HeaderText = "Column14";
             this.Column14.MinimumWidth = 8;
             this.Column14.Name = "Column14";
+            this.Column14.ReadOnly = true;
             this.Column14.Visible = false;
             // 
             // Column8
@@ -694,6 +724,7 @@ namespace QLNHAHANG
             this.Column8.HeaderText = "Column8";
             this.Column8.MinimumWidth = 8;
             this.Column8.Name = "Column8";
+            this.Column8.ReadOnly = true;
             this.Column8.Visible = false;
             // 
             // Column9
@@ -702,15 +733,17 @@ namespace QLNHAHANG
             this.Column9.HeaderText = "Column9";
             this.Column9.MinimumWidth = 8;
             this.Column9.Name = "Column9";
+            this.Column9.ReadOnly = true;
             this.Column9.Visible = false;
             // 
             // frmThongKeSanPham
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1208, 631);
+            this.ClientSize = new System.Drawing.Size(1074, 505);
             this.Controls.Add(this.tableLayoutPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "frmThongKeSanPham";
             this.Text = "frmThongKeSanPham";
             this.Load += new System.EventHandler(this.frmThongKeSanPham_Load);

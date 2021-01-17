@@ -30,9 +30,9 @@ namespace QLNHAHANG
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmNhaCungCap));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.txtTimKiem = new Guna.UI2.WinForms.Guna2TextBox();
             this.btnThem = new Guna.UI2.WinForms.Guna2CircleButton();
             this.gunaPanel2 = new Guna.UI.WinForms.GunaPanel();
@@ -52,10 +52,14 @@ namespace QLNHAHANG
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnRP = new Guna.UI2.WinForms.Guna2CircleButton();
             this.gunaPanel1 = new Guna.UI.WinForms.GunaPanel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.dataGridViewNhaCungCap = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.btnRP = new Guna.UI2.WinForms.Guna2CircleButton();
+            this.MANCC = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TENNCC = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DIACHI = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SDT = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.gunaPanel2.SuspendLayout();
             this.grbDiaChi.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
@@ -239,7 +243,7 @@ namespace QLNHAHANG
             this.txtDiaChi.PlaceholderText = "Địa chỉ";
             this.txtDiaChi.SelectedText = "";
             this.txtDiaChi.ShadowDecoration.Parent = this.txtDiaChi;
-            this.txtDiaChi.Size = new System.Drawing.Size(373, 27);
+            this.txtDiaChi.Size = new System.Drawing.Size(764, 47);
             this.txtDiaChi.TabIndex = 0;
             // 
             // grbDiaChi
@@ -250,7 +254,7 @@ namespace QLNHAHANG
             this.grbDiaChi.Margin = new System.Windows.Forms.Padding(5, 2, 5, 5);
             this.grbDiaChi.Name = "grbDiaChi";
             this.grbDiaChi.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.grbDiaChi.Size = new System.Drawing.Size(388, 59);
+            this.grbDiaChi.Size = new System.Drawing.Size(779, 81);
             this.grbDiaChi.TabIndex = 10;
             this.grbDiaChi.TabStop = false;
             this.grbDiaChi.Text = "Địa chỉ";
@@ -258,16 +262,16 @@ namespace QLNHAHANG
             // tableLayoutPanel3
             // 
             this.tableLayoutPanel3.ColumnCount = 2;
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 98.99624F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 1.003764F));
             this.tableLayoutPanel3.Controls.Add(this.grbDiaChi, 0, 0);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(3, 72);
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(3, 94);
             this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 1;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(797, 66);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(797, 88);
             this.tableLayoutPanel3.TabIndex = 0;
             // 
             // txtMaNhaCungCap
@@ -299,7 +303,7 @@ namespace QLNHAHANG
             this.txtMaNhaCungCap.PlaceholderText = "Mã nhà cung cấp";
             this.txtMaNhaCungCap.SelectedText = "";
             this.txtMaNhaCungCap.ShadowDecoration.Parent = this.txtMaNhaCungCap;
-            this.txtMaNhaCungCap.Size = new System.Drawing.Size(216, 27);
+            this.txtMaNhaCungCap.Size = new System.Drawing.Size(216, 47);
             this.txtMaNhaCungCap.TabIndex = 0;
             // 
             // grbMa
@@ -310,7 +314,7 @@ namespace QLNHAHANG
             this.grbMa.Margin = new System.Windows.Forms.Padding(5, 2, 5, 5);
             this.grbMa.Name = "grbMa";
             this.grbMa.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.grbMa.Size = new System.Drawing.Size(229, 59);
+            this.grbMa.Size = new System.Drawing.Size(229, 81);
             this.grbMa.TabIndex = 9;
             this.grbMa.TabStop = false;
             this.grbMa.Text = "Mã nhà cung cấp";
@@ -344,7 +348,7 @@ namespace QLNHAHANG
             this.txtTenNhaCungCap.PlaceholderText = "Tên nhà cung cấp";
             this.txtTenNhaCungCap.SelectedText = "";
             this.txtTenNhaCungCap.ShadowDecoration.Parent = this.txtTenNhaCungCap;
-            this.txtTenNhaCungCap.Size = new System.Drawing.Size(293, 27);
+            this.txtTenNhaCungCap.Size = new System.Drawing.Size(293, 47);
             this.txtTenNhaCungCap.TabIndex = 0;
             // 
             // gbTenNhaCungCap
@@ -355,7 +359,7 @@ namespace QLNHAHANG
             this.gbTenNhaCungCap.Margin = new System.Windows.Forms.Padding(5, 2, 5, 5);
             this.gbTenNhaCungCap.Name = "gbTenNhaCungCap";
             this.gbTenNhaCungCap.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.gbTenNhaCungCap.Size = new System.Drawing.Size(308, 59);
+            this.gbTenNhaCungCap.Size = new System.Drawing.Size(308, 81);
             this.gbTenNhaCungCap.TabIndex = 11;
             this.gbTenNhaCungCap.TabStop = false;
             this.gbTenNhaCungCap.Text = "Tên nhà cung cấp";
@@ -389,7 +393,7 @@ namespace QLNHAHANG
             this.txtSoDienThoai.PlaceholderText = "Số điện thoại";
             this.txtSoDienThoai.SelectedText = "";
             this.txtSoDienThoai.ShadowDecoration.Parent = this.txtSoDienThoai;
-            this.txtSoDienThoai.Size = new System.Drawing.Size(216, 27);
+            this.txtSoDienThoai.Size = new System.Drawing.Size(216, 47);
             this.txtSoDienThoai.TabIndex = 0;
             // 
             // groupBox3
@@ -400,7 +404,7 @@ namespace QLNHAHANG
             this.groupBox3.Margin = new System.Windows.Forms.Padding(5, 2, 5, 5);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox3.Size = new System.Drawing.Size(230, 59);
+            this.groupBox3.Size = new System.Drawing.Size(230, 81);
             this.groupBox3.TabIndex = 12;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Số điện thoại";
@@ -420,7 +424,7 @@ namespace QLNHAHANG
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
             this.tableLayoutPanel4.RowCount = 1;
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(797, 66);
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(797, 88);
             this.tableLayoutPanel4.TabIndex = 1;
             // 
             // tableLayoutPanel2
@@ -437,7 +441,7 @@ namespace QLNHAHANG
             this.tableLayoutPanel2.RowCount = 2;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(803, 140);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(803, 184);
             this.tableLayoutPanel2.TabIndex = 34;
             // 
             // panel1
@@ -453,6 +457,28 @@ namespace QLNHAHANG
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(912, 224);
             this.panel1.TabIndex = 2;
+            // 
+            // btnRP
+            // 
+            this.btnRP.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnRP.Animated = true;
+            this.btnRP.CheckedState.Parent = this.btnRP;
+            this.btnRP.CustomImages.Parent = this.btnRP;
+            this.btnRP.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(197)))), ((int)(((byte)(203)))));
+            this.btnRP.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnRP.ForeColor = System.Drawing.Color.White;
+            this.btnRP.HoverState.Parent = this.btnRP;
+            this.btnRP.Image = global::QLNHAHANG.Properties.Resources.ic_report_2;
+            this.btnRP.Location = new System.Drawing.Point(856, 164);
+            this.btnRP.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnRP.Name = "btnRP";
+            this.btnRP.ShadowDecoration.Enabled = true;
+            this.btnRP.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.btnRP.ShadowDecoration.Parent = this.btnRP;
+            this.btnRP.ShadowDecoration.Shadow = new System.Windows.Forms.Padding(0, 2, 2, 2);
+            this.btnRP.Size = new System.Drawing.Size(44, 42);
+            this.btnRP.TabIndex = 38;
+            this.btnRP.Click += new System.EventHandler(this.btnRP_Click);
             // 
             // gunaPanel1
             // 
@@ -487,37 +513,43 @@ namespace QLNHAHANG
             this.dataGridViewNhaCungCap.AllowUserToAddRows = false;
             this.dataGridViewNhaCungCap.AllowUserToDeleteRows = false;
             this.dataGridViewNhaCungCap.AllowUserToResizeRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.dataGridViewNhaCungCap.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            this.dataGridViewNhaCungCap.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
             this.dataGridViewNhaCungCap.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridViewNhaCungCap.BackgroundColor = System.Drawing.SystemColors.Control;
             this.dataGridViewNhaCungCap.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridViewNhaCungCap.CausesValidation = false;
             this.dataGridViewNhaCungCap.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dataGridViewNhaCungCap.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.Salmon;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewNhaCungCap.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(197)))), ((int)(((byte)(203)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewNhaCungCap.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.dataGridViewNhaCungCap.ColumnHeadersHeight = 40;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridViewNhaCungCap.DefaultCellStyle = dataGridViewCellStyle3;
+            this.dataGridViewNhaCungCap.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.MANCC,
+            this.TENNCC,
+            this.DIACHI,
+            this.SDT});
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewNhaCungCap.DefaultCellStyle = dataGridViewCellStyle6;
             this.dataGridViewNhaCungCap.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridViewNhaCungCap.EnableHeadersVisualStyles = false;
             this.dataGridViewNhaCungCap.GridColor = System.Drawing.SystemColors.Control;
             this.dataGridViewNhaCungCap.Location = new System.Drawing.Point(3, 292);
             this.dataGridViewNhaCungCap.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dataGridViewNhaCungCap.Name = "dataGridViewNhaCungCap";
+            this.dataGridViewNhaCungCap.ReadOnly = true;
             this.dataGridViewNhaCungCap.RowHeadersVisible = false;
             this.dataGridViewNhaCungCap.RowHeadersWidth = 51;
             this.dataGridViewNhaCungCap.RowTemplate.Height = 24;
@@ -532,13 +564,13 @@ namespace QLNHAHANG
             this.dataGridViewNhaCungCap.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
             this.dataGridViewNhaCungCap.ThemeStyle.BackColor = System.Drawing.SystemColors.Control;
             this.dataGridViewNhaCungCap.ThemeStyle.GridColor = System.Drawing.SystemColors.Control;
-            this.dataGridViewNhaCungCap.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.Salmon;
+            this.dataGridViewNhaCungCap.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(197)))), ((int)(((byte)(203)))));
             this.dataGridViewNhaCungCap.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.dataGridViewNhaCungCap.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
             this.dataGridViewNhaCungCap.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.Black;
             this.dataGridViewNhaCungCap.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.dataGridViewNhaCungCap.ThemeStyle.HeaderStyle.Height = 40;
-            this.dataGridViewNhaCungCap.ThemeStyle.ReadOnly = false;
+            this.dataGridViewNhaCungCap.ThemeStyle.ReadOnly = true;
             this.dataGridViewNhaCungCap.ThemeStyle.RowsStyle.BackColor = System.Drawing.SystemColors.Control;
             this.dataGridViewNhaCungCap.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dataGridViewNhaCungCap.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
@@ -548,27 +580,37 @@ namespace QLNHAHANG
             this.dataGridViewNhaCungCap.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             this.dataGridViewNhaCungCap.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewNhaCungCap_CellClick);
             // 
-            // btnRP
+            // MANCC
             // 
-            this.btnRP.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnRP.Animated = true;
-            this.btnRP.CheckedState.Parent = this.btnRP;
-            this.btnRP.CustomImages.Parent = this.btnRP;
-            this.btnRP.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(197)))), ((int)(((byte)(203)))));
-            this.btnRP.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnRP.ForeColor = System.Drawing.Color.White;
-            this.btnRP.HoverState.Parent = this.btnRP;
-            this.btnRP.Image = global::QLNHAHANG.Properties.Resources.ic_report_2;
-            this.btnRP.Location = new System.Drawing.Point(856, 164);
-            this.btnRP.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnRP.Name = "btnRP";
-            this.btnRP.ShadowDecoration.Enabled = true;
-            this.btnRP.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.btnRP.ShadowDecoration.Parent = this.btnRP;
-            this.btnRP.ShadowDecoration.Shadow = new System.Windows.Forms.Padding(0, 2, 2, 2);
-            this.btnRP.Size = new System.Drawing.Size(44, 42);
-            this.btnRP.TabIndex = 38;
-            this.btnRP.Click += new System.EventHandler(this.btnRP_Click);
+            this.MANCC.DataPropertyName = "MANCC";
+            this.MANCC.HeaderText = "Mã nhà cung cấp";
+            this.MANCC.MinimumWidth = 6;
+            this.MANCC.Name = "MANCC";
+            this.MANCC.ReadOnly = true;
+            // 
+            // TENNCC
+            // 
+            this.TENNCC.DataPropertyName = "TENNCC";
+            this.TENNCC.HeaderText = "Tên nhà cung cấp";
+            this.TENNCC.MinimumWidth = 6;
+            this.TENNCC.Name = "TENNCC";
+            this.TENNCC.ReadOnly = true;
+            // 
+            // DIACHI
+            // 
+            this.DIACHI.DataPropertyName = "DIACHI";
+            this.DIACHI.HeaderText = "Địa chỉ";
+            this.DIACHI.MinimumWidth = 6;
+            this.DIACHI.Name = "DIACHI";
+            this.DIACHI.ReadOnly = true;
+            // 
+            // SDT
+            // 
+            this.SDT.DataPropertyName = "SDT";
+            this.SDT.HeaderText = "Số điện thoại";
+            this.SDT.MinimumWidth = 6;
+            this.SDT.Name = "SDT";
+            this.SDT.ReadOnly = true;
             // 
             // frmNhaCungCap
             // 
@@ -622,5 +664,9 @@ namespace QLNHAHANG
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private Guna.UI2.WinForms.Guna2DataGridView dataGridViewNhaCungCap;
         private Guna.UI2.WinForms.Guna2CircleButton btnRP;
+        private System.Windows.Forms.DataGridViewTextBoxColumn MANCC;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TENNCC;
+        private System.Windows.Forms.DataGridViewTextBoxColumn DIACHI;
+        private System.Windows.Forms.DataGridViewTextBoxColumn SDT;
     }
 }

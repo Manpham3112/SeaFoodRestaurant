@@ -35,6 +35,7 @@ namespace QLNHAHANG
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.btnRP = new Guna.UI2.WinForms.Guna2CircleButton();
             this.btnXoa = new Guna.UI2.WinForms.Guna2CircleButton();
             this.btnSua = new Guna.UI2.WinForms.Guna2CircleButton();
             this.btnLuu = new Guna.UI2.WinForms.Guna2CircleButton();
@@ -50,7 +51,8 @@ namespace QLNHAHANG
             this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
             this.gunaPanel2 = new Guna.UI.WinForms.GunaPanel();
             this.dgrv_HienThiLoaiNguyenLieu = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.btnRP = new Guna.UI2.WinForms.Guna2CircleButton();
+            this.MALNL = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TENLNL = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tableLayoutPanel1.SuspendLayout();
             this.guna2Panel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
@@ -93,6 +95,28 @@ namespace QLNHAHANG
             this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
             this.guna2Panel1.Size = new System.Drawing.Size(743, 260);
             this.guna2Panel1.TabIndex = 0;
+            // 
+            // btnRP
+            // 
+            this.btnRP.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnRP.Animated = true;
+            this.btnRP.CheckedState.Parent = this.btnRP;
+            this.btnRP.CustomImages.Parent = this.btnRP;
+            this.btnRP.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(197)))), ((int)(((byte)(203)))));
+            this.btnRP.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnRP.ForeColor = System.Drawing.Color.White;
+            this.btnRP.HoverState.Parent = this.btnRP;
+            this.btnRP.Image = global::QLNHAHANG.Properties.Resources.ic_report_2;
+            this.btnRP.Location = new System.Drawing.Point(690, 213);
+            this.btnRP.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnRP.Name = "btnRP";
+            this.btnRP.ShadowDecoration.Enabled = true;
+            this.btnRP.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.btnRP.ShadowDecoration.Parent = this.btnRP;
+            this.btnRP.ShadowDecoration.Shadow = new System.Windows.Forms.Padding(0, 2, 2, 2);
+            this.btnRP.Size = new System.Drawing.Size(44, 45);
+            this.btnRP.TabIndex = 38;
+            this.btnRP.Click += new System.EventHandler(this.btnRP_Click);
             // 
             // btnXoa
             // 
@@ -385,7 +409,7 @@ namespace QLNHAHANG
             this.dgrv_HienThiLoaiNguyenLieu.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dgrv_HienThiLoaiNguyenLieu.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.Salmon;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(197)))), ((int)(((byte)(203)))));
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.5F);
             dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
@@ -393,6 +417,9 @@ namespace QLNHAHANG
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dgrv_HienThiLoaiNguyenLieu.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgrv_HienThiLoaiNguyenLieu.ColumnHeadersHeight = 40;
+            this.dgrv_HienThiLoaiNguyenLieu.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.MALNL,
+            this.TENLNL});
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
@@ -407,6 +434,7 @@ namespace QLNHAHANG
             this.dgrv_HienThiLoaiNguyenLieu.Location = new System.Drawing.Point(0, 0);
             this.dgrv_HienThiLoaiNguyenLieu.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dgrv_HienThiLoaiNguyenLieu.Name = "dgrv_HienThiLoaiNguyenLieu";
+            this.dgrv_HienThiLoaiNguyenLieu.ReadOnly = true;
             this.dgrv_HienThiLoaiNguyenLieu.RowHeadersVisible = false;
             this.dgrv_HienThiLoaiNguyenLieu.RowHeadersWidth = 51;
             this.dgrv_HienThiLoaiNguyenLieu.RowTemplate.Height = 24;
@@ -421,13 +449,13 @@ namespace QLNHAHANG
             this.dgrv_HienThiLoaiNguyenLieu.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
             this.dgrv_HienThiLoaiNguyenLieu.ThemeStyle.BackColor = System.Drawing.SystemColors.Control;
             this.dgrv_HienThiLoaiNguyenLieu.ThemeStyle.GridColor = System.Drawing.SystemColors.Control;
-            this.dgrv_HienThiLoaiNguyenLieu.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.Salmon;
+            this.dgrv_HienThiLoaiNguyenLieu.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(197)))), ((int)(((byte)(203)))));
             this.dgrv_HienThiLoaiNguyenLieu.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.dgrv_HienThiLoaiNguyenLieu.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
             this.dgrv_HienThiLoaiNguyenLieu.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.Black;
             this.dgrv_HienThiLoaiNguyenLieu.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.dgrv_HienThiLoaiNguyenLieu.ThemeStyle.HeaderStyle.Height = 40;
-            this.dgrv_HienThiLoaiNguyenLieu.ThemeStyle.ReadOnly = false;
+            this.dgrv_HienThiLoaiNguyenLieu.ThemeStyle.ReadOnly = true;
             this.dgrv_HienThiLoaiNguyenLieu.ThemeStyle.RowsStyle.BackColor = System.Drawing.SystemColors.Control;
             this.dgrv_HienThiLoaiNguyenLieu.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dgrv_HienThiLoaiNguyenLieu.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
@@ -435,29 +463,24 @@ namespace QLNHAHANG
             this.dgrv_HienThiLoaiNguyenLieu.ThemeStyle.RowsStyle.Height = 24;
             this.dgrv_HienThiLoaiNguyenLieu.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.dgrv_HienThiLoaiNguyenLieu.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.dgrv_HienThiLoaiNguyenLieu.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgrv_HienThiLoaiNguyenLieu_CellClick);
             this.dgrv_HienThiLoaiNguyenLieu.SelectionChanged += new System.EventHandler(this.dgrv_HienThiLoaiNguyenLieu_SelectionChanged);
             // 
-            // btnRP
+            // MALNL
             // 
-            this.btnRP.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnRP.Animated = true;
-            this.btnRP.CheckedState.Parent = this.btnRP;
-            this.btnRP.CustomImages.Parent = this.btnRP;
-            this.btnRP.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(197)))), ((int)(((byte)(203)))));
-            this.btnRP.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnRP.ForeColor = System.Drawing.Color.White;
-            this.btnRP.HoverState.Parent = this.btnRP;
-            this.btnRP.Image = global::QLNHAHANG.Properties.Resources.ic_report_2;
-            this.btnRP.Location = new System.Drawing.Point(690, 213);
-            this.btnRP.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnRP.Name = "btnRP";
-            this.btnRP.ShadowDecoration.Enabled = true;
-            this.btnRP.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.btnRP.ShadowDecoration.Parent = this.btnRP;
-            this.btnRP.ShadowDecoration.Shadow = new System.Windows.Forms.Padding(0, 2, 2, 2);
-            this.btnRP.Size = new System.Drawing.Size(44, 45);
-            this.btnRP.TabIndex = 38;
-            this.btnRP.Click += new System.EventHandler(this.btnRP_Click);
+            this.MALNL.DataPropertyName = "MALNL";
+            this.MALNL.HeaderText = "Mã loại nguyên liệu";
+            this.MALNL.MinimumWidth = 6;
+            this.MALNL.Name = "MALNL";
+            this.MALNL.ReadOnly = true;
+            // 
+            // TENLNL
+            // 
+            this.TENLNL.DataPropertyName = "TENLNL";
+            this.TENLNL.HeaderText = "Tên loại nguyên liệu";
+            this.TENLNL.MinimumWidth = 6;
+            this.TENLNL.Name = "TENLNL";
+            this.TENLNL.ReadOnly = true;
             // 
             // frmLoaiNguyenLieu
             // 
@@ -503,5 +526,7 @@ namespace QLNHAHANG
         private Guna.UI.WinForms.GunaPanel gunaPanel2;
         private Guna.UI2.WinForms.Guna2DataGridView dgrv_HienThiLoaiNguyenLieu;
         private Guna.UI2.WinForms.Guna2CircleButton btnRP;
+        private System.Windows.Forms.DataGridViewTextBoxColumn MALNL;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TENLNL;
     }
 }

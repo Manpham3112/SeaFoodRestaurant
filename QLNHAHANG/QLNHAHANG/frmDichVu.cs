@@ -35,6 +35,7 @@ namespace QLNHAHANG
             setEnableTextBox(lstTextBox, false);
             databingding(0);
             setHeaderDV();
+            btnChonHinh.Enabled = false;
             
         }
         public void databingding(int rowindex)
@@ -108,6 +109,7 @@ namespace QLNHAHANG
 
         private void btnThem_Click(object sender, EventArgs e)
         {
+            btnChonHinh.Enabled = true;
             Random r = new Random();
             int count = qldv.demSoLuong() + 1;
             txtMaDV.Text = "DV00" + count + r.Next(0, 99);
@@ -133,7 +135,10 @@ namespace QLNHAHANG
 
         private void btnSua_Click(object sender, EventArgs e)
         {
+            btnChonHinh.Enabled = true;
             setEnableTextBox(lstTextBox, true);
+            btnThem.Enabled = false;
+            btnXoa.Enabled = false;
             txtMaDV.Enabled = false;
             if (btnLuu.Enabled == true)
             {
@@ -169,6 +174,7 @@ namespace QLNHAHANG
             {
                 MessageBox.Show("Dịch vụ " + txtMaDV.Text + " không đạt điều kiện để xóa");
             }
+            frmDichVu_Load(sender, e);
         }
 
         private void btnLuu_Click(object sender, EventArgs e)
@@ -310,6 +316,11 @@ namespace QLNHAHANG
         {
             frm_rpDichVu rp = new frm_rpDichVu();
             rp.Show();
+        }
+
+        private void dataGridViewDichVu_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

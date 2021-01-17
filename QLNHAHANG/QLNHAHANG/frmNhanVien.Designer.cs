@@ -43,6 +43,7 @@ namespace QLNHAHANG
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.txtDiaChi = new Guna.UI2.WinForms.Guna2TextBox();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.btnRP = new Guna.UI2.WinForms.Guna2CircleButton();
             this.btnSua = new Guna.UI2.WinForms.Guna2CircleButton();
             this.btnThem = new Guna.UI2.WinForms.Guna2CircleButton();
             this.btnLuu = new Guna.UI2.WinForms.Guna2CircleButton();
@@ -69,7 +70,13 @@ namespace QLNHAHANG
             this.cboLoaiNhanVien = new Guna.UI.WinForms.GunaComboBox();
             this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
-            this.btnRP = new Guna.UI2.WinForms.Guna2CircleButton();
+            this.MANV = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TENNV = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SDT = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DIACHI = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NGAYSINH = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.MATKHAU = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.MANQ = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox26.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -97,7 +104,7 @@ namespace QLNHAHANG
             this.gunaLabel5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.gunaLabel5.Location = new System.Drawing.Point(3, 0);
             this.gunaLabel5.Name = "gunaLabel5";
-            this.gunaLabel5.Size = new System.Drawing.Size(338, 20);
+            this.gunaLabel5.Size = new System.Drawing.Size(296, 20);
             this.gunaLabel5.TabIndex = 53;
             this.gunaLabel5.Text = "Thông tin cá nhân";
             // 
@@ -106,10 +113,10 @@ namespace QLNHAHANG
             this.groupBox26.Controls.Add(this.txtMa);
             this.groupBox26.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox26.Location = new System.Drawing.Point(4, 34);
-            this.groupBox26.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox26.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox26.Name = "groupBox26";
-            this.groupBox26.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.groupBox26.Size = new System.Drawing.Size(336, 53);
+            this.groupBox26.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBox26.Size = new System.Drawing.Size(294, 53);
             this.groupBox26.TabIndex = 65;
             this.groupBox26.TabStop = false;
             this.groupBox26.Text = "Mã nhân viên (*)";
@@ -134,13 +141,13 @@ namespace QLNHAHANG
             this.txtMa.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtMa.HoverState.Parent = this.txtMa;
             this.txtMa.Location = new System.Drawing.Point(4, 19);
-            this.txtMa.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.txtMa.Margin = new System.Windows.Forms.Padding(5);
             this.txtMa.Name = "txtMa";
             this.txtMa.PasswordChar = '\0';
             this.txtMa.PlaceholderText = "Mã nhân viên";
             this.txtMa.SelectedText = "";
             this.txtMa.ShadowDecoration.Parent = this.txtMa;
-            this.txtMa.Size = new System.Drawing.Size(328, 30);
+            this.txtMa.Size = new System.Drawing.Size(286, 30);
             this.txtMa.TabIndex = 58;
             // 
             // groupBox1
@@ -148,10 +155,10 @@ namespace QLNHAHANG
             this.groupBox1.Controls.Add(this.txtHoTen);
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox1.Location = new System.Drawing.Point(4, 95);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.groupBox1.Size = new System.Drawing.Size(336, 54);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBox1.Size = new System.Drawing.Size(294, 54);
             this.groupBox1.TabIndex = 66;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Họ tên nhân viên (*)";
@@ -176,13 +183,13 @@ namespace QLNHAHANG
             this.txtHoTen.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtHoTen.HoverState.Parent = this.txtHoTen;
             this.txtHoTen.Location = new System.Drawing.Point(4, 19);
-            this.txtHoTen.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.txtHoTen.Margin = new System.Windows.Forms.Padding(5);
             this.txtHoTen.Name = "txtHoTen";
             this.txtHoTen.PasswordChar = '\0';
             this.txtHoTen.PlaceholderText = "Họ tên nhân viên";
             this.txtHoTen.SelectedText = "";
             this.txtHoTen.ShadowDecoration.Parent = this.txtHoTen;
-            this.txtHoTen.Size = new System.Drawing.Size(328, 31);
+            this.txtHoTen.Size = new System.Drawing.Size(286, 31);
             this.txtHoTen.TabIndex = 58;
             // 
             // groupBox2
@@ -190,10 +197,10 @@ namespace QLNHAHANG
             this.groupBox2.Controls.Add(this.txtSoDienThoai);
             this.groupBox2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox2.Location = new System.Drawing.Point(4, 157);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.groupBox2.Size = new System.Drawing.Size(336, 51);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBox2.Size = new System.Drawing.Size(294, 51);
             this.groupBox2.TabIndex = 67;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Số điện thoại";
@@ -218,13 +225,13 @@ namespace QLNHAHANG
             this.txtSoDienThoai.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtSoDienThoai.HoverState.Parent = this.txtSoDienThoai;
             this.txtSoDienThoai.Location = new System.Drawing.Point(4, 19);
-            this.txtSoDienThoai.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.txtSoDienThoai.Margin = new System.Windows.Forms.Padding(5);
             this.txtSoDienThoai.Name = "txtSoDienThoai";
             this.txtSoDienThoai.PasswordChar = '\0';
             this.txtSoDienThoai.PlaceholderText = "Số điện thoại";
             this.txtSoDienThoai.SelectedText = "";
             this.txtSoDienThoai.ShadowDecoration.Parent = this.txtSoDienThoai;
-            this.txtSoDienThoai.Size = new System.Drawing.Size(328, 28);
+            this.txtSoDienThoai.Size = new System.Drawing.Size(286, 28);
             this.txtSoDienThoai.TabIndex = 58;
             this.txtSoDienThoai.TextChanged += new System.EventHandler(this.txtSoDienThoai_TextChanged);
             this.txtSoDienThoai.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtSoDienThoai_KeyPress);
@@ -234,10 +241,10 @@ namespace QLNHAHANG
             this.groupBox4.Controls.Add(this.txtDiaChi);
             this.groupBox4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox4.Location = new System.Drawing.Point(4, 222);
-            this.groupBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox4.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.groupBox4.Size = new System.Drawing.Size(336, 49);
+            this.groupBox4.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBox4.Size = new System.Drawing.Size(294, 49);
             this.groupBox4.TabIndex = 69;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Địa chỉ";
@@ -262,13 +269,13 @@ namespace QLNHAHANG
             this.txtDiaChi.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtDiaChi.HoverState.Parent = this.txtDiaChi;
             this.txtDiaChi.Location = new System.Drawing.Point(4, 19);
-            this.txtDiaChi.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.txtDiaChi.Margin = new System.Windows.Forms.Padding(5);
             this.txtDiaChi.Name = "txtDiaChi";
             this.txtDiaChi.PasswordChar = '\0';
             this.txtDiaChi.PlaceholderText = "Địa chỉ";
             this.txtDiaChi.SelectedText = "";
             this.txtDiaChi.ShadowDecoration.Parent = this.txtDiaChi;
-            this.txtDiaChi.Size = new System.Drawing.Size(328, 26);
+            this.txtDiaChi.Size = new System.Drawing.Size(286, 26);
             this.txtDiaChi.TabIndex = 58;
             // 
             // panel4
@@ -284,6 +291,28 @@ namespace QLNHAHANG
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(320, 57);
             this.panel4.TabIndex = 53;
+            // 
+            // btnRP
+            // 
+            this.btnRP.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnRP.Animated = true;
+            this.btnRP.CheckedState.Parent = this.btnRP;
+            this.btnRP.CustomImages.Parent = this.btnRP;
+            this.btnRP.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(197)))), ((int)(((byte)(203)))));
+            this.btnRP.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnRP.ForeColor = System.Drawing.Color.White;
+            this.btnRP.HoverState.Parent = this.btnRP;
+            this.btnRP.Image = global::QLNHAHANG.Properties.Resources.ic_report_2;
+            this.btnRP.Location = new System.Drawing.Point(63, 4);
+            this.btnRP.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnRP.Name = "btnRP";
+            this.btnRP.ShadowDecoration.Enabled = true;
+            this.btnRP.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.btnRP.ShadowDecoration.Parent = this.btnRP;
+            this.btnRP.ShadowDecoration.Shadow = new System.Windows.Forms.Padding(0, 2, 2, 2);
+            this.btnRP.Size = new System.Drawing.Size(44, 42);
+            this.btnRP.TabIndex = 50;
+            this.btnRP.Click += new System.EventHandler(this.btnRP_Click);
             // 
             // btnSua
             // 
@@ -441,7 +470,7 @@ namespace QLNHAHANG
             this.dateTimePickerNgaySinh.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.dateTimePickerNgaySinh.Name = "dateTimePickerNgaySinh";
             this.dateTimePickerNgaySinh.ShadowDecoration.Parent = this.dateTimePickerNgaySinh;
-            this.dateTimePickerNgaySinh.Size = new System.Drawing.Size(328, 31);
+            this.dateTimePickerNgaySinh.Size = new System.Drawing.Size(286, 31);
             this.dateTimePickerNgaySinh.TabIndex = 0;
             this.dateTimePickerNgaySinh.Value = new System.DateTime(2020, 8, 5, 14, 4, 37, 900);
             // 
@@ -459,7 +488,7 @@ namespace QLNHAHANG
             this.dataGridViewNhanVien.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dataGridViewNhanVien.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.Salmon;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(197)))), ((int)(((byte)(203)))));
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.5F);
             dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
@@ -467,6 +496,14 @@ namespace QLNHAHANG
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dataGridViewNhanVien.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridViewNhanVien.ColumnHeadersHeight = 40;
+            this.dataGridViewNhanVien.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.MANV,
+            this.TENNV,
+            this.SDT,
+            this.DIACHI,
+            this.NGAYSINH,
+            this.MATKHAU,
+            this.MANQ});
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
@@ -481,6 +518,7 @@ namespace QLNHAHANG
             this.dataGridViewNhanVien.Location = new System.Drawing.Point(329, 2);
             this.dataGridViewNhanVien.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dataGridViewNhanVien.Name = "dataGridViewNhanVien";
+            this.dataGridViewNhanVien.ReadOnly = true;
             this.dataGridViewNhanVien.RowHeadersVisible = false;
             this.dataGridViewNhanVien.RowHeadersWidth = 51;
             this.dataGridViewNhanVien.RowTemplate.Height = 24;
@@ -495,13 +533,13 @@ namespace QLNHAHANG
             this.dataGridViewNhanVien.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
             this.dataGridViewNhanVien.ThemeStyle.BackColor = System.Drawing.SystemColors.Control;
             this.dataGridViewNhanVien.ThemeStyle.GridColor = System.Drawing.SystemColors.Control;
-            this.dataGridViewNhanVien.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.Salmon;
+            this.dataGridViewNhanVien.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(197)))), ((int)(((byte)(203)))));
             this.dataGridViewNhanVien.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.dataGridViewNhanVien.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
             this.dataGridViewNhanVien.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.Black;
             this.dataGridViewNhanVien.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.dataGridViewNhanVien.ThemeStyle.HeaderStyle.Height = 40;
-            this.dataGridViewNhanVien.ThemeStyle.ReadOnly = false;
+            this.dataGridViewNhanVien.ThemeStyle.ReadOnly = true;
             this.dataGridViewNhanVien.ThemeStyle.RowsStyle.BackColor = System.Drawing.SystemColors.Control;
             this.dataGridViewNhanVien.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dataGridViewNhanVien.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
@@ -643,10 +681,10 @@ namespace QLNHAHANG
             this.groupBox9.Controls.Add(this.gunaPanel1);
             this.groupBox9.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox9.Location = new System.Drawing.Point(4, 463);
-            this.groupBox9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox9.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox9.Name = "groupBox9";
-            this.groupBox9.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.groupBox9.Size = new System.Drawing.Size(336, 54);
+            this.groupBox9.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBox9.Size = new System.Drawing.Size(294, 54);
             this.groupBox9.TabIndex = 75;
             this.groupBox9.TabStop = false;
             this.groupBox9.Text = "Mật khẩu";
@@ -660,7 +698,7 @@ namespace QLNHAHANG
             this.gunaPanel1.Location = new System.Drawing.Point(4, 19);
             this.gunaPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.gunaPanel1.Name = "gunaPanel1";
-            this.gunaPanel1.Size = new System.Drawing.Size(328, 31);
+            this.gunaPanel1.Size = new System.Drawing.Size(286, 31);
             this.gunaPanel1.TabIndex = 0;
             // 
             // btnHidePass
@@ -676,7 +714,7 @@ namespace QLNHAHANG
             this.btnHidePass.ForeColor = System.Drawing.Color.White;
             this.btnHidePass.Image = ((System.Drawing.Image)(resources.GetObject("btnHidePass.Image")));
             this.btnHidePass.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnHidePass.Location = new System.Drawing.Point(250, 0);
+            this.btnHidePass.Location = new System.Drawing.Point(208, 0);
             this.btnHidePass.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnHidePass.Name = "btnHidePass";
             this.btnHidePass.OnHoverBaseColor = System.Drawing.Color.Transparent;
@@ -701,7 +739,7 @@ namespace QLNHAHANG
             this.btnShowPass.ForeColor = System.Drawing.Color.White;
             this.btnShowPass.Image = ((System.Drawing.Image)(resources.GetObject("btnShowPass.Image")));
             this.btnShowPass.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnShowPass.Location = new System.Drawing.Point(289, 0);
+            this.btnShowPass.Location = new System.Drawing.Point(247, 0);
             this.btnShowPass.Margin = new System.Windows.Forms.Padding(3, 2, 11, 2);
             this.btnShowPass.Name = "btnShowPass";
             this.btnShowPass.OnHoverBaseColor = System.Drawing.Color.Transparent;
@@ -732,13 +770,13 @@ namespace QLNHAHANG
             this.txtMatKhau.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtMatKhau.HoverState.Parent = this.txtMatKhau;
             this.txtMatKhau.Location = new System.Drawing.Point(0, 0);
-            this.txtMatKhau.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.txtMatKhau.Margin = new System.Windows.Forms.Padding(5);
             this.txtMatKhau.Name = "txtMatKhau";
             this.txtMatKhau.PasswordChar = '\0';
             this.txtMatKhau.PlaceholderText = "Mật khẩu";
             this.txtMatKhau.SelectedText = "";
             this.txtMatKhau.ShadowDecoration.Parent = this.txtMatKhau;
-            this.txtMatKhau.Size = new System.Drawing.Size(328, 31);
+            this.txtMatKhau.Size = new System.Drawing.Size(286, 31);
             this.txtMatKhau.TabIndex = 59;
             // 
             // groupBox8
@@ -746,10 +784,10 @@ namespace QLNHAHANG
             this.groupBox8.Controls.Add(this.cboLoaiNhanVien);
             this.groupBox8.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox8.Location = new System.Drawing.Point(4, 400);
-            this.groupBox8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox8.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox8.Name = "groupBox8";
-            this.groupBox8.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.groupBox8.Size = new System.Drawing.Size(336, 55);
+            this.groupBox8.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBox8.Size = new System.Drawing.Size(294, 55);
             this.groupBox8.TabIndex = 74;
             this.groupBox8.TabStop = false;
             this.groupBox8.Text = "Nhóm nhân viên";
@@ -771,7 +809,7 @@ namespace QLNHAHANG
             this.cboLoaiNhanVien.Name = "cboLoaiNhanVien";
             this.cboLoaiNhanVien.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.cboLoaiNhanVien.OnHoverItemForeColor = System.Drawing.Color.White;
-            this.cboLoaiNhanVien.Size = new System.Drawing.Size(328, 31);
+            this.cboLoaiNhanVien.Size = new System.Drawing.Size(286, 31);
             this.cboLoaiNhanVien.TabIndex = 0;
             // 
             // gunaLabel1
@@ -781,7 +819,7 @@ namespace QLNHAHANG
             this.gunaLabel1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.gunaLabel1.Location = new System.Drawing.Point(3, 364);
             this.gunaLabel1.Name = "gunaLabel1";
-            this.gunaLabel1.Size = new System.Drawing.Size(338, 20);
+            this.gunaLabel1.Size = new System.Drawing.Size(296, 20);
             this.gunaLabel1.TabIndex = 73;
             this.gunaLabel1.Text = "Thông tin tài khoản";
             this.gunaLabel1.Click += new System.EventHandler(this.gunaLabel1_Click);
@@ -791,35 +829,69 @@ namespace QLNHAHANG
             this.groupBox6.Controls.Add(this.dateTimePickerNgaySinh);
             this.groupBox6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox6.Location = new System.Drawing.Point(4, 285);
-            this.groupBox6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox6.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.groupBox6.Size = new System.Drawing.Size(336, 54);
+            this.groupBox6.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBox6.Size = new System.Drawing.Size(294, 54);
             this.groupBox6.TabIndex = 71;
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "Ngày sinh";
             // 
-            // btnRP
+            // MANV
             // 
-            this.btnRP.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnRP.Animated = true;
-            this.btnRP.CheckedState.Parent = this.btnRP;
-            this.btnRP.CustomImages.Parent = this.btnRP;
-            this.btnRP.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(197)))), ((int)(((byte)(203)))));
-            this.btnRP.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnRP.ForeColor = System.Drawing.Color.White;
-            this.btnRP.HoverState.Parent = this.btnRP;
-            this.btnRP.Image = global::QLNHAHANG.Properties.Resources.ic_report_2;
-            this.btnRP.Location = new System.Drawing.Point(63, 4);
-            this.btnRP.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnRP.Name = "btnRP";
-            this.btnRP.ShadowDecoration.Enabled = true;
-            this.btnRP.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.btnRP.ShadowDecoration.Parent = this.btnRP;
-            this.btnRP.ShadowDecoration.Shadow = new System.Windows.Forms.Padding(0, 2, 2, 2);
-            this.btnRP.Size = new System.Drawing.Size(44, 42);
-            this.btnRP.TabIndex = 50;
-            this.btnRP.Click += new System.EventHandler(this.btnRP_Click);
+            this.MANV.DataPropertyName = "MANV";
+            this.MANV.HeaderText = "Mã nhân viên";
+            this.MANV.MinimumWidth = 6;
+            this.MANV.Name = "MANV";
+            this.MANV.ReadOnly = true;
+            // 
+            // TENNV
+            // 
+            this.TENNV.DataPropertyName = "TENNV";
+            this.TENNV.HeaderText = "Tên nhân viên";
+            this.TENNV.MinimumWidth = 6;
+            this.TENNV.Name = "TENNV";
+            this.TENNV.ReadOnly = true;
+            // 
+            // SDT
+            // 
+            this.SDT.DataPropertyName = "SDT";
+            this.SDT.HeaderText = "Số điện thoại";
+            this.SDT.MinimumWidth = 6;
+            this.SDT.Name = "SDT";
+            this.SDT.ReadOnly = true;
+            // 
+            // DIACHI
+            // 
+            this.DIACHI.DataPropertyName = "DIACHI";
+            this.DIACHI.HeaderText = "Địa chỉ";
+            this.DIACHI.MinimumWidth = 6;
+            this.DIACHI.Name = "DIACHI";
+            this.DIACHI.ReadOnly = true;
+            // 
+            // NGAYSINH
+            // 
+            this.NGAYSINH.DataPropertyName = "NGAYSINH";
+            this.NGAYSINH.HeaderText = "Ngày sinh";
+            this.NGAYSINH.MinimumWidth = 6;
+            this.NGAYSINH.Name = "NGAYSINH";
+            this.NGAYSINH.ReadOnly = true;
+            // 
+            // MATKHAU
+            // 
+            this.MATKHAU.DataPropertyName = "MATKHAU";
+            this.MATKHAU.HeaderText = "Mật Khẩu";
+            this.MATKHAU.MinimumWidth = 6;
+            this.MATKHAU.Name = "MATKHAU";
+            this.MATKHAU.ReadOnly = true;
+            // 
+            // MANQ
+            // 
+            this.MANQ.DataPropertyName = "MANQ";
+            this.MANQ.HeaderText = "Nhóm quyền";
+            this.MANQ.MinimumWidth = 6;
+            this.MANQ.Name = "MANQ";
+            this.MANQ.ReadOnly = true;
             // 
             // frmNhanVien
             // 
@@ -895,5 +967,12 @@ namespace QLNHAHANG
         private System.Windows.Forms.GroupBox groupBox6;
         private Guna.UI.WinForms.GunaCheckBox ckHoatDong;
         private Guna.UI2.WinForms.Guna2CircleButton btnRP;
+        private System.Windows.Forms.DataGridViewTextBoxColumn MANV;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TENNV;
+        private System.Windows.Forms.DataGridViewTextBoxColumn SDT;
+        private System.Windows.Forms.DataGridViewTextBoxColumn DIACHI;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NGAYSINH;
+        private System.Windows.Forms.DataGridViewTextBoxColumn MATKHAU;
+        private System.Windows.Forms.DataGridViewTextBoxColumn MANQ;
     }
 }

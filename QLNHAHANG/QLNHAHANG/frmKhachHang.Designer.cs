@@ -54,6 +54,7 @@ namespace QLNHAHANG
             this.TAIKHOAN = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.MATKHAU = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
+            this.btnRP = new Guna.UI2.WinForms.Guna2CircleButton();
             this.panel2 = new System.Windows.Forms.Panel();
             this.txtTimKiem = new Guna.UI2.WinForms.Guna2TextBox();
             this.gunaLabel3 = new Guna.UI.WinForms.GunaLabel();
@@ -65,7 +66,6 @@ namespace QLNHAHANG
             this.btnSua = new Guna.UI2.WinForms.Guna2CircleButton();
             this.btnLuu = new Guna.UI2.WinForms.Guna2CircleButton();
             this.btnThem = new Guna.UI2.WinForms.Guna2CircleButton();
-            this.btnRP = new Guna.UI2.WinForms.Guna2CircleButton();
             this.grbMaKhachHang.SuspendLayout();
             this.grbHoTenKhachHang.SuspendLayout();
             this.grbSoDienThoai.SuspendLayout();
@@ -105,7 +105,7 @@ namespace QLNHAHANG
             this.txtMaKhachHang.HoverState.BorderColor = System.Drawing.SystemColors.Control;
             this.txtMaKhachHang.HoverState.Parent = this.txtMaKhachHang;
             this.txtMaKhachHang.Location = new System.Drawing.Point(7, 22);
-            this.txtMaKhachHang.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtMaKhachHang.Margin = new System.Windows.Forms.Padding(4);
             this.txtMaKhachHang.Name = "txtMaKhachHang";
             this.txtMaKhachHang.PasswordChar = '\0';
             this.txtMaKhachHang.PlaceholderText = "Mã khách hàng";
@@ -149,7 +149,7 @@ namespace QLNHAHANG
             this.txtSDT.HoverState.BorderColor = System.Drawing.SystemColors.Control;
             this.txtSDT.HoverState.Parent = this.txtSDT;
             this.txtSDT.Location = new System.Drawing.Point(0, 22);
-            this.txtSDT.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtSDT.Margin = new System.Windows.Forms.Padding(4);
             this.txtSDT.Name = "txtSDT";
             this.txtSDT.PasswordChar = '\0';
             this.txtSDT.PlaceholderText = "Số điện thoại";
@@ -162,7 +162,7 @@ namespace QLNHAHANG
             // grbHoTenKhachHang
             // 
             this.grbHoTenKhachHang.Controls.Add(this.txtSDT);
-            this.grbHoTenKhachHang.Location = new System.Drawing.Point(718, 3);
+            this.grbHoTenKhachHang.Location = new System.Drawing.Point(717, 3);
             this.grbHoTenKhachHang.Margin = new System.Windows.Forms.Padding(5, 3, 5, 5);
             this.grbHoTenKhachHang.Name = "grbHoTenKhachHang";
             this.grbHoTenKhachHang.Size = new System.Drawing.Size(265, 59);
@@ -193,13 +193,13 @@ namespace QLNHAHANG
             this.txtTenKH.HoverState.BorderColor = System.Drawing.SystemColors.Control;
             this.txtTenKH.HoverState.Parent = this.txtTenKH;
             this.txtTenKH.Location = new System.Drawing.Point(7, 25);
-            this.txtTenKH.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTenKH.Margin = new System.Windows.Forms.Padding(4);
             this.txtTenKH.Name = "txtTenKH";
             this.txtTenKH.PasswordChar = '\0';
             this.txtTenKH.PlaceholderText = "Tên khách hàng";
             this.txtTenKH.SelectedText = "";
             this.txtTenKH.ShadowDecoration.Parent = this.txtTenKH;
-            this.txtTenKH.Size = new System.Drawing.Size(372, 27);
+            this.txtTenKH.Size = new System.Drawing.Size(371, 27);
             this.txtTenKH.TabIndex = 0;
             // 
             // grbSoDienThoai
@@ -209,7 +209,7 @@ namespace QLNHAHANG
             this.grbSoDienThoai.Location = new System.Drawing.Point(322, 3);
             this.grbSoDienThoai.Margin = new System.Windows.Forms.Padding(5, 3, 5, 5);
             this.grbSoDienThoai.Name = "grbSoDienThoai";
-            this.grbSoDienThoai.Size = new System.Drawing.Size(386, 82);
+            this.grbSoDienThoai.Size = new System.Drawing.Size(385, 82);
             this.grbSoDienThoai.TabIndex = 10;
             this.grbSoDienThoai.TabStop = false;
             this.grbSoDienThoai.Text = "Tên khách hàng";
@@ -219,18 +219,18 @@ namespace QLNHAHANG
             this.tableLayoutPanel3.ColumnCount = 3;
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 44.46721F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 55.53279F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 282F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 283F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 192F));
             this.tableLayoutPanel3.Controls.Add(this.grbSoDienThoai, 0, 0);
             this.tableLayoutPanel3.Controls.Add(this.grbHoTenKhachHang, 1, 0);
             this.tableLayoutPanel3.Controls.Add(this.grbMaKhachHang, 0, 0);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel3.Location = new System.Drawing.Point(5, 5);
-            this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(5);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 1;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 67F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 90F));
             this.tableLayoutPanel3.Size = new System.Drawing.Size(996, 90);
             this.tableLayoutPanel3.TabIndex = 0;
             // 
@@ -257,7 +257,7 @@ namespace QLNHAHANG
             this.txtMatKhau.HoverState.BorderColor = System.Drawing.SystemColors.Control;
             this.txtMatKhau.HoverState.Parent = this.txtMatKhau;
             this.txtMatKhau.Location = new System.Drawing.Point(7, 22);
-            this.txtMatKhau.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtMatKhau.Margin = new System.Windows.Forms.Padding(4);
             this.txtMatKhau.Name = "txtMatKhau";
             this.txtMatKhau.PasswordChar = '\0';
             this.txtMatKhau.PlaceholderText = "Mật khẩu";
@@ -289,7 +289,7 @@ namespace QLNHAHANG
             this.txtDiaChi.HoverState.BorderColor = System.Drawing.SystemColors.Control;
             this.txtDiaChi.HoverState.Parent = this.txtDiaChi;
             this.txtDiaChi.Location = new System.Drawing.Point(7, 25);
-            this.txtDiaChi.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtDiaChi.Margin = new System.Windows.Forms.Padding(4);
             this.txtDiaChi.Name = "txtDiaChi";
             this.txtDiaChi.PasswordChar = '\0';
             this.txtDiaChi.PlaceholderText = "Địa chỉ";
@@ -321,7 +321,7 @@ namespace QLNHAHANG
             this.txtTaiKhoan.HoverState.BorderColor = System.Drawing.SystemColors.Control;
             this.txtTaiKhoan.HoverState.Parent = this.txtTaiKhoan;
             this.txtTaiKhoan.Location = new System.Drawing.Point(7, 25);
-            this.txtTaiKhoan.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTaiKhoan.Margin = new System.Windows.Forms.Padding(4);
             this.txtTaiKhoan.Name = "txtTaiKhoan";
             this.txtTaiKhoan.PasswordChar = '\0';
             this.txtTaiKhoan.PlaceholderText = "Tài khoản";
@@ -380,7 +380,7 @@ namespace QLNHAHANG
             this.dataGridViewKhachHang.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dataGridViewKhachHang.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.Salmon;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(197)))), ((int)(((byte)(203)))));
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.5F);
             dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
@@ -408,6 +408,7 @@ namespace QLNHAHANG
             this.dataGridViewKhachHang.GridColor = System.Drawing.SystemColors.Control;
             this.dataGridViewKhachHang.Location = new System.Drawing.Point(0, 274);
             this.dataGridViewKhachHang.Name = "dataGridViewKhachHang";
+            this.dataGridViewKhachHang.ReadOnly = true;
             this.dataGridViewKhachHang.RowHeadersVisible = false;
             this.dataGridViewKhachHang.RowHeadersWidth = 51;
             this.dataGridViewKhachHang.RowTemplate.Height = 24;
@@ -422,13 +423,13 @@ namespace QLNHAHANG
             this.dataGridViewKhachHang.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
             this.dataGridViewKhachHang.ThemeStyle.BackColor = System.Drawing.SystemColors.Control;
             this.dataGridViewKhachHang.ThemeStyle.GridColor = System.Drawing.SystemColors.Control;
-            this.dataGridViewKhachHang.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.Salmon;
+            this.dataGridViewKhachHang.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(197)))), ((int)(((byte)(203)))));
             this.dataGridViewKhachHang.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.dataGridViewKhachHang.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
             this.dataGridViewKhachHang.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.Black;
             this.dataGridViewKhachHang.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.dataGridViewKhachHang.ThemeStyle.HeaderStyle.Height = 40;
-            this.dataGridViewKhachHang.ThemeStyle.ReadOnly = false;
+            this.dataGridViewKhachHang.ThemeStyle.ReadOnly = true;
             this.dataGridViewKhachHang.ThemeStyle.RowsStyle.BackColor = System.Drawing.SystemColors.Control;
             this.dataGridViewKhachHang.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dataGridViewKhachHang.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
@@ -444,6 +445,7 @@ namespace QLNHAHANG
             this.MAKH.HeaderText = "Mã khách hàng";
             this.MAKH.MinimumWidth = 6;
             this.MAKH.Name = "MAKH";
+            this.MAKH.ReadOnly = true;
             // 
             // TENKH
             // 
@@ -451,6 +453,7 @@ namespace QLNHAHANG
             this.TENKH.HeaderText = "Tên khách hàng";
             this.TENKH.MinimumWidth = 6;
             this.TENKH.Name = "TENKH";
+            this.TENKH.ReadOnly = true;
             // 
             // SDT
             // 
@@ -458,6 +461,7 @@ namespace QLNHAHANG
             this.SDT.HeaderText = "Số điện thoại";
             this.SDT.MinimumWidth = 6;
             this.SDT.Name = "SDT";
+            this.SDT.ReadOnly = true;
             // 
             // DIACHI
             // 
@@ -465,6 +469,7 @@ namespace QLNHAHANG
             this.DIACHI.HeaderText = "Địa chỉ";
             this.DIACHI.MinimumWidth = 6;
             this.DIACHI.Name = "DIACHI";
+            this.DIACHI.ReadOnly = true;
             // 
             // TAIKHOAN
             // 
@@ -472,6 +477,7 @@ namespace QLNHAHANG
             this.TAIKHOAN.HeaderText = "Tài khoản";
             this.TAIKHOAN.MinimumWidth = 6;
             this.TAIKHOAN.Name = "TAIKHOAN";
+            this.TAIKHOAN.ReadOnly = true;
             // 
             // MATKHAU
             // 
@@ -479,6 +485,7 @@ namespace QLNHAHANG
             this.MATKHAU.HeaderText = "Mật khẩu";
             this.MATKHAU.MinimumWidth = 6;
             this.MATKHAU.Name = "MATKHAU";
+            this.MATKHAU.ReadOnly = true;
             // 
             // guna2Panel3
             // 
@@ -495,6 +502,28 @@ namespace QLNHAHANG
             this.guna2Panel3.ShadowDecoration.Parent = this.guna2Panel3;
             this.guna2Panel3.Size = new System.Drawing.Size(1081, 274);
             this.guna2Panel3.TabIndex = 7;
+            // 
+            // btnRP
+            // 
+            this.btnRP.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnRP.Animated = true;
+            this.btnRP.CheckedState.Parent = this.btnRP;
+            this.btnRP.CustomImages.Parent = this.btnRP;
+            this.btnRP.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(197)))), ((int)(((byte)(203)))));
+            this.btnRP.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnRP.ForeColor = System.Drawing.Color.White;
+            this.btnRP.HoverState.Parent = this.btnRP;
+            this.btnRP.Image = global::QLNHAHANG.Properties.Resources.ic_report_2;
+            this.btnRP.Location = new System.Drawing.Point(1026, 216);
+            this.btnRP.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnRP.Name = "btnRP";
+            this.btnRP.ShadowDecoration.Enabled = true;
+            this.btnRP.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.btnRP.ShadowDecoration.Parent = this.btnRP;
+            this.btnRP.ShadowDecoration.Shadow = new System.Windows.Forms.Padding(0, 2, 2, 2);
+            this.btnRP.Size = new System.Drawing.Size(44, 42);
+            this.btnRP.TabIndex = 37;
+            this.btnRP.Click += new System.EventHandler(this.btnRP_Click);
             // 
             // panel2
             // 
@@ -576,7 +605,7 @@ namespace QLNHAHANG
             this.tableLayoutPanel4.Controls.Add(this.grbCMND, 1, 0);
             this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel4.Location = new System.Drawing.Point(5, 105);
-            this.tableLayoutPanel4.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.tableLayoutPanel4.Margin = new System.Windows.Forms.Padding(5);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
             this.tableLayoutPanel4.RowCount = 1;
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -613,7 +642,7 @@ namespace QLNHAHANG
             this.btnXoa.Animated = true;
             this.btnXoa.CheckedState.Parent = this.btnXoa;
             this.btnXoa.CustomImages.Parent = this.btnXoa;
-            this.btnXoa.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(205)))), ((int)(((byte)(148)))));
+            this.btnXoa.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(197)))), ((int)(((byte)(203)))));
             this.btnXoa.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnXoa.ForeColor = System.Drawing.Color.White;
             this.btnXoa.HoverState.Parent = this.btnXoa;
@@ -634,7 +663,7 @@ namespace QLNHAHANG
             this.btnSua.Animated = true;
             this.btnSua.CheckedState.Parent = this.btnSua;
             this.btnSua.CustomImages.Parent = this.btnSua;
-            this.btnSua.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(205)))), ((int)(((byte)(148)))));
+            this.btnSua.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(197)))), ((int)(((byte)(203)))));
             this.btnSua.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnSua.ForeColor = System.Drawing.Color.White;
             this.btnSua.HoverState.Parent = this.btnSua;
@@ -655,7 +684,7 @@ namespace QLNHAHANG
             this.btnLuu.Animated = true;
             this.btnLuu.CheckedState.Parent = this.btnLuu;
             this.btnLuu.CustomImages.Parent = this.btnLuu;
-            this.btnLuu.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(205)))), ((int)(((byte)(148)))));
+            this.btnLuu.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(197)))), ((int)(((byte)(203)))));
             this.btnLuu.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnLuu.ForeColor = System.Drawing.Color.White;
             this.btnLuu.HoverState.Parent = this.btnLuu;
@@ -676,7 +705,7 @@ namespace QLNHAHANG
             this.btnThem.Animated = true;
             this.btnThem.CheckedState.Parent = this.btnThem;
             this.btnThem.CustomImages.Parent = this.btnThem;
-            this.btnThem.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(205)))), ((int)(((byte)(148)))));
+            this.btnThem.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(197)))), ((int)(((byte)(203)))));
             this.btnThem.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnThem.ForeColor = System.Drawing.Color.White;
             this.btnThem.HoverState.Parent = this.btnThem;
@@ -690,28 +719,6 @@ namespace QLNHAHANG
             this.btnThem.Size = new System.Drawing.Size(42, 40);
             this.btnThem.TabIndex = 17;
             this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
-            // 
-            // btnRP
-            // 
-            this.btnRP.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnRP.Animated = true;
-            this.btnRP.CheckedState.Parent = this.btnRP;
-            this.btnRP.CustomImages.Parent = this.btnRP;
-            this.btnRP.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(197)))), ((int)(((byte)(203)))));
-            this.btnRP.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnRP.ForeColor = System.Drawing.Color.White;
-            this.btnRP.HoverState.Parent = this.btnRP;
-            this.btnRP.Image = global::QLNHAHANG.Properties.Resources.ic_report_2;
-            this.btnRP.Location = new System.Drawing.Point(1026, 216);
-            this.btnRP.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnRP.Name = "btnRP";
-            this.btnRP.ShadowDecoration.Enabled = true;
-            this.btnRP.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.btnRP.ShadowDecoration.Parent = this.btnRP;
-            this.btnRP.ShadowDecoration.Shadow = new System.Windows.Forms.Padding(0, 2, 2, 2);
-            this.btnRP.Size = new System.Drawing.Size(44, 42);
-            this.btnRP.TabIndex = 37;
-            this.btnRP.Click += new System.EventHandler(this.btnRP_Click);
             // 
             // frmKhachHang
             // 

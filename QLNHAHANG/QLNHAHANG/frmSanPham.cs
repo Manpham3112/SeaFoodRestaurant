@@ -148,6 +148,16 @@ namespace QLNHAHANG
             setHeaderSP();
             setHeaderNL_SP();
             setHeaderNL();
+            btnXoa.Enabled = false;
+            btnSua.Enabled = false;
+            btnLamMoi.Enabled = true;
+            btnChonHinh.Enabled = false;
+            txtMa.Enabled = false;
+            txtTen.Enabled = false;
+            cbMaLoai.Enabled = false;
+            cbTinhTrang.Enabled = false;
+            txtGia.Enabled = false;
+
         }
 
         private void cbMaLoai_SelectedIndexChanged(object sender, EventArgs e)
@@ -205,6 +215,7 @@ namespace QLNHAHANG
 
         private void gvSanPham_CellClick(object sender, DataGridViewCellEventArgs e)
         {
+            btnSua.Enabled = true;
             try
             {
                 if (gvSanPham.Rows[e.RowIndex].Cells[e.ColumnIndex].Value != null)
@@ -224,6 +235,13 @@ namespace QLNHAHANG
 
         private void btnThem_Click(object sender, EventArgs e)
         {
+            txtMa.Enabled = false;
+            cbMaLoai.Enabled = true;
+            cbTinhTrang.SelectedValue = "Bán";
+            txtGia.Enabled = true;
+            btnChonHinh.Enabled = true;
+            txtTen.Enabled = true;
+            cbTinhTrang.Enabled = true;
             checkThem = true;
             checkSua = false;
             checkXoa = false;
@@ -303,10 +321,16 @@ namespace QLNHAHANG
                 gvSanPham.DataSource = sp_bll.getALLSP();
                 thietlapcontrol();
             }
+            frmSanPham_Load(sender, e);
         }
 
         private void btnSua_Click(object sender, EventArgs e)
         {
+            txtTen.Enabled = true;
+            cbTinhTrang.Enabled = true;
+            txtGia.Enabled = true;
+            cbMaLoai.Enabled = true;
+            btnChonHinh.Enabled = true;
             if (gvSanPham.SelectedRows.Count == 0)
             {
                 MessageBox.Show("Chưa chọn sản phẩm để sửa");
@@ -427,6 +451,7 @@ namespace QLNHAHANG
         private void btnLamMoi_Click(object sender, EventArgs e)
         {
             thietlapcontrol();
+            frmSanPham_Load(sender, e);
         }
         public void setHeaderSP()
         {

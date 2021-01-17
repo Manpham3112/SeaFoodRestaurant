@@ -40,18 +40,18 @@ namespace QLNHAHANG
             this.crystalReportViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.crystalReportViewer1.Location = new System.Drawing.Point(0, 0);
             this.crystalReportViewer1.Name = "crystalReportViewer1";
-            this.crystalReportViewer1.Size = new System.Drawing.Size(1059, 633);
+            this.crystalReportViewer1.Size = new System.Drawing.Size(1924, 1055);
             this.crystalReportViewer1.TabIndex = 0;
             // 
             // frm_rpDichVu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1059, 633);
+            this.ClientSize = new System.Drawing.Size(1924, 1055);
             this.Controls.Add(this.crystalReportViewer1);
             this.Name = "frm_rpDichVu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Report Hóa đơn";
+            this.Text = "Report Dịch vụ";
             this.Load += new System.EventHandler(this.frm_rpDichVu_Load);
             this.ResumeLayout(false);
 

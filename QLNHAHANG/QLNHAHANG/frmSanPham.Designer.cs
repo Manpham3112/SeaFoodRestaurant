@@ -52,8 +52,6 @@ namespace QLNHAHANG
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.gunaCircleButton1 = new Guna.UI.WinForms.GunaCircleButton();
             this.gvNL_SP = new System.Windows.Forms.DataGridView();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pnControlSP = new System.Windows.Forms.Panel();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.txtGia = new Guna.UI2.WinForms.Guna2TextBox();
@@ -79,6 +77,11 @@ namespace QLNHAHANG
             this.gunaCircleButton3 = new Guna.UI.WinForms.GunaCircleButton();
             this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.MASP = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.MANL = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SOLUONG = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.guna2Panel1.SuspendLayout();
             this.btnThemSP.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gvSanPham)).BeginInit();
@@ -286,6 +289,8 @@ namespace QLNHAHANG
             // 
             // gvSanPham
             // 
+            this.gvSanPham.AllowUserToAddRows = false;
+            this.gvSanPham.AllowUserToDeleteRows = false;
             this.gvSanPham.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
@@ -297,7 +302,7 @@ namespace QLNHAHANG
             this.TRANGTHAI,
             this.Column2});
             this.gvSanPham.Location = new System.Drawing.Point(0, 114);
-            this.gvSanPham.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gvSanPham.Margin = new System.Windows.Forms.Padding(4);
             this.gvSanPham.Name = "gvSanPham";
             this.gvSanPham.ReadOnly = true;
             this.gvSanPham.RowHeadersWidth = 62;
@@ -393,37 +398,27 @@ namespace QLNHAHANG
             // 
             // gvNL_SP
             // 
+            this.gvNL_SP.AllowUserToAddRows = false;
+            this.gvNL_SP.AllowUserToDeleteRows = false;
             this.gvNL_SP.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.gvNL_SP.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.gvNL_SP.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.gvNL_SP.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column5,
-            this.Column6});
+            this.Column6,
+            this.MASP,
+            this.MANL,
+            this.SOLUONG});
             this.gvNL_SP.Location = new System.Drawing.Point(332, 374);
-            this.gvNL_SP.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gvNL_SP.Margin = new System.Windows.Forms.Padding(4);
             this.gvNL_SP.Name = "gvNL_SP";
+            this.gvNL_SP.ReadOnly = true;
             this.gvNL_SP.RowHeadersWidth = 62;
             this.gvNL_SP.Size = new System.Drawing.Size(276, 171);
             this.gvNL_SP.TabIndex = 12;
             this.gvNL_SP.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gvNL_SP_CellContentClick);
             this.gvNL_SP.RowPostPaint += new System.Windows.Forms.DataGridViewRowPostPaintEventHandler(this.gvNL_SP_RowPostPaint);
-            // 
-            // Column5
-            // 
-            this.Column5.DataPropertyName = "QL_SanPham";
-            this.Column5.HeaderText = "QL_SanPham";
-            this.Column5.MinimumWidth = 8;
-            this.Column5.Name = "Column5";
-            this.Column5.Visible = false;
-            // 
-            // Column6
-            // 
-            this.Column6.DataPropertyName = "QL_NguyenLieu";
-            this.Column6.HeaderText = "QL_NguyenLieu";
-            this.Column6.MinimumWidth = 8;
-            this.Column6.Name = "Column6";
-            this.Column6.Visible = false;
             // 
             // pnControlSP
             // 
@@ -435,7 +430,7 @@ namespace QLNHAHANG
             this.pnControlSP.Controls.Add(this.gbTen);
             this.pnControlSP.Controls.Add(this.gbMSP);
             this.pnControlSP.Location = new System.Drawing.Point(339, 46);
-            this.pnControlSP.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pnControlSP.Margin = new System.Windows.Forms.Padding(4);
             this.pnControlSP.Name = "pnControlSP";
             this.pnControlSP.Size = new System.Drawing.Size(731, 264);
             this.pnControlSP.TabIndex = 13;
@@ -446,9 +441,9 @@ namespace QLNHAHANG
             | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox5.Controls.Add(this.txtGia);
             this.groupBox5.Location = new System.Drawing.Point(388, 86);
-            this.groupBox5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox5.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox5.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox5.Size = new System.Drawing.Size(320, 70);
             this.groupBox5.TabIndex = 4;
             this.groupBox5.TabStop = false;
@@ -489,9 +484,9 @@ namespace QLNHAHANG
             this.groupBox6.Controls.Add(this.btnChonHinh);
             this.groupBox6.Controls.Add(this.pcSp);
             this.groupBox6.Location = new System.Drawing.Point(388, 162);
-            this.groupBox6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox6.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox6.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox6.Size = new System.Drawing.Size(320, 101);
             this.groupBox6.TabIndex = 5;
             this.groupBox6.TabStop = false;
@@ -509,7 +504,7 @@ namespace QLNHAHANG
             this.btnChonHinh.ForeColor = System.Drawing.Color.White;
             this.btnChonHinh.HoverState.Parent = this.btnChonHinh;
             this.btnChonHinh.Location = new System.Drawing.Point(207, 19);
-            this.btnChonHinh.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnChonHinh.Margin = new System.Windows.Forms.Padding(4);
             this.btnChonHinh.Name = "btnChonHinh";
             this.btnChonHinh.ShadowDecoration.Parent = this.btnChonHinh;
             this.btnChonHinh.Size = new System.Drawing.Size(80, 70);
@@ -521,7 +516,7 @@ namespace QLNHAHANG
             // 
             this.pcSp.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pcSp.Location = new System.Drawing.Point(44, 11);
-            this.pcSp.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pcSp.Margin = new System.Windows.Forms.Padding(4);
             this.pcSp.Name = "pcSp";
             this.pcSp.Size = new System.Drawing.Size(146, 82);
             this.pcSp.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -534,9 +529,9 @@ namespace QLNHAHANG
             | System.Windows.Forms.AnchorStyles.Right)));
             this.groupMaLoai.Controls.Add(this.cbMaLoai);
             this.groupMaLoai.Location = new System.Drawing.Point(388, 4);
-            this.groupMaLoai.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupMaLoai.Margin = new System.Windows.Forms.Padding(4);
             this.groupMaLoai.Name = "groupMaLoai";
-            this.groupMaLoai.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupMaLoai.Padding = new System.Windows.Forms.Padding(4);
             this.groupMaLoai.Size = new System.Drawing.Size(320, 74);
             this.groupMaLoai.TabIndex = 3;
             this.groupMaLoai.TabStop = false;
@@ -560,7 +555,7 @@ namespace QLNHAHANG
             this.cbMaLoai.ItemHeight = 30;
             this.cbMaLoai.ItemsAppearance.Parent = this.cbMaLoai;
             this.cbMaLoai.Location = new System.Drawing.Point(4, 19);
-            this.cbMaLoai.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbMaLoai.Margin = new System.Windows.Forms.Padding(4);
             this.cbMaLoai.Name = "cbMaLoai";
             this.cbMaLoai.ShadowDecoration.Parent = this.cbMaLoai;
             this.cbMaLoai.Size = new System.Drawing.Size(312, 36);
@@ -572,9 +567,9 @@ namespace QLNHAHANG
             | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox3.Controls.Add(this.cbTinhTrang);
             this.groupBox3.Location = new System.Drawing.Point(5, 162);
-            this.groupBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox3.Size = new System.Drawing.Size(320, 101);
             this.groupBox3.TabIndex = 2;
             this.groupBox3.TabStop = false;
@@ -601,7 +596,7 @@ namespace QLNHAHANG
             "Ngưng Bán"});
             this.cbTinhTrang.ItemsAppearance.Parent = this.cbTinhTrang;
             this.cbTinhTrang.Location = new System.Drawing.Point(4, 19);
-            this.cbTinhTrang.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbTinhTrang.Margin = new System.Windows.Forms.Padding(4);
             this.cbTinhTrang.Name = "cbTinhTrang";
             this.cbTinhTrang.ShadowDecoration.Parent = this.cbTinhTrang;
             this.cbTinhTrang.Size = new System.Drawing.Size(312, 36);
@@ -614,9 +609,9 @@ namespace QLNHAHANG
             | System.Windows.Forms.AnchorStyles.Right)));
             this.gbTen.Controls.Add(this.txtTen);
             this.gbTen.Location = new System.Drawing.Point(5, 85);
-            this.gbTen.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gbTen.Margin = new System.Windows.Forms.Padding(4);
             this.gbTen.Name = "gbTen";
-            this.gbTen.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gbTen.Padding = new System.Windows.Forms.Padding(4);
             this.gbTen.Size = new System.Drawing.Size(320, 70);
             this.gbTen.TabIndex = 1;
             this.gbTen.TabStop = false;
@@ -656,9 +651,9 @@ namespace QLNHAHANG
             | System.Windows.Forms.AnchorStyles.Right)));
             this.gbMSP.Controls.Add(this.txtMa);
             this.gbMSP.Location = new System.Drawing.Point(5, 4);
-            this.gbMSP.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gbMSP.Margin = new System.Windows.Forms.Padding(4);
             this.gbMSP.Name = "gbMSP";
-            this.gbMSP.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gbMSP.Padding = new System.Windows.Forms.Padding(4);
             this.gbMSP.Size = new System.Drawing.Size(320, 74);
             this.gbMSP.TabIndex = 0;
             this.gbMSP.TabStop = false;
@@ -694,6 +689,8 @@ namespace QLNHAHANG
             // 
             // gvNguyenLieu
             // 
+            this.gvNguyenLieu.AllowUserToAddRows = false;
+            this.gvNguyenLieu.AllowUserToDeleteRows = false;
             this.gvNguyenLieu.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.gvNguyenLieu.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -703,7 +700,7 @@ namespace QLNHAHANG
             this.Column9,
             this.Column10});
             this.gvNguyenLieu.Location = new System.Drawing.Point(794, 375);
-            this.gvNguyenLieu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gvNguyenLieu.Margin = new System.Windows.Forms.Padding(4);
             this.gvNguyenLieu.Name = "gvNguyenLieu";
             this.gvNguyenLieu.ReadOnly = true;
             this.gvNguyenLieu.RowHeadersWidth = 62;
@@ -772,7 +769,7 @@ namespace QLNHAHANG
             this.btnXoaNL.ImageSize = new System.Drawing.Size(50, 50);
             this.btnXoaNL.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
             this.btnXoaNL.Location = new System.Drawing.Point(614, 454);
-            this.btnXoaNL.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnXoaNL.Margin = new System.Windows.Forms.Padding(4);
             this.btnXoaNL.Name = "btnXoaNL";
             this.btnXoaNL.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.btnXoaNL.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -806,7 +803,7 @@ namespace QLNHAHANG
             this.btnThemNL.ImageSize = new System.Drawing.Size(50, 50);
             this.btnThemNL.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
             this.btnThemNL.Location = new System.Drawing.Point(614, 397);
-            this.btnThemNL.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnThemNL.Margin = new System.Windows.Forms.Padding(4);
             this.btnThemNL.Name = "btnThemNL";
             this.btnThemNL.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.btnThemNL.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -891,6 +888,48 @@ namespace QLNHAHANG
             this.guna2Panel3.TabIndex = 21;
             this.guna2Panel3.UseTransparentBackground = true;
             // 
+            // Column5
+            // 
+            this.Column5.DataPropertyName = "QL_SanPham";
+            this.Column5.HeaderText = "QL_SanPham";
+            this.Column5.MinimumWidth = 8;
+            this.Column5.Name = "Column5";
+            this.Column5.ReadOnly = true;
+            this.Column5.Visible = false;
+            // 
+            // Column6
+            // 
+            this.Column6.DataPropertyName = "QL_NguyenLieu";
+            this.Column6.HeaderText = "QL_NguyenLieu";
+            this.Column6.MinimumWidth = 8;
+            this.Column6.Name = "Column6";
+            this.Column6.ReadOnly = true;
+            this.Column6.Visible = false;
+            // 
+            // MASP
+            // 
+            this.MASP.DataPropertyName = "MASP";
+            this.MASP.HeaderText = "Mã sản phẩm";
+            this.MASP.MinimumWidth = 6;
+            this.MASP.Name = "MASP";
+            this.MASP.ReadOnly = true;
+            // 
+            // MANL
+            // 
+            this.MANL.DataPropertyName = "MANL";
+            this.MANL.HeaderText = "Mã nguyên liệu";
+            this.MANL.MinimumWidth = 6;
+            this.MANL.Name = "MANL";
+            this.MANL.ReadOnly = true;
+            // 
+            // SOLUONG
+            // 
+            this.SOLUONG.DataPropertyName = "SOLUONG";
+            this.SOLUONG.HeaderText = "Số lượng";
+            this.SOLUONG.MinimumWidth = 6;
+            this.SOLUONG.Name = "SOLUONG";
+            this.SOLUONG.ReadOnly = true;
+            // 
             // frmSanPham
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -950,8 +989,6 @@ namespace QLNHAHANG
         private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
         private Guna.UI.WinForms.GunaAdvenceButton btnXoaNL;
         private System.Windows.Forms.DataGridView gvNL_SP;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
         private System.Windows.Forms.Panel pnControlSP;
         private System.Windows.Forms.GroupBox groupBox5;
         private Guna.UI2.WinForms.Guna2TextBox txtGia;
@@ -981,5 +1018,10 @@ namespace QLNHAHANG
         private System.Windows.Forms.DataGridViewTextBoxColumn TenSanPham;
         private System.Windows.Forms.DataGridViewTextBoxColumn TRANGTHAI;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
+        private System.Windows.Forms.DataGridViewTextBoxColumn MASP;
+        private System.Windows.Forms.DataGridViewTextBoxColumn MANL;
+        private System.Windows.Forms.DataGridViewTextBoxColumn SOLUONG;
     }
 }

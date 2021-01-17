@@ -263,6 +263,7 @@ namespace QLNHAHANG
             txtSoDienThoai.Enabled = true;
             cboLoaiNhanVien.Enabled = true;
             dateTimePickerNgaySinh.Enabled = true;
+            btnThem.Enabled = btnXoa.Enabled = false;
         }
 
         private void btnLuu_Click(object sender, EventArgs e)
@@ -271,6 +272,7 @@ namespace QLNHAHANG
             if (!kiemtraMa() || !kiemtraTenNhanVien() || !kiemtraSoDienThoai() || !kiemtraDiaChi()
                 || !kiemtraNgaySinh() || !kiemtraMatKhau())
             {
+                frmNhanVien_Load(sender, e);
                 return;
             }
             else
@@ -285,6 +287,7 @@ namespace QLNHAHANG
                     loadDataGridViewNhanVien();
                     btnThem.Enabled = true;
                     btnLuu.Enabled = false;
+                    frmNhanVien_Load(sender, e);
                 }
                 else
                 {
@@ -297,8 +300,10 @@ namespace QLNHAHANG
                     btnSua.Enabled = false;
                     btnLuu.Enabled = false;
                     btnThem.Enabled = false;
+                    frmNhanVien_Load(sender, e);
                 }
             }
+            frmNhanVien_Load(sender, e);
 
         }
 
@@ -315,6 +320,7 @@ namespace QLNHAHANG
             {
                 MessageBox.Show("Nhân viên" + txtMa.Text + " không thể xóa");
             }
+            frmNhanVien_Load(sender, e);
         }
 
         private void txtSearch_TextChanged(object sender, EventArgs e)

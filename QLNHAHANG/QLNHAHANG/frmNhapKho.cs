@@ -121,7 +121,7 @@ namespace QLNHAHANG
             int count = qlnk.demSoLuong() + 1;
             txtMaPNK.Text = "PNK0" + count + r.Next(0, 99);
             txtMaPNK.ReadOnly = true;
-            txtMaNV.ReadOnly = true ;
+            txtMaNV.ReadOnly = true;
             txtMaNV.Text = nv.MANV;
             txtMaNCC.Clear();
             txtTongTien.Text = "0";
@@ -143,17 +143,18 @@ namespace QLNHAHANG
 
         private void btnLuuPNK_Click(object sender, EventArgs e)
         {
-                if (qlnk.kT(txtMaPNK.Text) == true)
-                {
-                    qlnk.themPhieuNhapKho(txtMaPNK.Text,nv.MANV, txtMaNCC.Text, txt_NgayNhan.Value, Convert.ToInt32(txtTongTien.Text));
-                    MessageBox.Show("Thêm thành công");
+            if (qlnk.kT(txtMaPNK.Text) == true)
+            {
+                qlnk.themPhieuNhapKho(txtMaPNK.Text, nv.MANV, txtMaNCC.Text, txt_NgayNhan.Value, Convert.ToInt32(txtTongTien.Text));
+                MessageBox.Show("Thêm thành công");
                 frmNhapKho_Load(sender, e);
             }
-                else
-                {
-                    MessageBox.Show("Lỗi hệ thống");
-                }
-            
+            else
+            {
+                MessageBox.Show("Lỗi hệ thống");
+            }
+            frmNhapKho_Load(sender, e);
+
         }
 
         private void dataGridViewPhieuNhanHang_CellClick(object sender, DataGridViewCellEventArgs e)

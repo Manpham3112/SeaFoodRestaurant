@@ -228,6 +228,7 @@ namespace QLNHAHANG
             {
                 MessageBox.Show("Khách hàng " + txtMaKhachHang.Text + " không đạt điều kiện để xóa");
             }
+            frmKhachHang_Load(sender, e);
         }
 
         private void dataGridViewKhachHang_CellClick(object sender, DataGridViewCellEventArgs e)
