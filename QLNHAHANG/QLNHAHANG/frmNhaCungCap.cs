@@ -267,5 +267,11 @@ namespace QLNHAHANG
                 MessageBox.Show("Nhà cung cấp " + txtMaNhaCungCap.Text + " không đạt điều kiện để xóa");
             }
         }
+
+        private void btnRP_Click(object sender, EventArgs e)
+        {
+            frm_rpNhaCungCap rp = new frm_rpNhaCungCap();
+            rp.Show();
+        }
     }
 }

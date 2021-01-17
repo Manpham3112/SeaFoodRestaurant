@@ -241,5 +241,21 @@ namespace QLNHAHANG
                 e.Handled = true;
             }
         }
+
+        private void dataGridViewKhuyenMai_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void btnRP_Click(object sender, EventArgs e)
+        {
+            frm_rpKhuyenMai rp = new frm_rpKhuyenMai();
+            rp.Show();
+        }
     }
 }

@@ -340,7 +340,7 @@ namespace QLNHAHANG
                 if (check)
                 {
                     MessageBox.Show("In hoá đơn thành công !");
-                    //xuatFileExcel();
+                    xuatFileExcel();
                     veTrangThaiBD();
 
 
@@ -351,6 +351,11 @@ namespace QLNHAHANG
                 }
 
             
+        }
+        public void xuatFileExcel()
+        {
+            frm_rpOrder rp = new frm_rpOrder();
+            rp.Show();
         }
         private void veTrangThaiBD()
         {

@@ -144,5 +144,11 @@ namespace QLNHAHANG
                 dgrv_HienThiLoaiNguyenLieu.DataSource = lnl.loadLoaiNguyenLieu();
             }
         }
+
+        private void btnRP_Click(object sender, EventArgs e)
+        {
+            frmLoaiNguyenLieu rp = new frmLoaiNguyenLieu();
+            rp.Show();
+        }
     }
 }

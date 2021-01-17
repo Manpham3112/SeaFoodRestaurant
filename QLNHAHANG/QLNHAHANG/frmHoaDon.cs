@@ -79,5 +79,11 @@ namespace QLNHAHANG
                 dataGridViewChiTietHD.DataSource = hd.layChiTietHoaDon(mahd);
             }
         }
+
+        private void btnXuatReport_Click(object sender, EventArgs e)
+        {
+            frm_rpHoaDon rp = new frm_rpHoaDon();
+            rp.Show();
+        }
     }
 }

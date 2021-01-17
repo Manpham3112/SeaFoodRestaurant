@@ -454,6 +454,7 @@ namespace QLNHAHANG
             this.btnXuatReport.Size = new System.Drawing.Size(146, 39);
             this.btnXuatReport.TabIndex = 18;
             this.btnXuatReport.Text = "Xuất Report";
+            this.btnXuatReport.Click += new System.EventHandler(this.btnXuatReport_Click);
             // 
             // txtTimKiem
             // 

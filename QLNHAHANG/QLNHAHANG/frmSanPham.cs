@@ -542,5 +542,11 @@ namespace QLNHAHANG
                 }
             }
         }
+
+        private void btnReport_Click(object sender, EventArgs e)
+        {
+            frm_rpSanPham rp = new frm_rpSanPham();
+            rp.Show();
+        }
     }
 }

@@ -252,5 +252,11 @@ namespace QLNHAHANG
             dgrv_HienThiNguyenLieu.Columns["TENLNL"].HeaderText = "Tên loại";
 
         }
+
+        private void btnRP_Click(object sender, EventArgs e)
+        {
+            frmNguyenLieu rp = new frmNguyenLieu();
+            rp.Show();
+        }
     }
 }

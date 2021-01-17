@@ -260,5 +260,11 @@ namespace QLNHAHANG
                 e.Handled = true;
             }
         }
+
+        private void btnRP_Click(object sender, EventArgs e)
+        {
+            frm_rpKhachHang rp = new frm_rpKhachHang();
+            rp.Show();
+        }
     }
 }

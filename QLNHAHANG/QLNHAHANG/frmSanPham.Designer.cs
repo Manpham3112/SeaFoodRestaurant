@@ -99,7 +99,7 @@ namespace QLNHAHANG
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 40);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 32);
             // 
             // guna2Panel1
             // 
@@ -113,13 +113,14 @@ namespace QLNHAHANG
             this.guna2Panel1.Controls.Add(this.gunaCircleButton2);
             this.guna2Panel1.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(178)))), ((int)(((byte)(178)))));
             this.guna2Panel1.FillColor = System.Drawing.Color.White;
-            this.guna2Panel1.Location = new System.Drawing.Point(-300, -72);
+            this.guna2Panel1.Location = new System.Drawing.Point(-267, -58);
+            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(178)))), ((int)(((byte)(178)))));
             this.guna2Panel1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
             this.guna2Panel1.ShadowDecoration.Shadow = new System.Windows.Forms.Padding(0, 0, 5, 5);
-            this.guna2Panel1.Size = new System.Drawing.Size(663, 66);
+            this.guna2Panel1.Size = new System.Drawing.Size(589, 53);
             this.guna2Panel1.TabIndex = 18;
             this.guna2Panel1.UseTransparentBackground = true;
             // 
@@ -137,14 +138,14 @@ namespace QLNHAHANG
             this.txtTimSP.FocusedState.Parent = this.txtTimSP;
             this.txtTimSP.HoverState.BorderColor = System.Drawing.Color.White;
             this.txtTimSP.HoverState.Parent = this.txtTimSP;
-            this.txtTimSP.Location = new System.Drawing.Point(70, 5);
-            this.txtTimSP.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
+            this.txtTimSP.Location = new System.Drawing.Point(62, 4);
+            this.txtTimSP.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.txtTimSP.Name = "txtTimSP";
             this.txtTimSP.PasswordChar = '\0';
             this.txtTimSP.PlaceholderText = "Nhập Sản phẩm cần tìm";
             this.txtTimSP.SelectedText = "";
             this.txtTimSP.ShadowDecoration.Parent = this.txtTimSP;
-            this.txtTimSP.Size = new System.Drawing.Size(398, 55);
+            this.txtTimSP.Size = new System.Drawing.Size(354, 44);
             this.txtTimSP.TabIndex = 1;
             // 
             // gunaCircleButton2
@@ -160,14 +161,15 @@ namespace QLNHAHANG
             this.gunaCircleButton2.ForeColor = System.Drawing.Color.White;
             this.gunaCircleButton2.Image = ((System.Drawing.Image)(resources.GetObject("gunaCircleButton2.Image")));
             this.gunaCircleButton2.ImageSize = new System.Drawing.Size(22, 22);
-            this.gunaCircleButton2.Location = new System.Drawing.Point(12, 3);
+            this.gunaCircleButton2.Location = new System.Drawing.Point(11, 2);
+            this.gunaCircleButton2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.gunaCircleButton2.Name = "gunaCircleButton2";
             this.gunaCircleButton2.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.gunaCircleButton2.OnHoverBorderColor = System.Drawing.Color.Black;
             this.gunaCircleButton2.OnHoverForeColor = System.Drawing.Color.White;
             this.gunaCircleButton2.OnHoverImage = null;
             this.gunaCircleButton2.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaCircleButton2.Size = new System.Drawing.Size(51, 57);
+            this.gunaCircleButton2.Size = new System.Drawing.Size(45, 46);
             this.gunaCircleButton2.TabIndex = 0;
             // 
             // btnThemSP
@@ -187,7 +189,7 @@ namespace QLNHAHANG
             this.btnThemSP.Name = "btnThemSP";
             this.btnThemSP.Padding = new System.Windows.Forms.Padding(0, 0, 3, 0);
             this.btnThemSP.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.btnThemSP.Size = new System.Drawing.Size(1236, 40);
+            this.btnThemSP.Size = new System.Drawing.Size(1099, 32);
             this.btnThemSP.TabIndex = 17;
             this.btnThemSP.Text = "Thêm";
             // 
@@ -207,7 +209,7 @@ namespace QLNHAHANG
             this.btnThem.Image = ((System.Drawing.Image)(resources.GetObject("btnThem.Image")));
             this.btnThem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnThem.Name = "btnThem";
-            this.btnThem.Size = new System.Drawing.Size(99, 35);
+            this.btnThem.Size = new System.Drawing.Size(87, 29);
             this.btnThem.Text = "Thêm";
             this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
@@ -216,7 +218,7 @@ namespace QLNHAHANG
             this.btnXoa.Image = ((System.Drawing.Image)(resources.GetObject("btnXoa.Image")));
             this.btnXoa.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnXoa.Name = "btnXoa";
-            this.btnXoa.Size = new System.Drawing.Size(81, 35);
+            this.btnXoa.Size = new System.Drawing.Size(72, 29);
             this.btnXoa.Text = "Xóa";
             this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
@@ -225,7 +227,7 @@ namespace QLNHAHANG
             this.btnSua.Image = ((System.Drawing.Image)(resources.GetObject("btnSua.Image")));
             this.btnSua.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnSua.Name = "btnSua";
-            this.btnSua.Size = new System.Drawing.Size(80, 35);
+            this.btnSua.Size = new System.Drawing.Size(71, 29);
             this.btnSua.Text = "Sửa";
             this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
             // 
@@ -234,7 +236,7 @@ namespace QLNHAHANG
             this.btnLuu.Image = ((System.Drawing.Image)(resources.GetObject("btnLuu.Image")));
             this.btnLuu.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnLuu.Name = "btnLuu";
-            this.btnLuu.Size = new System.Drawing.Size(80, 35);
+            this.btnLuu.Size = new System.Drawing.Size(71, 29);
             this.btnLuu.Text = "Lưu";
             this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
             // 
@@ -243,7 +245,7 @@ namespace QLNHAHANG
             this.btnLamMoi.Image = ((System.Drawing.Image)(resources.GetObject("btnLamMoi.Image")));
             this.btnLamMoi.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnLamMoi.Name = "btnLamMoi";
-            this.btnLamMoi.Size = new System.Drawing.Size(132, 35);
+            this.btnLamMoi.Size = new System.Drawing.Size(113, 29);
             this.btnLamMoi.Text = "Làm Mới";
             this.btnLamMoi.Click += new System.EventHandler(this.btnLamMoi_Click);
             // 
@@ -252,8 +254,9 @@ namespace QLNHAHANG
             this.btnReport.Image = global::QLNHAHANG.Properties.Resources.ic_report_2;
             this.btnReport.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnReport.Name = "btnReport";
-            this.btnReport.Size = new System.Drawing.Size(163, 35);
+            this.btnReport.Size = new System.Drawing.Size(138, 29);
             this.btnReport.Text = "Xuất Report";
+            this.btnReport.Click += new System.EventHandler(this.btnReport_Click);
             // 
             // txtTimNL
             // 
@@ -270,14 +273,14 @@ namespace QLNHAHANG
             this.txtTimNL.ForeColor = System.Drawing.Color.Black;
             this.txtTimNL.HoverState.BorderColor = System.Drawing.Color.White;
             this.txtTimNL.HoverState.Parent = this.txtTimNL;
-            this.txtTimNL.Location = new System.Drawing.Point(66, 3);
-            this.txtTimNL.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
+            this.txtTimNL.Location = new System.Drawing.Point(59, 2);
+            this.txtTimNL.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.txtTimNL.Name = "txtTimNL";
             this.txtTimNL.PasswordChar = '\0';
             this.txtTimNL.PlaceholderText = "Nhập nguyên liệu cần tìm";
             this.txtTimNL.SelectedText = "";
             this.txtTimNL.ShadowDecoration.Parent = this.txtTimNL;
-            this.txtTimNL.Size = new System.Drawing.Size(234, 57);
+            this.txtTimNL.Size = new System.Drawing.Size(208, 46);
             this.txtTimNL.TabIndex = 1;
             this.txtTimNL.TextChanged += new System.EventHandler(this.txtTimNL_TextChanged);
             // 
@@ -293,12 +296,12 @@ namespace QLNHAHANG
             this.TenSanPham,
             this.TRANGTHAI,
             this.Column2});
-            this.gvSanPham.Location = new System.Drawing.Point(0, 143);
-            this.gvSanPham.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.gvSanPham.Location = new System.Drawing.Point(0, 114);
+            this.gvSanPham.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.gvSanPham.Name = "gvSanPham";
             this.gvSanPham.ReadOnly = true;
             this.gvSanPham.RowHeadersWidth = 62;
-            this.gvSanPham.Size = new System.Drawing.Size(365, 538);
+            this.gvSanPham.Size = new System.Drawing.Size(324, 430);
             this.gvSanPham.TabIndex = 20;
             this.gvSanPham.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gvSanPham_CellClick);
             this.gvSanPham.RowPostPaint += new System.Windows.Forms.DataGridViewRowPostPaintEventHandler(this.gvSanPham_RowPostPaint);
@@ -353,13 +356,14 @@ namespace QLNHAHANG
             this.guna2Panel2.Controls.Add(this.gunaCircleButton1);
             this.guna2Panel2.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(178)))), ((int)(((byte)(178)))));
             this.guna2Panel2.FillColor = System.Drawing.Color.White;
-            this.guna2Panel2.Location = new System.Drawing.Point(887, 395);
+            this.guna2Panel2.Location = new System.Drawing.Point(788, 316);
+            this.guna2Panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2Panel2.Name = "guna2Panel2";
             this.guna2Panel2.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(178)))), ((int)(((byte)(178)))));
             this.guna2Panel2.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.guna2Panel2.ShadowDecoration.Parent = this.guna2Panel2;
             this.guna2Panel2.ShadowDecoration.Shadow = new System.Windows.Forms.Padding(0, 0, 5, 5);
-            this.guna2Panel2.Size = new System.Drawing.Size(316, 66);
+            this.guna2Panel2.Size = new System.Drawing.Size(281, 53);
             this.guna2Panel2.TabIndex = 19;
             this.guna2Panel2.UseTransparentBackground = true;
             // 
@@ -376,14 +380,15 @@ namespace QLNHAHANG
             this.gunaCircleButton1.ForeColor = System.Drawing.Color.White;
             this.gunaCircleButton1.Image = ((System.Drawing.Image)(resources.GetObject("gunaCircleButton1.Image")));
             this.gunaCircleButton1.ImageSize = new System.Drawing.Size(22, 22);
-            this.gunaCircleButton1.Location = new System.Drawing.Point(17, 3);
+            this.gunaCircleButton1.Location = new System.Drawing.Point(15, 2);
+            this.gunaCircleButton1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.gunaCircleButton1.Name = "gunaCircleButton1";
             this.gunaCircleButton1.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.gunaCircleButton1.OnHoverBorderColor = System.Drawing.Color.Black;
             this.gunaCircleButton1.OnHoverForeColor = System.Drawing.Color.White;
             this.gunaCircleButton1.OnHoverImage = null;
             this.gunaCircleButton1.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaCircleButton1.Size = new System.Drawing.Size(51, 57);
+            this.gunaCircleButton1.Size = new System.Drawing.Size(45, 46);
             this.gunaCircleButton1.TabIndex = 0;
             // 
             // gvNL_SP
@@ -395,11 +400,11 @@ namespace QLNHAHANG
             this.gvNL_SP.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column5,
             this.Column6});
-            this.gvNL_SP.Location = new System.Drawing.Point(373, 467);
-            this.gvNL_SP.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.gvNL_SP.Location = new System.Drawing.Point(332, 374);
+            this.gvNL_SP.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.gvNL_SP.Name = "gvNL_SP";
             this.gvNL_SP.RowHeadersWidth = 62;
-            this.gvNL_SP.Size = new System.Drawing.Size(310, 214);
+            this.gvNL_SP.Size = new System.Drawing.Size(276, 171);
             this.gvNL_SP.TabIndex = 12;
             this.gvNL_SP.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gvNL_SP_CellContentClick);
             this.gvNL_SP.RowPostPaint += new System.Windows.Forms.DataGridViewRowPostPaintEventHandler(this.gvNL_SP_RowPostPaint);
@@ -429,10 +434,10 @@ namespace QLNHAHANG
             this.pnControlSP.Controls.Add(this.groupBox3);
             this.pnControlSP.Controls.Add(this.gbTen);
             this.pnControlSP.Controls.Add(this.gbMSP);
-            this.pnControlSP.Location = new System.Drawing.Point(381, 58);
-            this.pnControlSP.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pnControlSP.Location = new System.Drawing.Point(339, 46);
+            this.pnControlSP.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pnControlSP.Name = "pnControlSP";
-            this.pnControlSP.Size = new System.Drawing.Size(822, 330);
+            this.pnControlSP.Size = new System.Drawing.Size(731, 264);
             this.pnControlSP.TabIndex = 13;
             // 
             // groupBox5
@@ -440,11 +445,11 @@ namespace QLNHAHANG
             this.groupBox5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox5.Controls.Add(this.txtGia);
-            this.groupBox5.Location = new System.Drawing.Point(437, 107);
-            this.groupBox5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.groupBox5.Location = new System.Drawing.Point(388, 86);
+            this.groupBox5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.groupBox5.Size = new System.Drawing.Size(360, 88);
+            this.groupBox5.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox5.Size = new System.Drawing.Size(320, 70);
             this.groupBox5.TabIndex = 4;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Giá";
@@ -453,7 +458,7 @@ namespace QLNHAHANG
             // 
             this.txtGia.Animated = true;
             this.txtGia.AutoRoundedCorners = true;
-            this.txtGia.BorderRadius = 28;
+            this.txtGia.BorderRadius = 22;
             this.txtGia.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtGia.DefaultText = "";
             this.txtGia.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -467,14 +472,14 @@ namespace QLNHAHANG
             this.txtGia.ForeColor = System.Drawing.Color.Black;
             this.txtGia.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtGia.HoverState.Parent = this.txtGia;
-            this.txtGia.Location = new System.Drawing.Point(4, 24);
-            this.txtGia.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
+            this.txtGia.Location = new System.Drawing.Point(4, 19);
+            this.txtGia.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.txtGia.Name = "txtGia";
             this.txtGia.PasswordChar = '\0';
             this.txtGia.PlaceholderText = "";
             this.txtGia.SelectedText = "";
             this.txtGia.ShadowDecoration.Parent = this.txtGia;
-            this.txtGia.Size = new System.Drawing.Size(352, 59);
+            this.txtGia.Size = new System.Drawing.Size(312, 47);
             this.txtGia.TabIndex = 1;
             // 
             // groupBox6
@@ -483,11 +488,11 @@ namespace QLNHAHANG
             | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox6.Controls.Add(this.btnChonHinh);
             this.groupBox6.Controls.Add(this.pcSp);
-            this.groupBox6.Location = new System.Drawing.Point(437, 203);
-            this.groupBox6.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.groupBox6.Location = new System.Drawing.Point(388, 162);
+            this.groupBox6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.groupBox6.Size = new System.Drawing.Size(360, 126);
+            this.groupBox6.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox6.Size = new System.Drawing.Size(320, 101);
             this.groupBox6.TabIndex = 5;
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "Hình";
@@ -496,18 +501,18 @@ namespace QLNHAHANG
             // 
             this.btnChonHinh.Animated = true;
             this.btnChonHinh.AutoRoundedCorners = true;
-            this.btnChonHinh.BorderRadius = 43;
+            this.btnChonHinh.BorderRadius = 34;
             this.btnChonHinh.CheckedState.Parent = this.btnChonHinh;
             this.btnChonHinh.CustomImages.Parent = this.btnChonHinh;
             this.btnChonHinh.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(197)))), ((int)(((byte)(203)))));
             this.btnChonHinh.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnChonHinh.ForeColor = System.Drawing.Color.White;
             this.btnChonHinh.HoverState.Parent = this.btnChonHinh;
-            this.btnChonHinh.Location = new System.Drawing.Point(233, 24);
-            this.btnChonHinh.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnChonHinh.Location = new System.Drawing.Point(207, 19);
+            this.btnChonHinh.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnChonHinh.Name = "btnChonHinh";
             this.btnChonHinh.ShadowDecoration.Parent = this.btnChonHinh;
-            this.btnChonHinh.Size = new System.Drawing.Size(90, 88);
+            this.btnChonHinh.Size = new System.Drawing.Size(80, 70);
             this.btnChonHinh.TabIndex = 1;
             this.btnChonHinh.Text = "Chọn Hình";
             this.btnChonHinh.Click += new System.EventHandler(this.btnChonHinh_Click);
@@ -515,10 +520,10 @@ namespace QLNHAHANG
             // pcSp
             // 
             this.pcSp.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pcSp.Location = new System.Drawing.Point(50, 14);
-            this.pcSp.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pcSp.Location = new System.Drawing.Point(44, 11);
+            this.pcSp.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pcSp.Name = "pcSp";
-            this.pcSp.Size = new System.Drawing.Size(164, 102);
+            this.pcSp.Size = new System.Drawing.Size(146, 82);
             this.pcSp.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pcSp.TabIndex = 0;
             this.pcSp.TabStop = false;
@@ -528,11 +533,11 @@ namespace QLNHAHANG
             this.groupMaLoai.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.groupMaLoai.Controls.Add(this.cbMaLoai);
-            this.groupMaLoai.Location = new System.Drawing.Point(437, 5);
-            this.groupMaLoai.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.groupMaLoai.Location = new System.Drawing.Point(388, 4);
+            this.groupMaLoai.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupMaLoai.Name = "groupMaLoai";
-            this.groupMaLoai.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.groupMaLoai.Size = new System.Drawing.Size(360, 92);
+            this.groupMaLoai.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupMaLoai.Size = new System.Drawing.Size(320, 74);
             this.groupMaLoai.TabIndex = 3;
             this.groupMaLoai.TabStop = false;
             this.groupMaLoai.Text = "Mã Loại";
@@ -554,11 +559,11 @@ namespace QLNHAHANG
             this.cbMaLoai.HoverState.Parent = this.cbMaLoai;
             this.cbMaLoai.ItemHeight = 30;
             this.cbMaLoai.ItemsAppearance.Parent = this.cbMaLoai;
-            this.cbMaLoai.Location = new System.Drawing.Point(4, 24);
-            this.cbMaLoai.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cbMaLoai.Location = new System.Drawing.Point(4, 19);
+            this.cbMaLoai.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cbMaLoai.Name = "cbMaLoai";
             this.cbMaLoai.ShadowDecoration.Parent = this.cbMaLoai;
-            this.cbMaLoai.Size = new System.Drawing.Size(352, 36);
+            this.cbMaLoai.Size = new System.Drawing.Size(312, 36);
             this.cbMaLoai.TabIndex = 0;
             // 
             // groupBox3
@@ -566,11 +571,11 @@ namespace QLNHAHANG
             this.groupBox3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox3.Controls.Add(this.cbTinhTrang);
-            this.groupBox3.Location = new System.Drawing.Point(6, 203);
-            this.groupBox3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.groupBox3.Location = new System.Drawing.Point(5, 162);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.groupBox3.Size = new System.Drawing.Size(360, 126);
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox3.Size = new System.Drawing.Size(320, 101);
             this.groupBox3.TabIndex = 2;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Tình Trạng";
@@ -595,11 +600,11 @@ namespace QLNHAHANG
             "Bán",
             "Ngưng Bán"});
             this.cbTinhTrang.ItemsAppearance.Parent = this.cbTinhTrang;
-            this.cbTinhTrang.Location = new System.Drawing.Point(4, 24);
-            this.cbTinhTrang.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cbTinhTrang.Location = new System.Drawing.Point(4, 19);
+            this.cbTinhTrang.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cbTinhTrang.Name = "cbTinhTrang";
             this.cbTinhTrang.ShadowDecoration.Parent = this.cbTinhTrang;
-            this.cbTinhTrang.Size = new System.Drawing.Size(352, 36);
+            this.cbTinhTrang.Size = new System.Drawing.Size(312, 36);
             this.cbTinhTrang.StartIndex = 0;
             this.cbTinhTrang.TabIndex = 1;
             // 
@@ -608,11 +613,11 @@ namespace QLNHAHANG
             this.gbTen.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.gbTen.Controls.Add(this.txtTen);
-            this.gbTen.Location = new System.Drawing.Point(6, 106);
-            this.gbTen.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.gbTen.Location = new System.Drawing.Point(5, 85);
+            this.gbTen.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.gbTen.Name = "gbTen";
-            this.gbTen.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.gbTen.Size = new System.Drawing.Size(360, 88);
+            this.gbTen.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gbTen.Size = new System.Drawing.Size(320, 70);
             this.gbTen.TabIndex = 1;
             this.gbTen.TabStop = false;
             this.gbTen.Text = "Tên Sản Phẩm";
@@ -621,7 +626,7 @@ namespace QLNHAHANG
             // 
             this.txtTen.Animated = true;
             this.txtTen.AutoRoundedCorners = true;
-            this.txtTen.BorderRadius = 28;
+            this.txtTen.BorderRadius = 22;
             this.txtTen.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtTen.DefaultText = "";
             this.txtTen.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -635,14 +640,14 @@ namespace QLNHAHANG
             this.txtTen.ForeColor = System.Drawing.Color.Black;
             this.txtTen.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtTen.HoverState.Parent = this.txtTen;
-            this.txtTen.Location = new System.Drawing.Point(4, 24);
-            this.txtTen.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
+            this.txtTen.Location = new System.Drawing.Point(4, 19);
+            this.txtTen.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.txtTen.Name = "txtTen";
             this.txtTen.PasswordChar = '\0';
             this.txtTen.PlaceholderText = "";
             this.txtTen.SelectedText = "";
             this.txtTen.ShadowDecoration.Parent = this.txtTen;
-            this.txtTen.Size = new System.Drawing.Size(352, 59);
+            this.txtTen.Size = new System.Drawing.Size(312, 47);
             this.txtTen.TabIndex = 1;
             // 
             // gbMSP
@@ -650,11 +655,11 @@ namespace QLNHAHANG
             this.gbMSP.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.gbMSP.Controls.Add(this.txtMa);
-            this.gbMSP.Location = new System.Drawing.Point(6, 5);
-            this.gbMSP.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.gbMSP.Location = new System.Drawing.Point(5, 4);
+            this.gbMSP.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.gbMSP.Name = "gbMSP";
-            this.gbMSP.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.gbMSP.Size = new System.Drawing.Size(360, 92);
+            this.gbMSP.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gbMSP.Size = new System.Drawing.Size(320, 74);
             this.gbMSP.TabIndex = 0;
             this.gbMSP.TabStop = false;
             this.gbMSP.Text = "Mã Sản Phẩm";
@@ -664,7 +669,7 @@ namespace QLNHAHANG
             this.txtMa.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtMa.AutoRoundedCorners = true;
-            this.txtMa.BorderRadius = 26;
+            this.txtMa.BorderRadius = 21;
             this.txtMa.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtMa.DefaultText = "";
             this.txtMa.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -677,14 +682,14 @@ namespace QLNHAHANG
             this.txtMa.ForeColor = System.Drawing.Color.Black;
             this.txtMa.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtMa.HoverState.Parent = this.txtMa;
-            this.txtMa.Location = new System.Drawing.Point(9, 25);
-            this.txtMa.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
+            this.txtMa.Location = new System.Drawing.Point(8, 20);
+            this.txtMa.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.txtMa.Name = "txtMa";
             this.txtMa.PasswordChar = '\0';
             this.txtMa.PlaceholderText = "";
             this.txtMa.SelectedText = "";
             this.txtMa.ShadowDecoration.Parent = this.txtMa;
-            this.txtMa.Size = new System.Drawing.Size(347, 55);
+            this.txtMa.Size = new System.Drawing.Size(308, 44);
             this.txtMa.TabIndex = 0;
             // 
             // gvNguyenLieu
@@ -697,12 +702,12 @@ namespace QLNHAHANG
             this.Column8,
             this.Column9,
             this.Column10});
-            this.gvNguyenLieu.Location = new System.Drawing.Point(893, 469);
-            this.gvNguyenLieu.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.gvNguyenLieu.Location = new System.Drawing.Point(794, 375);
+            this.gvNguyenLieu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.gvNguyenLieu.Name = "gvNguyenLieu";
             this.gvNguyenLieu.ReadOnly = true;
             this.gvNguyenLieu.RowHeadersWidth = 62;
-            this.gvNguyenLieu.Size = new System.Drawing.Size(310, 214);
+            this.gvNguyenLieu.Size = new System.Drawing.Size(276, 171);
             this.gvNguyenLieu.TabIndex = 14;
             this.gvNguyenLieu.RowPostPaint += new System.Windows.Forms.DataGridViewRowPostPaintEventHandler(this.gvNguyenLieu_RowPostPaint);
             // 
@@ -766,8 +771,8 @@ namespace QLNHAHANG
             this.btnXoaNL.Image = ((System.Drawing.Image)(resources.GetObject("btnXoaNL.Image")));
             this.btnXoaNL.ImageSize = new System.Drawing.Size(50, 50);
             this.btnXoaNL.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.btnXoaNL.Location = new System.Drawing.Point(691, 568);
-            this.btnXoaNL.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnXoaNL.Location = new System.Drawing.Point(614, 454);
+            this.btnXoaNL.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnXoaNL.Name = "btnXoaNL";
             this.btnXoaNL.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.btnXoaNL.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -775,7 +780,7 @@ namespace QLNHAHANG
             this.btnXoaNL.OnHoverImage = null;
             this.btnXoaNL.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
             this.btnXoaNL.OnPressedColor = System.Drawing.Color.Black;
-            this.btnXoaNL.Size = new System.Drawing.Size(194, 62);
+            this.btnXoaNL.Size = new System.Drawing.Size(172, 50);
             this.btnXoaNL.TabIndex = 16;
             this.btnXoaNL.Text = "Xóa NL";
             this.btnXoaNL.Click += new System.EventHandler(this.btnXoaNL_Click);
@@ -800,8 +805,8 @@ namespace QLNHAHANG
             this.btnThemNL.Image = ((System.Drawing.Image)(resources.GetObject("btnThemNL.Image")));
             this.btnThemNL.ImageSize = new System.Drawing.Size(50, 50);
             this.btnThemNL.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.btnThemNL.Location = new System.Drawing.Point(691, 496);
-            this.btnThemNL.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnThemNL.Location = new System.Drawing.Point(614, 397);
+            this.btnThemNL.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnThemNL.Name = "btnThemNL";
             this.btnThemNL.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.btnThemNL.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -809,7 +814,7 @@ namespace QLNHAHANG
             this.btnThemNL.OnHoverImage = null;
             this.btnThemNL.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
             this.btnThemNL.OnPressedColor = System.Drawing.Color.Black;
-            this.btnThemNL.Size = new System.Drawing.Size(194, 62);
+            this.btnThemNL.Size = new System.Drawing.Size(172, 50);
             this.btnThemNL.TabIndex = 15;
             this.btnThemNL.Text = "Thêm NL";
             this.btnThemNL.Click += new System.EventHandler(this.btnThemNL_Click);
@@ -827,14 +832,15 @@ namespace QLNHAHANG
             this.gunaCircleButton3.ForeColor = System.Drawing.Color.White;
             this.gunaCircleButton3.Image = ((System.Drawing.Image)(resources.GetObject("gunaCircleButton3.Image")));
             this.gunaCircleButton3.ImageSize = new System.Drawing.Size(22, 22);
-            this.gunaCircleButton3.Location = new System.Drawing.Point(12, 3);
+            this.gunaCircleButton3.Location = new System.Drawing.Point(11, 2);
+            this.gunaCircleButton3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.gunaCircleButton3.Name = "gunaCircleButton3";
             this.gunaCircleButton3.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.gunaCircleButton3.OnHoverBorderColor = System.Drawing.Color.Black;
             this.gunaCircleButton3.OnHoverForeColor = System.Drawing.Color.White;
             this.gunaCircleButton3.OnHoverImage = null;
             this.gunaCircleButton3.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaCircleButton3.Size = new System.Drawing.Size(51, 57);
+            this.gunaCircleButton3.Size = new System.Drawing.Size(45, 46);
             this.gunaCircleButton3.TabIndex = 0;
             // 
             // guna2TextBox1
@@ -851,14 +857,14 @@ namespace QLNHAHANG
             this.guna2TextBox1.FocusedState.Parent = this.guna2TextBox1;
             this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.White;
             this.guna2TextBox1.HoverState.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.Location = new System.Drawing.Point(63, 5);
-            this.guna2TextBox1.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
+            this.guna2TextBox1.Location = new System.Drawing.Point(56, 4);
+            this.guna2TextBox1.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.guna2TextBox1.Name = "guna2TextBox1";
             this.guna2TextBox1.PasswordChar = '\0';
             this.guna2TextBox1.PlaceholderText = "Nhập Sản phẩm cần tìm";
             this.guna2TextBox1.SelectedText = "";
             this.guna2TextBox1.ShadowDecoration.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.Size = new System.Drawing.Size(274, 55);
+            this.guna2TextBox1.Size = new System.Drawing.Size(244, 44);
             this.guna2TextBox1.TabIndex = 1;
             this.guna2TextBox1.TextChanged += new System.EventHandler(this.guna2TextBox1_TextChanged);
             // 
@@ -874,21 +880,22 @@ namespace QLNHAHANG
             this.guna2Panel3.Controls.Add(this.gunaCircleButton3);
             this.guna2Panel3.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(178)))), ((int)(((byte)(178)))));
             this.guna2Panel3.FillColor = System.Drawing.Color.White;
-            this.guna2Panel3.Location = new System.Drawing.Point(5, 55);
+            this.guna2Panel3.Location = new System.Drawing.Point(4, 44);
+            this.guna2Panel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2Panel3.Name = "guna2Panel3";
             this.guna2Panel3.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(178)))), ((int)(((byte)(178)))));
             this.guna2Panel3.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.guna2Panel3.ShadowDecoration.Parent = this.guna2Panel3;
             this.guna2Panel3.ShadowDecoration.Shadow = new System.Windows.Forms.Padding(0, 0, 5, 5);
-            this.guna2Panel3.Size = new System.Drawing.Size(360, 66);
+            this.guna2Panel3.Size = new System.Drawing.Size(320, 53);
             this.guna2Panel3.TabIndex = 21;
             this.guna2Panel3.UseTransparentBackground = true;
             // 
             // frmSanPham
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1236, 695);
+            this.ClientSize = new System.Drawing.Size(1099, 556);
             this.Controls.Add(this.guna2Panel3);
             this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.gvSanPham);
@@ -900,6 +907,7 @@ namespace QLNHAHANG
             this.Controls.Add(this.btnThemNL);
             this.Controls.Add(this.gvNguyenLieu);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "frmSanPham";
             this.Text = "frmSanPham";
             this.Load += new System.EventHandler(this.frmSanPham_Load);

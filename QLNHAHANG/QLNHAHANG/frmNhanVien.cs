@@ -333,5 +333,11 @@ namespace QLNHAHANG
         {
 
         }
+
+        private void btnRP_Click(object sender, EventArgs e)
+        {
+            frm_rpNhanVien rp = new frm_rpNhanVien();
+            rp.Show();
+        }
     }
 }

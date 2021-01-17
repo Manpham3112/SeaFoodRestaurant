@@ -259,9 +259,8 @@ namespace QLNHAHANG
 
         private void RP_PNK_Click(object sender, EventArgs e)
         {
-           // RP_PNK pnk = new RP_PNK();
-            this.Hide();
-            //pnk.Show();
+            frm_rpNhapKho rp = new frm_rpNhapKho();
+            rp.Show();
         }
 
         private void dataGridViewPhieuNhanHang_SelectionChanged(object sender, EventArgs e)

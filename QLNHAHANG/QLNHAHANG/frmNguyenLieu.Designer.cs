@@ -62,6 +62,7 @@ namespace QLNHAHANG
             this.btnSua = new Guna.UI2.WinForms.Guna2CircleButton();
             this.btnLuu = new Guna.UI2.WinForms.Guna2CircleButton();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.btnRP = new Guna.UI2.WinForms.Guna2CircleButton();
             ((System.ComponentModel.ISupportInitialize)(this.dgrv_HienThiNguyenLieu)).BeginInit();
             this.panel1.SuspendLayout();
             this.gunaPanel2.SuspendLayout();
@@ -100,11 +101,11 @@ namespace QLNHAHANG
             "Hàng hết hạn sử dụng",
             "Hàng đã hết trong kho"});
             this.cboLoc.ItemsAppearance.Parent = this.cboLoc;
-            this.cboLoc.Location = new System.Drawing.Point(684, 6);
-            this.cboLoc.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.cboLoc.Location = new System.Drawing.Point(608, 5);
+            this.cboLoc.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.cboLoc.Name = "cboLoc";
             this.cboLoc.ShadowDecoration.Parent = this.cboLoc;
-            this.cboLoc.Size = new System.Drawing.Size(349, 26);
+            this.cboLoc.Size = new System.Drawing.Size(311, 26);
             this.cboLoc.TabIndex = 1;
             this.cboLoc.SelectedIndexChanged += new System.EventHandler(this.cboLoc_SelectedIndexChanged);
             // 
@@ -141,14 +142,14 @@ namespace QLNHAHANG
             this.dgrv_HienThiNguyenLieu.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgrv_HienThiNguyenLieu.EnableHeadersVisualStyles = false;
             this.dgrv_HienThiNguyenLieu.GridColor = System.Drawing.SystemColors.Control;
-            this.dgrv_HienThiNguyenLieu.Location = new System.Drawing.Point(0, 55);
-            this.dgrv_HienThiNguyenLieu.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.dgrv_HienThiNguyenLieu.Location = new System.Drawing.Point(0, 44);
+            this.dgrv_HienThiNguyenLieu.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dgrv_HienThiNguyenLieu.Name = "dgrv_HienThiNguyenLieu";
             this.dgrv_HienThiNguyenLieu.RowHeadersVisible = false;
             this.dgrv_HienThiNguyenLieu.RowHeadersWidth = 51;
             this.dgrv_HienThiNguyenLieu.RowTemplate.Height = 24;
             this.dgrv_HienThiNguyenLieu.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgrv_HienThiNguyenLieu.Size = new System.Drawing.Size(1058, 210);
+            this.dgrv_HienThiNguyenLieu.Size = new System.Drawing.Size(940, 121);
             this.dgrv_HienThiNguyenLieu.TabIndex = 10;
             this.dgrv_HienThiNguyenLieu.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
             this.dgrv_HienThiNguyenLieu.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
@@ -180,9 +181,9 @@ namespace QLNHAHANG
             this.panel1.Controls.Add(this.cboLoc);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1058, 55);
+            this.panel1.Size = new System.Drawing.Size(940, 44);
             this.panel1.TabIndex = 3;
             // 
             // gunaButton1
@@ -198,15 +199,15 @@ namespace QLNHAHANG
             this.gunaButton1.ForeColor = System.Drawing.Color.Black;
             this.gunaButton1.Image = ((System.Drawing.Image)(resources.GetObject("gunaButton1.Image")));
             this.gunaButton1.ImageSize = new System.Drawing.Size(20, 20);
-            this.gunaButton1.Location = new System.Drawing.Point(516, 5);
-            this.gunaButton1.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.gunaButton1.Location = new System.Drawing.Point(459, 4);
+            this.gunaButton1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.gunaButton1.Name = "gunaButton1";
             this.gunaButton1.OnHoverBaseColor = System.Drawing.SystemColors.Control;
             this.gunaButton1.OnHoverBorderColor = System.Drawing.Color.Black;
             this.gunaButton1.OnHoverForeColor = System.Drawing.Color.White;
             this.gunaButton1.OnHoverImage = null;
             this.gunaButton1.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaButton1.Size = new System.Drawing.Size(160, 38);
+            this.gunaButton1.Size = new System.Drawing.Size(142, 30);
             this.gunaButton1.TabIndex = 2;
             this.gunaButton1.Text = "Lọc dữ liệu";
             // 
@@ -215,19 +216,19 @@ namespace QLNHAHANG
             this.gunaPanel2.Controls.Add(this.dgrv_HienThiNguyenLieu);
             this.gunaPanel2.Controls.Add(this.panel1);
             this.gunaPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gunaPanel2.Location = new System.Drawing.Point(3, 317);
-            this.gunaPanel2.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.gunaPanel2.Location = new System.Drawing.Point(3, 301);
+            this.gunaPanel2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.gunaPanel2.Name = "gunaPanel2";
-            this.gunaPanel2.Size = new System.Drawing.Size(1058, 265);
+            this.gunaPanel2.Size = new System.Drawing.Size(940, 165);
             this.gunaPanel2.TabIndex = 1;
             // 
             // gunaLabel1
             // 
             this.gunaLabel1.AutoSize = true;
             this.gunaLabel1.Font = new System.Drawing.Font("Segoe UI", 12.8F, System.Drawing.FontStyle.Bold);
-            this.gunaLabel1.Location = new System.Drawing.Point(62, 18);
+            this.gunaLabel1.Location = new System.Drawing.Point(55, 14);
             this.gunaLabel1.Name = "gunaLabel1";
-            this.gunaLabel1.Size = new System.Drawing.Size(163, 36);
+            this.gunaLabel1.Size = new System.Drawing.Size(137, 30);
             this.gunaLabel1.TabIndex = 2;
             this.gunaLabel1.Text = "Nguyên liệu";
             // 
@@ -238,9 +239,9 @@ namespace QLNHAHANG
             this.gunaPanel1.Controls.Add(this.gunaLabel1);
             this.gunaPanel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.gunaPanel1.Location = new System.Drawing.Point(0, 0);
-            this.gunaPanel1.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.gunaPanel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.gunaPanel1.Name = "gunaPanel1";
-            this.gunaPanel1.Size = new System.Drawing.Size(1058, 78);
+            this.gunaPanel1.Size = new System.Drawing.Size(940, 62);
             this.gunaPanel1.TabIndex = 0;
             // 
             // btnThem
@@ -254,14 +255,14 @@ namespace QLNHAHANG
             this.btnThem.ForeColor = System.Drawing.Color.White;
             this.btnThem.HoverState.Parent = this.btnThem;
             this.btnThem.Image = ((System.Drawing.Image)(resources.GetObject("btnThem.Image")));
-            this.btnThem.Location = new System.Drawing.Point(1000, 18);
-            this.btnThem.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.btnThem.Location = new System.Drawing.Point(889, 14);
+            this.btnThem.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnThem.Name = "btnThem";
             this.btnThem.ShadowDecoration.Enabled = true;
             this.btnThem.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.btnThem.ShadowDecoration.Parent = this.btnThem;
             this.btnThem.ShadowDecoration.Shadow = new System.Windows.Forms.Padding(0, 2, 2, 2);
-            this.btnThem.Size = new System.Drawing.Size(50, 52);
+            this.btnThem.Size = new System.Drawing.Size(44, 42);
             this.btnThem.TabIndex = 36;
             this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
@@ -285,14 +286,14 @@ namespace QLNHAHANG
             this.txtTimKiem.HoverState.Parent = this.txtTimKiem;
             this.txtTimKiem.IconRight = ((System.Drawing.Image)(resources.GetObject("txtTimKiem.IconRight")));
             this.txtTimKiem.IconRightSize = new System.Drawing.Size(22, 22);
-            this.txtTimKiem.Location = new System.Drawing.Point(234, 12);
-            this.txtTimKiem.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
+            this.txtTimKiem.Location = new System.Drawing.Point(208, 10);
+            this.txtTimKiem.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.txtTimKiem.Name = "txtTimKiem";
             this.txtTimKiem.PasswordChar = '\0';
             this.txtTimKiem.PlaceholderText = "Nhập thông tin nguyên liệu tìm kiếm ...";
             this.txtTimKiem.SelectedText = "";
             this.txtTimKiem.ShadowDecoration.Parent = this.txtTimKiem;
-            this.txtTimKiem.Size = new System.Drawing.Size(724, 54);
+            this.txtTimKiem.Size = new System.Drawing.Size(644, 43);
             this.txtTimKiem.TabIndex = 3;
             this.txtTimKiem.TextChanged += new System.EventHandler(this.txtTimKiem_TextChanged);
             // 
@@ -318,14 +319,14 @@ namespace QLNHAHANG
             this.txt_MaNguyenLieu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
             this.txt_MaNguyenLieu.HoverState.BorderColor = System.Drawing.SystemColors.Control;
             this.txt_MaNguyenLieu.HoverState.Parent = this.txt_MaNguyenLieu;
-            this.txt_MaNguyenLieu.Location = new System.Drawing.Point(8, 28);
-            this.txt_MaNguyenLieu.Margin = new System.Windows.Forms.Padding(8, 12, 8, 12);
+            this.txt_MaNguyenLieu.Location = new System.Drawing.Point(7, 22);
+            this.txt_MaNguyenLieu.Margin = new System.Windows.Forms.Padding(7, 10, 7, 10);
             this.txt_MaNguyenLieu.Name = "txt_MaNguyenLieu";
             this.txt_MaNguyenLieu.PasswordChar = '\0';
             this.txt_MaNguyenLieu.PlaceholderText = "Mã nguyên liệu";
             this.txt_MaNguyenLieu.SelectedText = "";
             this.txt_MaNguyenLieu.ShadowDecoration.Parent = this.txt_MaNguyenLieu;
-            this.txt_MaNguyenLieu.Size = new System.Drawing.Size(278, 34);
+            this.txt_MaNguyenLieu.Size = new System.Drawing.Size(248, 27);
             this.txt_MaNguyenLieu.TabIndex = 0;
             // 
             // txt_TenNguyenLieu
@@ -350,14 +351,14 @@ namespace QLNHAHANG
             this.txt_TenNguyenLieu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
             this.txt_TenNguyenLieu.HoverState.BorderColor = System.Drawing.SystemColors.Control;
             this.txt_TenNguyenLieu.HoverState.Parent = this.txt_TenNguyenLieu;
-            this.txt_TenNguyenLieu.Location = new System.Drawing.Point(8, 28);
-            this.txt_TenNguyenLieu.Margin = new System.Windows.Forms.Padding(8, 12, 8, 12);
+            this.txt_TenNguyenLieu.Location = new System.Drawing.Point(7, 22);
+            this.txt_TenNguyenLieu.Margin = new System.Windows.Forms.Padding(7, 10, 7, 10);
             this.txt_TenNguyenLieu.Name = "txt_TenNguyenLieu";
             this.txt_TenNguyenLieu.PasswordChar = '\0';
             this.txt_TenNguyenLieu.PlaceholderText = "Tên nguyên liệu";
             this.txt_TenNguyenLieu.SelectedText = "";
             this.txt_TenNguyenLieu.ShadowDecoration.Parent = this.txt_TenNguyenLieu;
-            this.txt_TenNguyenLieu.Size = new System.Drawing.Size(288, 34);
+            this.txt_TenNguyenLieu.Size = new System.Drawing.Size(256, 27);
             this.txt_TenNguyenLieu.TabIndex = 0;
             // 
             // cbo_TenLoai
@@ -377,11 +378,11 @@ namespace QLNHAHANG
             this.cbo_TenLoai.HoverState.Parent = this.cbo_TenLoai;
             this.cbo_TenLoai.ItemHeight = 20;
             this.cbo_TenLoai.ItemsAppearance.Parent = this.cbo_TenLoai;
-            this.cbo_TenLoai.Location = new System.Drawing.Point(8, 26);
-            this.cbo_TenLoai.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.cbo_TenLoai.Location = new System.Drawing.Point(7, 21);
+            this.cbo_TenLoai.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.cbo_TenLoai.Name = "cbo_TenLoai";
             this.cbo_TenLoai.ShadowDecoration.Parent = this.cbo_TenLoai;
-            this.cbo_TenLoai.Size = new System.Drawing.Size(280, 26);
+            this.cbo_TenLoai.Size = new System.Drawing.Size(250, 26);
             this.cbo_TenLoai.TabIndex = 0;
             // 
             // tableLayoutPanel3
@@ -394,23 +395,23 @@ namespace QLNHAHANG
             this.tableLayoutPanel3.Controls.Add(this.grbTen, 0, 0);
             this.tableLayoutPanel3.Controls.Add(this.grbMa, 0, 0);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(3, 5);
-            this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(3, 4);
+            this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 1;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(930, 77);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(826, 62);
             this.tableLayoutPanel3.TabIndex = 0;
             // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.cbo_TenLoai);
             this.groupBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupBox2.Location = new System.Drawing.Point(628, 5);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(6, 5, 6, 6);
+            this.groupBox2.Location = new System.Drawing.Point(557, 4);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(5, 4, 5, 5);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(3, 5, 3, 5);
-            this.groupBox2.Size = new System.Drawing.Size(296, 66);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.groupBox2.Size = new System.Drawing.Size(264, 53);
             this.groupBox2.TabIndex = 12;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Loại nguyên liệu";
@@ -419,11 +420,11 @@ namespace QLNHAHANG
             // 
             this.grbTen.Controls.Add(this.txt_TenNguyenLieu);
             this.grbTen.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.grbTen.Location = new System.Drawing.Point(312, 5);
-            this.grbTen.Margin = new System.Windows.Forms.Padding(6, 5, 6, 6);
+            this.grbTen.Location = new System.Drawing.Point(277, 4);
+            this.grbTen.Margin = new System.Windows.Forms.Padding(5, 4, 5, 5);
             this.grbTen.Name = "grbTen";
-            this.grbTen.Padding = new System.Windows.Forms.Padding(3, 5, 3, 5);
-            this.grbTen.Size = new System.Drawing.Size(304, 66);
+            this.grbTen.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.grbTen.Size = new System.Drawing.Size(270, 53);
             this.grbTen.TabIndex = 11;
             this.grbTen.TabStop = false;
             this.grbTen.Text = "Tên nguyên liệu";
@@ -432,11 +433,11 @@ namespace QLNHAHANG
             // 
             this.grbMa.Controls.Add(this.txt_MaNguyenLieu);
             this.grbMa.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.grbMa.Location = new System.Drawing.Point(6, 5);
-            this.grbMa.Margin = new System.Windows.Forms.Padding(6, 5, 6, 6);
+            this.grbMa.Location = new System.Drawing.Point(5, 4);
+            this.grbMa.Margin = new System.Windows.Forms.Padding(5, 4, 5, 5);
             this.grbMa.Name = "grbMa";
-            this.grbMa.Padding = new System.Windows.Forms.Padding(3, 5, 3, 5);
-            this.grbMa.Size = new System.Drawing.Size(294, 66);
+            this.grbMa.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.grbMa.Size = new System.Drawing.Size(262, 53);
             this.grbMa.TabIndex = 10;
             this.grbMa.TabStop = false;
             this.grbMa.Text = "Mã nguyên liệu";
@@ -445,11 +446,11 @@ namespace QLNHAHANG
             // 
             this.groupBox3.Controls.Add(this.txt_HSD);
             this.groupBox3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupBox3.Location = new System.Drawing.Point(6, 5);
-            this.groupBox3.Margin = new System.Windows.Forms.Padding(6, 5, 6, 6);
+            this.groupBox3.Location = new System.Drawing.Point(5, 4);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(5, 4, 5, 5);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Padding = new System.Windows.Forms.Padding(3, 5, 3, 5);
-            this.groupBox3.Size = new System.Drawing.Size(294, 67);
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.groupBox3.Size = new System.Drawing.Size(262, 53);
             this.groupBox3.TabIndex = 10;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Hạn sử dụng";
@@ -467,8 +468,8 @@ namespace QLNHAHANG
             this.txt_HSD.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txt_HSD.ForeColor = System.Drawing.Color.Black;
             this.txt_HSD.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.txt_HSD.Location = new System.Drawing.Point(8, 25);
-            this.txt_HSD.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.txt_HSD.Location = new System.Drawing.Point(7, 20);
+            this.txt_HSD.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txt_HSD.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.txt_HSD.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.txt_HSD.Name = "txt_HSD";
@@ -476,7 +477,7 @@ namespace QLNHAHANG
             this.txt_HSD.OnHoverBorderColor = System.Drawing.SystemColors.Control;
             this.txt_HSD.OnHoverForeColor = System.Drawing.Color.Black;
             this.txt_HSD.OnPressedColor = System.Drawing.Color.Empty;
-            this.txt_HSD.Size = new System.Drawing.Size(278, 32);
+            this.txt_HSD.Size = new System.Drawing.Size(248, 26);
             this.txt_HSD.TabIndex = 2;
             this.txt_HSD.Text = "12/11/2020";
             this.txt_HSD.Value = new System.DateTime(2020, 11, 12, 0, 0, 0, 0);
@@ -503,25 +504,25 @@ namespace QLNHAHANG
             this.txt_DonVi.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
             this.txt_DonVi.HoverState.BorderColor = System.Drawing.SystemColors.Control;
             this.txt_DonVi.HoverState.Parent = this.txt_DonVi;
-            this.txt_DonVi.Location = new System.Drawing.Point(8, 28);
-            this.txt_DonVi.Margin = new System.Windows.Forms.Padding(8, 12, 8, 12);
+            this.txt_DonVi.Location = new System.Drawing.Point(7, 22);
+            this.txt_DonVi.Margin = new System.Windows.Forms.Padding(7, 10, 7, 10);
             this.txt_DonVi.Name = "txt_DonVi";
             this.txt_DonVi.PasswordChar = '\0';
             this.txt_DonVi.PlaceholderText = "Đơn vị tính";
             this.txt_DonVi.SelectedText = "";
             this.txt_DonVi.ShadowDecoration.Parent = this.txt_DonVi;
-            this.txt_DonVi.Size = new System.Drawing.Size(272, 34);
+            this.txt_DonVi.Size = new System.Drawing.Size(243, 27);
             this.txt_DonVi.TabIndex = 0;
             // 
             // groupBox4
             // 
             this.groupBox4.Controls.Add(this.txt_DonVi);
             this.groupBox4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupBox4.Location = new System.Drawing.Point(312, 5);
-            this.groupBox4.Margin = new System.Windows.Forms.Padding(6, 5, 6, 6);
+            this.groupBox4.Location = new System.Drawing.Point(277, 4);
+            this.groupBox4.Margin = new System.Windows.Forms.Padding(5, 4, 5, 5);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Padding = new System.Windows.Forms.Padding(3, 5, 3, 5);
-            this.groupBox4.Size = new System.Drawing.Size(288, 67);
+            this.groupBox4.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.groupBox4.Size = new System.Drawing.Size(257, 53);
             this.groupBox4.TabIndex = 11;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Đơn vị tính";
@@ -536,23 +537,23 @@ namespace QLNHAHANG
             this.tableLayoutPanel4.Controls.Add(this.groupBox4, 0, 0);
             this.tableLayoutPanel4.Controls.Add(this.groupBox3, 0, 0);
             this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel4.Location = new System.Drawing.Point(3, 92);
-            this.tableLayoutPanel4.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.tableLayoutPanel4.Location = new System.Drawing.Point(3, 74);
+            this.tableLayoutPanel4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
             this.tableLayoutPanel4.RowCount = 1;
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(930, 78);
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(826, 62);
             this.tableLayoutPanel4.TabIndex = 1;
             // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.txt_SoLuong);
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupBox1.Location = new System.Drawing.Point(612, 5);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(6, 5, 6, 6);
+            this.groupBox1.Location = new System.Drawing.Point(544, 4);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(5, 4, 5, 5);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 5, 3, 5);
-            this.groupBox1.Size = new System.Drawing.Size(312, 67);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.groupBox1.Size = new System.Drawing.Size(277, 53);
             this.groupBox1.TabIndex = 13;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Số lượng";
@@ -579,14 +580,14 @@ namespace QLNHAHANG
             this.txt_SoLuong.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
             this.txt_SoLuong.HoverState.BorderColor = System.Drawing.SystemColors.Control;
             this.txt_SoLuong.HoverState.Parent = this.txt_SoLuong;
-            this.txt_SoLuong.Location = new System.Drawing.Point(8, 28);
-            this.txt_SoLuong.Margin = new System.Windows.Forms.Padding(8, 12, 8, 12);
+            this.txt_SoLuong.Location = new System.Drawing.Point(7, 22);
+            this.txt_SoLuong.Margin = new System.Windows.Forms.Padding(7, 10, 7, 10);
             this.txt_SoLuong.Name = "txt_SoLuong";
             this.txt_SoLuong.PasswordChar = '\0';
             this.txt_SoLuong.PlaceholderText = "Số lượng";
             this.txt_SoLuong.SelectedText = "";
             this.txt_SoLuong.ShadowDecoration.Parent = this.txt_SoLuong;
-            this.txt_SoLuong.Size = new System.Drawing.Size(295, 34);
+            this.txt_SoLuong.Size = new System.Drawing.Size(262, 27);
             this.txt_SoLuong.TabIndex = 0;
             this.txt_SoLuong.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_SoLuong_KeyPress);
             // 
@@ -598,32 +599,33 @@ namespace QLNHAHANG
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel2.Controls.Add(this.tableLayoutPanel4, 0, 1);
             this.tableLayoutPanel2.Controls.Add(this.tableLayoutPanel3, 0, 0);
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(27, 102);
-            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(24, 82);
+            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 2;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(936, 175);
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(832, 140);
             this.tableLayoutPanel2.TabIndex = 35;
             // 
             // guna2Panel1
             // 
+            this.guna2Panel1.Controls.Add(this.btnRP);
             this.guna2Panel1.Controls.Add(this.btnXoa);
             this.guna2Panel1.Controls.Add(this.btnSua);
             this.guna2Panel1.Controls.Add(this.btnLuu);
             this.guna2Panel1.Controls.Add(this.tableLayoutPanel2);
             this.guna2Panel1.Controls.Add(this.gunaPanel1);
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.guna2Panel1.Location = new System.Drawing.Point(3, 5);
-            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.guna2Panel1.Location = new System.Drawing.Point(3, 4);
+            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
-            this.guna2Panel1.Size = new System.Drawing.Size(1058, 302);
+            this.guna2Panel1.Size = new System.Drawing.Size(940, 289);
             this.guna2Panel1.TabIndex = 0;
             // 
             // btnXoa
@@ -637,14 +639,14 @@ namespace QLNHAHANG
             this.btnXoa.ForeColor = System.Drawing.Color.White;
             this.btnXoa.HoverState.Parent = this.btnXoa;
             this.btnXoa.Image = ((System.Drawing.Image)(resources.GetObject("btnXoa.Image")));
-            this.btnXoa.Location = new System.Drawing.Point(1000, 158);
-            this.btnXoa.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.btnXoa.Location = new System.Drawing.Point(889, 126);
+            this.btnXoa.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.ShadowDecoration.Enabled = true;
             this.btnXoa.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.btnXoa.ShadowDecoration.Parent = this.btnXoa;
             this.btnXoa.ShadowDecoration.Shadow = new System.Windows.Forms.Padding(0, 2, 2, 2);
-            this.btnXoa.Size = new System.Drawing.Size(50, 52);
+            this.btnXoa.Size = new System.Drawing.Size(44, 42);
             this.btnXoa.TabIndex = 39;
             this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
@@ -659,14 +661,14 @@ namespace QLNHAHANG
             this.btnSua.ForeColor = System.Drawing.Color.White;
             this.btnSua.HoverState.Parent = this.btnSua;
             this.btnSua.Image = ((System.Drawing.Image)(resources.GetObject("btnSua.Image")));
-            this.btnSua.Location = new System.Drawing.Point(1000, 91);
-            this.btnSua.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.btnSua.Location = new System.Drawing.Point(889, 73);
+            this.btnSua.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnSua.Name = "btnSua";
             this.btnSua.ShadowDecoration.Enabled = true;
             this.btnSua.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.btnSua.ShadowDecoration.Parent = this.btnSua;
             this.btnSua.ShadowDecoration.Shadow = new System.Windows.Forms.Padding(0, 2, 2, 2);
-            this.btnSua.Size = new System.Drawing.Size(50, 52);
+            this.btnSua.Size = new System.Drawing.Size(44, 42);
             this.btnSua.TabIndex = 38;
             this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
             // 
@@ -681,14 +683,14 @@ namespace QLNHAHANG
             this.btnLuu.ForeColor = System.Drawing.Color.White;
             this.btnLuu.HoverState.Parent = this.btnLuu;
             this.btnLuu.Image = ((System.Drawing.Image)(resources.GetObject("btnLuu.Image")));
-            this.btnLuu.Location = new System.Drawing.Point(1000, 226);
-            this.btnLuu.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.btnLuu.Location = new System.Drawing.Point(889, 181);
+            this.btnLuu.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnLuu.Name = "btnLuu";
             this.btnLuu.ShadowDecoration.Enabled = true;
             this.btnLuu.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.btnLuu.ShadowDecoration.Parent = this.btnLuu;
             this.btnLuu.ShadowDecoration.Shadow = new System.Windows.Forms.Padding(0, 2, 2, 2);
-            this.btnLuu.Size = new System.Drawing.Size(50, 52);
+            this.btnLuu.Size = new System.Drawing.Size(44, 42);
             this.btnLuu.TabIndex = 37;
             this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
             // 
@@ -700,21 +702,44 @@ namespace QLNHAHANG
             this.tableLayoutPanel1.Controls.Add(this.gunaPanel2, 0, 1);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 2;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 312F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 297F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1064, 587);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(946, 470);
             this.tableLayoutPanel1.TabIndex = 1;
+            // 
+            // btnRP
+            // 
+            this.btnRP.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnRP.Animated = true;
+            this.btnRP.CheckedState.Parent = this.btnRP;
+            this.btnRP.CustomImages.Parent = this.btnRP;
+            this.btnRP.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(197)))), ((int)(((byte)(203)))));
+            this.btnRP.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnRP.ForeColor = System.Drawing.Color.White;
+            this.btnRP.HoverState.Parent = this.btnRP;
+            this.btnRP.Image = global::QLNHAHANG.Properties.Resources.ic_report_2;
+            this.btnRP.Location = new System.Drawing.Point(889, 229);
+            this.btnRP.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnRP.Name = "btnRP";
+            this.btnRP.ShadowDecoration.Enabled = true;
+            this.btnRP.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.btnRP.ShadowDecoration.Parent = this.btnRP;
+            this.btnRP.ShadowDecoration.Shadow = new System.Windows.Forms.Padding(0, 2, 2, 2);
+            this.btnRP.Size = new System.Drawing.Size(44, 42);
+            this.btnRP.TabIndex = 40;
+            this.btnRP.Click += new System.EventHandler(this.btnRP_Click);
             // 
             // frmNguyenLieu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1064, 587);
+            this.ClientSize = new System.Drawing.Size(946, 470);
             this.Controls.Add(this.tableLayoutPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "frmNguyenLieu";
             this.Text = "NguyenLieu";
             this.Load += new System.EventHandler(this.frmNguyenLieu_Load);
@@ -769,5 +794,6 @@ namespace QLNHAHANG
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.GroupBox groupBox1;
         private Guna.UI2.WinForms.Guna2TextBox txt_SoLuong;
+        private Guna.UI2.WinForms.Guna2CircleButton btnRP;
     }
 }
