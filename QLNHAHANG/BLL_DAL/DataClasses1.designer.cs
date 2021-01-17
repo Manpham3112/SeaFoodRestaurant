@@ -93,7 +93,7 @@ namespace BLL_DAL
     #endregion
 		
 		public DataClasses1DataContext() : 
-				base(global::BLL_DAL.Properties.Settings.Default.QL_NHAHANGConnectionString, mappingSource)
+				base(global::BLL_DAL.Properties.Settings.Default.QL_NHAHANGConnectionString4, mappingSource)
 		{
 			OnCreated();
 		}

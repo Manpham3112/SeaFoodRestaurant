@@ -305,5 +305,11 @@ namespace QLNHAHANG
                 e.Handled = true;
             }
         }
+
+        private void btnRP_Click(object sender, EventArgs e)
+        {
+            frm_rpDichVu rp = new frm_rpDichVu();
+            rp.Show();
+        }
     }
 }
