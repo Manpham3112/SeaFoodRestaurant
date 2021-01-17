@@ -12,7 +12,6 @@ namespace BLL_DAL
     public static class Utils
     {
         static string key { get; set; } = "A!9HHhi%XjjYY4YP2@Nob009X";
-
         // ma hoa mat khau 12345 => abcxyz?>
         public static string Encrypt(string text)
         {
