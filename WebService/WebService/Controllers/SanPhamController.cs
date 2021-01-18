@@ -1,18 +1,18 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Web;
 using System.Web.Http;
 using WebService.GenericRepositories;
 using WebService.model;
 using WebService.Utils;
 using WebService.ViewModel;
+using System.Web.Http.Cors;
 
 namespace WebService.Controllers
 {
     public class SanPhamController: ApiController
     {
         GenericRepository<SANPHAM> service = new GenericRepository<SANPHAM>();
+        [EnableCors(origins: "*", headers: "*", methods: "*")]
         [Route("api/sanpham")]
         [HttpGet]
         // GET api/values
