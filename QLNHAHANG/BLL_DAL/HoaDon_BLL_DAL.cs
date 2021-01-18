@@ -8,6 +8,7 @@ namespace BLL_DAL
 {
    public class HoaDon_BLL_DAL
     {
+        SanPham_BLL_DAL sp = new SanPham_BLL_DAL();
         DataClasses1DataContext hd = new DataClasses1DataContext();
         public HoaDon_BLL_DAL()
         {
@@ -51,7 +52,7 @@ namespace BLL_DAL
                 foreach (CT_HOADON item in lstCT)
                 {
                     item.MAHD = maHD;
-                    
+                    item.THANHTIEN = item.SOLUONG * sp.GetPriceByID(item.MASP);
                     hd.CT_HOADONs.InsertOnSubmit(item);
                     hd.SubmitChanges();
                 }

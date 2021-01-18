@@ -8,30 +8,28 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using BLL_DAL;
-
 namespace QLNHAHANG
 {
-    public partial class frm_rpOrder : Form
+    public partial class frm_rpHoaDonTheoNgay : Form
     {
         HoaDon_BLL_DAL hd = new HoaDon_BLL_DAL();
-        frmOrder order = new frmOrder();
-        string maHD;
-        public frm_rpOrder(string mahd)
+        string ngayLap;
+        public frm_rpHoaDonTheoNgay(string ngaylap)
         {
             InitializeComponent();
-            maHD = mahd;
+            ngayLap = ngaylap;
         }
 
-        private void frm_rpOrder_Load(object sender, EventArgs e)
+        private void frm_rpHoaDonTheoNgay_Load(object sender, EventArgs e)
         {
-            rpOrder rp = new rpOrder();
+            rpLocHoaDonTheoNgay rp = new rpLocHoaDonTheoNgay();
             crystalReportViewer1.ReportSource = rp;
-            
-            rp.SetParameterValue("LocMaHD", maHD);
+            rp.SetParameterValue("LocNgayLap", ngayLap);
             rp.SetDatabaseLogon("sa", "sa2012", "DESKTOP-HHM5LAU", "QL_NHAHANG");
             crystalReportViewer1.Refresh();
             crystalReportViewer1.DisplayToolbar = false;
             crystalReportViewer1.DisplayStatusBar = false;
         }
+
     }
 }

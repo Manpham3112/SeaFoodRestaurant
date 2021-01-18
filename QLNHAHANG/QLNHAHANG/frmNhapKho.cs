@@ -260,8 +260,19 @@ namespace QLNHAHANG
 
         private void RP_PNK_Click(object sender, EventArgs e)
         {
-            frm_rpNhapKho rp = new frm_rpNhapKho();
-            rp.Show();
+            if (dataGridViewPhieuNhanHang.SelectedCells.Count > 0)
+            {
+                int vt = dataGridViewPhieuNhanHang.SelectedCells[0].RowIndex;
+                maPhieuDangChon = dataGridViewPhieuNhanHang.Rows[vt].Cells["MAPNK"].Value.ToString().Trim();
+                frm_rpLocPhieuNhapKho rp = new frm_rpLocPhieuNhapKho(maPhieuDangChon);
+                rp.Show();
+            }
+            else
+            {
+                frm_rpNhapKho rp = new frm_rpNhapKho();
+                rp.Show();
+            }
+                
         }
 
         private void dataGridViewPhieuNhanHang_SelectionChanged(object sender, EventArgs e)

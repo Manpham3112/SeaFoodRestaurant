@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BLL_DAL
 {
-   public class SanPham_BLL_DAL
+    public class SanPham_BLL_DAL
     {
         DataClasses1DataContext qlsp = new DataClasses1DataContext();
         // tim san pham
@@ -132,7 +132,7 @@ namespace BLL_DAL
         }
 
         // Lay all SP_NguyenLieu
-        
+
         public List<CT_SANPHAM_NGUYENLIEU> laySP_NL(string maSP)
         {
             return qlsp.CT_SANPHAM_NGUYENLIEUs.Where(t => t.MASP == maSP).ToList();
@@ -275,18 +275,23 @@ namespace BLL_DAL
         public IQueryable<SANPHAM> loadGridViewTimKiemSanPham(string txtTimKiem)
         {
             var sanpham = from nv in qlsp.SANPHAMs
-                           where nv.MASP.Contains(txtTimKiem) ||
-                           nv.TENSP.Contains(txtTimKiem)
-                           select nv;
+                          where nv.MASP.Contains(txtTimKiem) ||
+                          nv.TENSP.Contains(txtTimKiem)
+                          select nv;
             return sanpham;
         }
         public IQueryable<NGUYENLIEU> loadGridViewTimKiemNguyenLieu(string txtTimKiem)
         {
             var nguyenlieu = from nv in qlsp.NGUYENLIEUs
-                          where nv.MANL.Contains(txtTimKiem) ||
-                          nv.TENNL.Contains(txtTimKiem)
-                          select nv;
+                             where nv.MANL.Contains(txtTimKiem) ||
+                             nv.TENNL.Contains(txtTimKiem)
+                             select nv;
             return nguyenlieu;
+        }
+
+        public double? GetPriceByID(string id)
+        {
+            return qlsp.SANPHAMs.FirstOrDefault(sp => sp.MASP == id).GIABAN;
         }
     }
 }

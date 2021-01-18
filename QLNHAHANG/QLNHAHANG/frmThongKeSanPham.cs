@@ -65,5 +65,16 @@ namespace QLNHAHANG
             spk.Xuly(3);
             gvBanChay.DataSource = lstSP.Where(t => t.SOLUONG <= max);
         }
+
+        private void gvBanCham_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void RP_PNK_Click(object sender, EventArgs e)
+        {
+            frm_rpHoaDonTheoNgay rp = new frm_rpHoaDonTheoNgay(ngaylap);
+            rp.Show();
+        }
     }
 }
