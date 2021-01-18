@@ -1,7 +1,7 @@
 ﻿
 namespace QLNHAHANG
 {
-    partial class Form2
+    partial class frm_rpLocPhieuNhapKho
     {
         /// <summary>
         /// Required designer variable.
@@ -40,17 +40,19 @@ namespace QLNHAHANG
             this.crystalReportViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.crystalReportViewer1.Location = new System.Drawing.Point(0, 0);
             this.crystalReportViewer1.Name = "crystalReportViewer1";
-            this.crystalReportViewer1.Size = new System.Drawing.Size(800, 450);
+            this.crystalReportViewer1.Size = new System.Drawing.Size(1924, 1055);
             this.crystalReportViewer1.TabIndex = 0;
             // 
-            // Form2
+            // frm_rpLocPhieuNhapKho
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1924, 1055);
             this.Controls.Add(this.crystalReportViewer1);
-            this.Name = "Form2";
-            this.Text = "Form2";
+            this.Name = "frm_rpLocPhieuNhapKho";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Phiếu nhập kho";
+            this.Load += new System.EventHandler(this.frm_rpLocPhieuNhapKho_Load);
             this.ResumeLayout(false);
 
         }

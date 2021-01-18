@@ -106,8 +106,9 @@ namespace QLNHAHANG
         private void btnThem_Click(object sender, EventArgs e)
         {
             reset();
+           
             setEnableTextBox(lstTextBox, true);
-            //txtMaNhaCungCap.Enabled = false;
+            txtMaNhaCungCap.Enabled = false;
             //int count = 0;
             //count = dataGridViewNhaCungCap.Rows.Count + 1;
             //txtMaNhaCungCap.Text = "NCC00" + count;
@@ -219,6 +220,8 @@ namespace QLNHAHANG
 
         private void btnSua_Click(object sender, EventArgs e)
         {
+            btnThem.Enabled = false;
+            btnXoa.Enabled = false;
             setEnableTextBox(lstTextBox, true);
             txtMaNhaCungCap.Enabled = false;
             if (btnLuu.Enabled == true)
@@ -241,6 +244,7 @@ namespace QLNHAHANG
             {
                 btnLuu.Enabled = true;
             }
+            
         }
 
         private void btnXoa_Click(object sender, EventArgs e)
@@ -266,6 +270,13 @@ namespace QLNHAHANG
             {
                 MessageBox.Show("Nhà cung cấp " + txtMaNhaCungCap.Text + " không đạt điều kiện để xóa");
             }
+            frmNhaCungCap_Load(sender, e);
+        }
+
+        private void btnRP_Click(object sender, EventArgs e)
+        {
+            frm_rpNhaCungCap rp = new frm_rpNhaCungCap();
+            rp.Show();
         }
     }
 }

@@ -16,14 +16,14 @@ namespace QLNHAHANG {
     using CrystalDecisions.CrystalReports.Engine;
     
     
-    public class rpHoaDon : ReportClass {
+    public class rpLocNhapKho : ReportClass {
         
-        public rpHoaDon() {
+        public rpLocNhapKho() {
         }
         
         public override string ResourceName {
             get {
-                return "rpHoaDon.rpt";
+                return "rpLocNhapKho.rpt";
             }
             set {
                 // Do nothing
@@ -41,7 +41,7 @@ namespace QLNHAHANG {
         
         public override string FullResourceName {
             get {
-                return "QLNHAHANG.rpHoaDon.rpt";
+                return "QLNHAHANG.rpLocNhapKho.rpt";
             }
             set {
                 // Do nothing
@@ -90,7 +90,7 @@ namespace QLNHAHANG {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_LocMaHD {
+        public CrystalDecisions.Shared.IParameterField Parameter_LocPNK {
             get {
                 return this.DataDefinition.ParameterFields[0];
             }
@@ -98,9 +98,9 @@ namespace QLNHAHANG {
     }
     
     [System.Drawing.ToolboxBitmapAttribute(typeof(CrystalDecisions.Shared.ExportOptions), "report.bmp")]
-    public class CachedrpHoaDon : Component, ICachedReport {
+    public class CachedrpLocNhapKho : Component, ICachedReport {
         
-        public CachedrpHoaDon() {
+        public CachedrpLocNhapKho() {
         }
         
         [Browsable(false)]
@@ -137,7 +137,7 @@ namespace QLNHAHANG {
         }
         
         public virtual CrystalDecisions.CrystalReports.Engine.ReportDocument CreateReport() {
-            rpHoaDon rpt = new rpHoaDon();
+            rpLocNhapKho rpt = new rpLocNhapKho();
             rpt.Site = this.Site;
             return rpt;
         }

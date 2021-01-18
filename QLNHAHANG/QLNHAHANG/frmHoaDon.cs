@@ -79,5 +79,16 @@ namespace QLNHAHANG
                 dataGridViewChiTietHD.DataSource = hd.layChiTietHoaDon(mahd);
             }
         }
+
+        private void btnXuatReport_Click(object sender, EventArgs e)
+        {
+            if (dataGridViewHoaDon.SelectedCells.Count > 0)
+            {
+                int vt = dataGridViewHoaDon.SelectedCells[0].RowIndex;
+                string maPhieuDangChon = dataGridViewHoaDon.Rows[vt].Cells["MAHD"].Value.ToString().Trim();
+                frm_rpHoaDon rp = new frm_rpHoaDon(maPhieuDangChon);
+                rp.Show();
+            }
+        }
     }
 }

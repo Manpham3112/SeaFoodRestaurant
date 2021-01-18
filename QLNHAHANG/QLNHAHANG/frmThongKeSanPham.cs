@@ -65,5 +65,12 @@ namespace QLNHAHANG
             spk.Xuly(3);
             gvBanChay.DataSource = lstSP.Where(t => t.SOLUONG <= max);
         }
+
+        private void gvBanCham_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        
     }
 }

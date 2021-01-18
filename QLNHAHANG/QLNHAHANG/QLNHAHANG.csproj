@@ -76,12 +76,6 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form2.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form2.Designer.cs">
-      <DependentUpon>Form2.cs</DependentUpon>
-    </Compile>
     <Compile Include="frmDichVu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -172,12 +166,6 @@
     <Compile Include="frmSanPham.Designer.cs">
       <DependentUpon>frmSanPham.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmThongKe.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmThongKe.Designer.cs">
-      <DependentUpon>frmThongKe.cs</DependentUpon>
-    </Compile>
     <Compile Include="frmThongKeSanPham.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -225,6 +213,12 @@
     </Compile>
     <Compile Include="frm_rpLoaiSanPham.designer.cs">
       <DependentUpon>frm_rpLoaiSanPham.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_rpLocPhieuNhapKho.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_rpLocPhieuNhapKho.Designer.cs">
+      <DependentUpon>frm_rpLocPhieuNhapKho.cs</DependentUpon>
     </Compile>
     <Compile Include="frm_rpNguyenLieu.cs">
       <SubType>Form</SubType>
@@ -300,6 +294,12 @@
       <DependentUpon>rpLoaiSanPham.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="rpLocNhapKho.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpLocNhapKho.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="rpNguyenLieu.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -344,9 +344,6 @@
     </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Form2.resx">
-      <DependentUpon>Form2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmDichVu.resx">
       <DependentUpon>frmDichVu.cs</DependentUpon>
@@ -393,9 +390,6 @@
     <EmbeddedResource Include="frmSanPham.resx">
       <DependentUpon>frmSanPham.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmThongKe.resx">
-      <DependentUpon>frmThongKe.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="frmThongKeSanPham.resx">
       <DependentUpon>frmThongKeSanPham.cs</DependentUpon>
     </EmbeddedResource>
@@ -419,6 +413,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frm_rpLoaiSanPham.resx">
       <DependentUpon>frm_rpLoaiSanPham.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_rpLocPhieuNhapKho.resx">
+      <DependentUpon>frm_rpLocPhieuNhapKho.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_rpNguyenLieu.resx">
       <DependentUpon>frm_rpNguyenLieu.cs</DependentUpon>
@@ -471,6 +468,10 @@
     <EmbeddedResource Include="rpLoaiSanPham.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>rpLoaiSanPham.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpLocNhapKho.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpLocNhapKho.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="rpNguyenLieu.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>

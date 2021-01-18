@@ -30,8 +30,8 @@ namespace QLNHAHANG
             txtMAKM.Text = makm;
             txtTENKM.Text = tenkm;
             txtPTKM.Text = phantramkm;
-            dtpickNGAYBD.Text = ngaybd;
-            dtpickNGAYKT.Text = ngaykt;
+            dtpickNGAYBD.Value = Convert.ToDateTime(ngaybd);
+            dtpickNGAYKT.Value = Convert.ToDateTime(ngaykt);
         }
         public bool isEmpty(List<string> lst)
         {
@@ -79,6 +79,8 @@ namespace QLNHAHANG
             setEnableTextBox(lstTextBox, false);
             databingding(0);
             txtMAKM.Enabled = false;
+            dtpickNGAYBD.Enabled = false;
+            dtpickNGAYKT.Enabled = false;
         }
 
         private void dataGridViewKhuyenMai_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -94,7 +96,10 @@ namespace QLNHAHANG
 
         private void btnThem_Click(object sender, EventArgs e)
         {
-
+            dtpickNGAYBD.Enabled = true;
+            dtpickNGAYKT.Enabled = true;
+            btnXoa.Enabled = false;
+            btnSua.Enabled = false;
             Random r = new Random();
             int count = qlkm.demSoLuong() + 1;
             txtMAKM.Text = "KM00" + count + r.Next(0, 99);
@@ -119,6 +124,11 @@ namespace QLNHAHANG
         private void btnSua_Click(object sender, EventArgs e)
         {
             setEnableTextBox(lstTextBox, true);
+            btnThem.Enabled = false;
+            dtpickNGAYBD.Enabled = true;
+            dtpickNGAYKT.Enabled = true;
+            btnXoa.Enabled = false;
+            
             txtMAKM.Enabled = false;
             if (btnLuu.Enabled == true)
             {
@@ -220,6 +230,7 @@ namespace QLNHAHANG
             {
                 MessageBox.Show("Khuyến mãi " + txtMAKM.Text + " không đạt điều kiện để xóa");
             }
+            frmKhuyenMai_Load(sender, e);
         }
 
         private void txtTimKiem_TextChanged(object sender, EventArgs e)
@@ -240,6 +251,27 @@ namespace QLNHAHANG
             {
                 e.Handled = true;
             }
+        }
+
+        private void dataGridViewKhuyenMai_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void btnRP_Click(object sender, EventArgs e)
+        {
+            frm_rpKhuyenMai rp = new frm_rpKhuyenMai();
+            rp.Show();
+        }
+
+        private void tableLayoutPanel3_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

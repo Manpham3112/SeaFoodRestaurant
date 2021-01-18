@@ -47,6 +47,8 @@ namespace QLNHAHANG
             loadGrdViewNhom();
             setHeaderMANHINH();
             trangthaiBD();
+            btnSua.Enabled = false;
+            btnXoa.Enabled = false;
         }
         private List<PHANQUYEN> layPQ()
         {
@@ -73,6 +75,7 @@ namespace QLNHAHANG
         }
         private void btnLuu_Click(object sender, EventArgs e)
         {
+
             NHOMQUYEN nq = new NHOMQUYEN()
             {
                 MANQ = txtMaNhom.Text,
@@ -103,10 +106,16 @@ namespace QLNHAHANG
             }
             qlns.submitChange();
             trangthaiBD();
+            btnLuu.Enabled = false;
+            btnXoa.Enabled = false;
+            btnSua.Enabled = false;
+            frmPhanQuyen_Load(sender, e);
         }
 
         private void grdNhom_CellClick(object sender, DataGridViewCellEventArgs e)
         {
+            btnSua.Enabled = true;
+            btnXoa.Enabled = true;
             int r = e.RowIndex;
             if (r < 0)
                 return;
@@ -182,6 +191,7 @@ namespace QLNHAHANG
                 txtMaNhom.Text = txtTenNhom.Text = string.Empty;
                 trangthaiBD();
             }
+            frmPhanQuyen_Load(sender, e);
         }
 
         private void grdNhom_SelectionChanged(object sender, EventArgs e)

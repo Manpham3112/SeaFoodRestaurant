@@ -20,7 +20,7 @@ namespace QLNHAHANG
         {
             rpNhaCungCap rp = new rpNhaCungCap();
             crystalReportViewer1.ReportSource = rp;
-            rp.SetDatabaseLogon("sa", "sa2012", "DESKTOP-HHM5LAU", "QL_BANHANG");
+            rp.SetDatabaseLogon("sa", "sa2012", "DESKTOP-HHM5LAU", "QL_NHAHANG");
             crystalReportViewer1.Refresh();
             crystalReportViewer1.DisplayToolbar = false;
             crystalReportViewer1.DisplayStatusBar = false;

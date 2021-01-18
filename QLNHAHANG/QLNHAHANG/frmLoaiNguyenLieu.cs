@@ -17,10 +17,23 @@ namespace QLNHAHANG
         {
             InitializeComponent();
         }
+        public void databingding(int rowindex)
+        {
+            string malnl = dgrv_HienThiLoaiNguyenLieu.Rows[rowindex].Cells["MALNL"].FormattedValue.ToString();
+            string tenlnl = dgrv_HienThiLoaiNguyenLieu.Rows[rowindex].Cells["TENLNL"].FormattedValue.ToString();
+            txt_MaLNL.Text = malnl;
+            txt_TenLNL.Text = tenlnl;
+        }
 
         private void frmLoaiNguyenLieu_Load(object sender, EventArgs e)
         {
             load_AllGrid();
+            btnXoa.Enabled = false;
+            btnSua.Enabled = false;
+            btnLuu.Enabled = false;
+            txt_TenLNL.Enabled = false;
+            txt_MaLNL.Enabled = false;
+            txt_MaLNL.ReadOnly = true;
         }
         void load_AllGrid()
         {
@@ -52,18 +65,18 @@ namespace QLNHAHANG
 
         private void dgrv_HienThiLoaiNguyenLieu_SelectionChanged(object sender, EventArgs e)
         {
-            if (dgrv_HienThiLoaiNguyenLieu.SelectedCells.Count > 0)
-            {
-                btnSua.Enabled = true;
-                btnXoa.Enabled = true;
-                int vitri = dgrv_HienThiLoaiNguyenLieu.SelectedCells[0].RowIndex;
+            //if (dgrv_HienThiLoaiNguyenLieu.SelectedCells.Count > 0)
+            //{
+            //    btnSua.Enabled = true;
+            //    btnXoa.Enabled = true;
+            //    int vitri = dgrv_HienThiLoaiNguyenLieu.SelectedCells[0].RowIndex;
 
-                string MaLNL = dgrv_HienThiLoaiNguyenLieu.Rows[vitri].Cells[0].Value.ToString().Trim();
-                string TenLNL = dgrv_HienThiLoaiNguyenLieu.Rows[vitri].Cells[1].Value.ToString().Trim();
+            //    string MaLNL = dgrv_HienThiLoaiNguyenLieu.Rows[vitri].Cells[0].Value.ToString().Trim();
+            //    string TenLNL = dgrv_HienThiLoaiNguyenLieu.Rows[vitri].Cells[1].Value.ToString().Trim();
 
-                txt_MaLNL.Text = MaLNL;
-                txt_TenLNL.Text = TenLNL;
-            }
+            //    txt_MaLNL.Text = MaLNL;
+            //    txt_TenLNL.Text = TenLNL;
+            //}
         }
         void textboxVeNull()
         {
@@ -72,6 +85,7 @@ namespace QLNHAHANG
         private void btnThem_Click(object sender, EventArgs e)
         {
             load_AllGrid();
+            txt_TenLNL.Enabled = true;
             btnXoa.Enabled = false;
             btnSua.Enabled = false;
             btnLuu.Enabled = true;
@@ -83,7 +97,10 @@ namespace QLNHAHANG
         private void btnSua_Click(object sender, EventArgs e)
         {
             txt_MaLNL.Enabled = false;
+            txt_TenLNL.Enabled = true;
             txt_TenLNL.Focus();
+            btnThem.Enabled = btnXoa.Enabled = false;
+            btnLuu.Enabled = true;
         }
 
         private void btnXoa_Click(object sender, EventArgs e)
@@ -109,6 +126,7 @@ namespace QLNHAHANG
             {
                 MessageBox.Show("Loại nguyên liệu " + txt_MaLNL.Text + " không đạt điều kiện để xóa");
             }
+            frmLoaiNguyenLieu_Load(sender,e);
 
         }
 
@@ -131,6 +149,7 @@ namespace QLNHAHANG
                     MessageBox.Show("Lưu thành công");
                 }
             }
+            frmLoaiNguyenLieu_Load(sender, e);
         }
 
         private void txtTimKiem_TextChanged(object sender, EventArgs e)
@@ -142,6 +161,25 @@ namespace QLNHAHANG
             else
             {
                 dgrv_HienThiLoaiNguyenLieu.DataSource = lnl.loadLoaiNguyenLieu();
+            }
+        }
+
+        private void btnRP_Click(object sender, EventArgs e)
+        {
+            frm_rpLoaiNguyenLieu rp = new frm_rpLoaiNguyenLieu();
+            rp.Show();
+        }
+
+        private void dgrv_HienThiLoaiNguyenLieu_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            btnSua.Enabled = true;
+            btnXoa.Enabled = true;
+            txt_MaLNL.Enabled = false;
+            txt_TenLNL.Enabled = false;
+            if (dgrv_HienThiLoaiNguyenLieu.Rows[e.RowIndex].Cells[e.ColumnIndex].Value != null)
+            {
+                dgrv_HienThiLoaiNguyenLieu.CurrentRow.Selected = true;
+                databingding(e.RowIndex);
             }
         }
     }

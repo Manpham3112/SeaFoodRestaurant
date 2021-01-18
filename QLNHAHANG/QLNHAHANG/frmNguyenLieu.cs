@@ -29,6 +29,11 @@ namespace QLNHAHANG
             txt_MaNguyenLieu.Text = nl.taoMaNguyenLieu();
             txt_TenNguyenLieu.Focus();
             cbo_TenLoai.SelectedIndex = 0;
+            txt_TenNguyenLieu.Enabled = true;
+            cbo_TenLoai.Enabled = true;
+            txt_HSD.Enabled = true;
+            txt_DonVi.Enabled = true;
+            txt_SoLuong.Enabled = true;
         }
         void textboxVeNull()
         {
@@ -44,6 +49,15 @@ namespace QLNHAHANG
             load_AllGrid();
             load_cbo_Loai();
             setHeaderNL();
+            txt_MaNguyenLieu.Enabled = false;
+            txt_TenNguyenLieu.Enabled = false;
+            cbo_TenLoai.Enabled = false;
+            txt_HSD.Enabled = false;
+            txt_DonVi.Enabled = false;
+            txt_SoLuong.Enabled = false;
+            btnXoa.Enabled = false;
+            btnLuu.Enabled = false;
+            btnSua.Enabled = false;
         }
         Boolean kiemTraNull()
         {
@@ -107,6 +121,7 @@ namespace QLNHAHANG
 
         private void dgrv_HienThiNguyenLieu_SelectionChanged(object sender, EventArgs e)
         {
+
             if (dgrv_HienThiNguyenLieu.SelectedCells.Count > 0)
             {
                 btnSua.Enabled = true;
@@ -124,7 +139,6 @@ namespace QLNHAHANG
                 txt_TenNguyenLieu.Text = TenNL;
                 txt_DonVi.Text = DonVi;
                 txt_SoLuong.Text = SoLuong;
-                //txt_HSD.Text = HSD;
                 txt_HSD.Value = Convert.ToDateTime(HSD);
                 cbo_TenLoai.Text = TenLoai;
             }
@@ -134,6 +148,14 @@ namespace QLNHAHANG
         {
             txt_MaNguyenLieu.Enabled = false;
             txt_TenNguyenLieu.Focus();
+            btnXoa.Enabled = false;
+            btnThem.Enabled = false;
+            txt_TenNguyenLieu.Enabled = true;
+            cbo_TenLoai.Enabled = true;
+            txt_HSD.Enabled = true;
+            txt_DonVi.Enabled = true;
+            txt_SoLuong.Enabled = true;
+
             //if (btnLuu.Enabled == true)
             //{
             //    DialogResult result;
@@ -169,6 +191,7 @@ namespace QLNHAHANG
                 {
                     nl.xoaNguyenLieu(txt_MaNguyenLieu.Text);
                     load_AllGrid();
+                    frmNguyenLieu_Load(sender, e);
                 }
                 else
                 {
@@ -179,7 +202,7 @@ namespace QLNHAHANG
             {
                 MessageBox.Show("Nguyên liệu " + txt_MaNguyenLieu.Text + " không đạt điều kiện để xóa");
             }
-
+            frmNguyenLieu_Load(sender, e);
 
 
         }
@@ -203,6 +226,7 @@ namespace QLNHAHANG
                     MessageBox.Show("Lưu thành công");
                 }
             }
+            frmNguyenLieu_Load(sender, e);
         }
 
         private void txtTimKiem_TextChanged(object sender, EventArgs e)
@@ -247,10 +271,40 @@ namespace QLNHAHANG
             dgrv_HienThiNguyenLieu.Columns["MANL"].HeaderText = "Mã nguyên liệu";
             dgrv_HienThiNguyenLieu.Columns["TENNL"].HeaderText = "Tên nguyên liệu";
             dgrv_HienThiNguyenLieu.Columns["DVT"].HeaderText = "Đơn vị tính";
-            dgrv_HienThiNguyenLieu.Columns["HSD"].HeaderText = "HSD";
+            dgrv_HienThiNguyenLieu.Columns["HSD"].HeaderText = "Hạn sử dụng";
             dgrv_HienThiNguyenLieu.Columns["SOLUONG"].HeaderText = "Số lượng";
             dgrv_HienThiNguyenLieu.Columns["TENLNL"].HeaderText = "Tên loại";
 
+        }
+        //public void databingding(int rowindex)
+        //{
+        //    string manl = dgrv_HienThiNguyenLieu.Rows[rowindex].Cells["MANL"].FormattedValue.ToString();
+        //    string tennl = dgrv_HienThiNguyenLieu.Rows[rowindex].Cells["TENNL"].FormattedValue.ToString();
+        //    string dvt = dgrv_HienThiNguyenLieu.Rows[rowindex].Cells["DVT"].FormattedValue.ToString();
+        //    string sl = dgrv_HienThiNguyenLieu.Rows[rowindex].Cells["SOLUONG"].FormattedValue.ToString();
+        //    string hsd = dgrv_HienThiNguyenLieu.Rows[rowindex].Cells["HSD"].FormattedValue.ToString();
+        //    txt_HSD.Value = Convert.ToDateTime(dgrv_HienThiNguyenLieu.Rows[rowindex].Cells["NGAYSINH"].FormattedValue.ToString());
+        //    txt_MaNguyenLieu.Text = manl;
+        //    txt_TenNguyenLieu.Text = tennl;
+        //    txt_DonVi.Text = dvt;
+        //    txt_SoLuong.Text = sl;            
+        //    //cbo_TenLoai.Text = tenloai;
+        //}
+        private void btnRP_Click(object sender, EventArgs e)
+        {
+            frm_rpNguyenLieu rp = new frm_rpNguyenLieu();
+            rp.Show();
+        }
+
+        private void dgrv_HienThiNguyenLieu_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            //btnSua.Enabled = true;
+            //btnXoa.Enabled = true;
+            //if (dgrv_HienThiNguyenLieu.Rows[e.RowIndex].Cells[e.ColumnIndex].Value != null)
+            //{
+            //    dgrv_HienThiNguyenLieu.CurrentRow.Selected = true;
+            //    databingding(e.RowIndex);
+            //}
         }
     }
 }

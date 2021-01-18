@@ -13,6 +13,10 @@ namespace BLL_DAL
         {
 
         }
+        public int demSoLuong()
+        {
+            return ff.LOAISPs.Select(kh => kh).Count();
+        }
         public IQueryable loadLoaiSP()
         {
             return ff.LOAISPs.Select(t => t);

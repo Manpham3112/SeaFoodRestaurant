@@ -128,7 +128,7 @@ namespace QLNHAHANG
             int count = qlnk.demSoLuong() + 1;
             txtMaPNK.Text = "PNK0" + count + r.Next(0, 99);
             txtMaPNK.ReadOnly = true;
-            txtMaNV.ReadOnly = true ;
+            txtMaNV.ReadOnly = true;
             txtMaNV.Text = nv.MANV;
             txtTongTien.Text = "0";
             setEnableTextBox(lstTextBox, true);
@@ -155,11 +155,12 @@ namespace QLNHAHANG
                     MessageBox.Show("Thêm thành công");
                 frmNhapKho_Load(sender, e);
             }
-                else
-                {
-                    MessageBox.Show("Lỗi hệ thống");
-                }
-            
+            else
+            {
+                MessageBox.Show("Lỗi hệ thống");
+            }
+            frmNhapKho_Load(sender, e);
+
         }
 
         private void dataGridViewPhieuNhanHang_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -266,9 +267,19 @@ namespace QLNHAHANG
 
         private void RP_PNK_Click(object sender, EventArgs e)
         {
-           // RP_PNK pnk = new RP_PNK();
-            this.Hide();
-            //pnk.Show();
+            if (dataGridViewPhieuNhanHang.SelectedCells.Count > 0)
+            {
+                int vt = dataGridViewPhieuNhanHang.SelectedCells[0].RowIndex;
+                maPhieuDangChon = dataGridViewPhieuNhanHang.Rows[vt].Cells["MAPNK"].Value.ToString().Trim();
+                frm_rpLocPhieuNhapKho rp = new frm_rpLocPhieuNhapKho(maPhieuDangChon);
+                rp.Show();
+            }
+            else
+            {
+                frm_rpNhapKho rp = new frm_rpNhapKho();
+                rp.Show();
+            }
+                
         }
 
         private void dataGridViewPhieuNhanHang_SelectionChanged(object sender, EventArgs e)
