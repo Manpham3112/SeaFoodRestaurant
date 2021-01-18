@@ -190,12 +190,6 @@
     <Compile Include="frm_rpHoaDon.designer.cs">
       <DependentUpon>frm_rpHoaDon.cs</DependentUpon>
     </Compile>
-    <Compile Include="frm_rpHoaDonTheoNgay.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frm_rpHoaDonTheoNgay.Designer.cs">
-      <DependentUpon>frm_rpHoaDonTheoNgay.cs</DependentUpon>
-    </Compile>
     <Compile Include="frm_rpKhachHang.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -298,12 +292,6 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>rpLoaiSanPham.rpt</DependentUpon>
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="rpLocHoaDonTheoNgay.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>rpLocHoaDonTheoNgay.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="rpLocNhapKho.cs">
@@ -414,9 +402,6 @@
     <EmbeddedResource Include="frm_rpHoaDon.resx">
       <DependentUpon>frm_rpHoaDon.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frm_rpHoaDonTheoNgay.resx">
-      <DependentUpon>frm_rpHoaDonTheoNgay.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="frm_rpKhachHang.resx">
       <DependentUpon>frm_rpKhachHang.cs</DependentUpon>
     </EmbeddedResource>
@@ -483,10 +468,6 @@
     <EmbeddedResource Include="rpLoaiSanPham.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>rpLoaiSanPham.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="rpLocHoaDonTheoNgay.rpt">
-      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>rpLocHoaDonTheoNgay.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="rpLocNhapKho.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>

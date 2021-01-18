@@ -41,8 +41,12 @@ namespace QLNHAHANG
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmThongKeSanPham));
             this.gvThongKeSP = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Cụm = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.dateTimePickerFrom = new Guna.UI.WinForms.GunaDateTimePicker();
@@ -71,12 +75,6 @@ namespace QLNHAHANG
             this.Column14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Cụm = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.RP_PNK = new Guna.UI.WinForms.GunaAdvenceButton();
             ((System.ComponentModel.ISupportInitialize)(this.gvThongKeSP)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.gunaPanel2.SuspendLayout();
@@ -161,6 +159,47 @@ namespace QLNHAHANG
             this.gvThongKeSP.ThemeStyle.RowsStyle.Height = 22;
             this.gvThongKeSP.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.gvThongKeSP.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            // 
+            // Column1
+            // 
+            this.Column1.DataPropertyName = "Masp";
+            this.Column1.HeaderText = "Mã Sản Phẩm";
+            this.Column1.MinimumWidth = 8;
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            this.Column1.Visible = false;
+            // 
+            // Column2
+            // 
+            this.Column2.DataPropertyName = "Tensp";
+            this.Column2.HeaderText = "Tên Sản Phẩm";
+            this.Column2.MinimumWidth = 8;
+            this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
+            // 
+            // Column3
+            // 
+            this.Column3.DataPropertyName = "Soluong";
+            this.Column3.HeaderText = "Số lượng";
+            this.Column3.MinimumWidth = 8;
+            this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
+            // 
+            // Column4
+            // 
+            this.Column4.DataPropertyName = "Dongia";
+            this.Column4.HeaderText = "Đơn giá";
+            this.Column4.MinimumWidth = 8;
+            this.Column4.Name = "Column4";
+            this.Column4.ReadOnly = true;
+            // 
+            // Cụm
+            // 
+            this.Cụm.HeaderText = "Column5";
+            this.Cụm.MinimumWidth = 8;
+            this.Cụm.Name = "Cụm";
+            this.Cụm.ReadOnly = true;
+            this.Cụm.Visible = false;
             // 
             // label1
             // 
@@ -335,7 +374,6 @@ namespace QLNHAHANG
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.RP_PNK);
             this.panel1.Controls.Add(this.tableLayoutPanel3);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.groupBox1);
@@ -700,83 +738,6 @@ namespace QLNHAHANG
             this.Column9.ReadOnly = true;
             this.Column9.Visible = false;
             // 
-            // Column1
-            // 
-            this.Column1.DataPropertyName = "Masp";
-            this.Column1.HeaderText = "Mã Sản Phẩm";
-            this.Column1.MinimumWidth = 8;
-            this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
-            this.Column1.Visible = false;
-            // 
-            // Column2
-            // 
-            this.Column2.DataPropertyName = "Tensp";
-            this.Column2.HeaderText = "Tên Sản Phẩm";
-            this.Column2.MinimumWidth = 8;
-            this.Column2.Name = "Column2";
-            this.Column2.ReadOnly = true;
-            // 
-            // Column3
-            // 
-            this.Column3.DataPropertyName = "Soluong";
-            this.Column3.HeaderText = "Số lượng";
-            this.Column3.MinimumWidth = 8;
-            this.Column3.Name = "Column3";
-            this.Column3.ReadOnly = true;
-            // 
-            // Column4
-            // 
-            this.Column4.DataPropertyName = "Dongia";
-            this.Column4.HeaderText = "Đơn giá";
-            this.Column4.MinimumWidth = 8;
-            this.Column4.Name = "Column4";
-            this.Column4.ReadOnly = true;
-            // 
-            // Cụm
-            // 
-            this.Cụm.HeaderText = "Column5";
-            this.Cụm.MinimumWidth = 8;
-            this.Cụm.Name = "Cụm";
-            this.Cụm.ReadOnly = true;
-            this.Cụm.Visible = false;
-            // 
-            // RP_PNK
-            // 
-            this.RP_PNK.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.RP_PNK.AnimationHoverSpeed = 0.07F;
-            this.RP_PNK.AnimationSpeed = 0.03F;
-            this.RP_PNK.BackColor = System.Drawing.Color.Transparent;
-            this.RP_PNK.BaseColor = System.Drawing.Color.Transparent;
-            this.RP_PNK.BorderColor = System.Drawing.Color.MediumTurquoise;
-            this.RP_PNK.BorderSize = 2;
-            this.RP_PNK.CheckedBaseColor = System.Drawing.Color.Gray;
-            this.RP_PNK.CheckedBorderColor = System.Drawing.Color.Black;
-            this.RP_PNK.CheckedForeColor = System.Drawing.Color.White;
-            this.RP_PNK.CheckedImage = null;
-            this.RP_PNK.CheckedLineColor = System.Drawing.Color.DimGray;
-            this.RP_PNK.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.RP_PNK.FocusedColor = System.Drawing.Color.Empty;
-            this.RP_PNK.Font = new System.Drawing.Font("Segoe UI", 7.5F, System.Drawing.FontStyle.Bold);
-            this.RP_PNK.ForeColor = System.Drawing.Color.MediumTurquoise;
-            this.RP_PNK.Image = ((System.Drawing.Image)(resources.GetObject("RP_PNK.Image")));
-            this.RP_PNK.ImageSize = new System.Drawing.Size(20, 20);
-            this.RP_PNK.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.RP_PNK.Location = new System.Drawing.Point(852, 19);
-            this.RP_PNK.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.RP_PNK.Name = "RP_PNK";
-            this.RP_PNK.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(128)))), ((int)(((byte)(114)))));
-            this.RP_PNK.OnHoverBorderColor = System.Drawing.Color.Empty;
-            this.RP_PNK.OnHoverForeColor = System.Drawing.Color.White;
-            this.RP_PNK.OnHoverImage = ((System.Drawing.Image)(resources.GetObject("RP_PNK.OnHoverImage")));
-            this.RP_PNK.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.RP_PNK.OnPressedColor = System.Drawing.Color.Black;
-            this.RP_PNK.Radius = 10;
-            this.RP_PNK.Size = new System.Drawing.Size(148, 39);
-            this.RP_PNK.TabIndex = 27;
-            this.RP_PNK.Text = "Xuất Report";
-            this.RP_PNK.Click += new System.EventHandler(this.RP_PNK_Click);
-            // 
             // frmThongKeSanPham
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -844,6 +805,5 @@ namespace QLNHAHANG
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private System.Windows.Forms.DataGridViewTextBoxColumn Cụm;
-        private Guna.UI.WinForms.GunaAdvenceButton RP_PNK;
     }
 }

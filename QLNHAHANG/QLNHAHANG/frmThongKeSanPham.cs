@@ -73,6 +73,7 @@ namespace QLNHAHANG
 
         private void RP_PNK_Click(object sender, EventArgs e)
         {
+            string ngaylap = Convert.ToString(dateTimePickerFrom.Value);
             frm_rpHoaDonTheoNgay rp = new frm_rpHoaDonTheoNgay(ngaylap);
             rp.Show();
         }
