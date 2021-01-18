@@ -655,7 +655,7 @@ namespace QLNHAHANG
             this.btnHidePass.FocusedColor = System.Drawing.Color.Empty;
             this.btnHidePass.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnHidePass.ForeColor = System.Drawing.Color.White;
-            this.btnHidePass.Image = ((System.Drawing.Image)(resources.GetObject("btnHidePass.Image")));
+            this.btnHidePass.Image = null;
             this.btnHidePass.ImageSize = new System.Drawing.Size(20, 20);
             this.btnHidePass.Location = new System.Drawing.Point(238, 0);
             this.btnHidePass.Name = "btnHidePass";
@@ -679,7 +679,7 @@ namespace QLNHAHANG
             this.btnShowPass.FocusedColor = System.Drawing.Color.Empty;
             this.btnShowPass.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnShowPass.ForeColor = System.Drawing.Color.White;
-            this.btnShowPass.Image = ((System.Drawing.Image)(resources.GetObject("btnShowPass.Image")));
+            this.btnShowPass.Image = null;
             this.btnShowPass.ImageSize = new System.Drawing.Size(20, 20);
             this.btnShowPass.Location = new System.Drawing.Point(282, 0);
             this.btnShowPass.Margin = new System.Windows.Forms.Padding(3, 3, 12, 3);

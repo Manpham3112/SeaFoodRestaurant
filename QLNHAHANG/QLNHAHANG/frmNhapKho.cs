@@ -40,16 +40,22 @@ namespace QLNHAHANG
         {
             InitializeComponent();
         }
+        public void loadCBLoai()
+        {
+            cboNCC.DataSource = qlnk.loadAllNCC();
+            cboNCC.ValueMember = "MANCC";
+            cboNCC.DisplayMember = "TENNCC";
+        }
         public void databingding(int rowindex)
         {
             string mapnk = dataGridViewPhieuNhanHang.Rows[rowindex].Cells["MAPNK"].FormattedValue.ToString();
             string manv = dataGridViewPhieuNhanHang.Rows[rowindex].Cells["MANV"].FormattedValue.ToString();
-            string mancc = dataGridViewPhieuNhanHang.Rows[rowindex].Cells["MANCC"].FormattedValue.ToString();
+            cboNCC.SelectedValue = dataGridViewPhieuNhanHang.Rows[rowindex].Cells["MANCC"].FormattedValue.ToString();
             string ngaylap = dataGridViewPhieuNhanHang.Rows[rowindex].Cells["NGAYLAP"].FormattedValue.ToString();
             string tongtien = dataGridViewPhieuNhanHang.Rows[rowindex].Cells["TONGTIEN"].FormattedValue.ToString();
             txtMaPNK.Text = mapnk;
             txtMaNV.Text = manv;
-            txtMaNCC.Text = mancc;
+            //txtMaNCC.Text = mancc;
             txt_NgayNhan.Text = ngaylap;
             txtTongTien.Text = tongtien;
         }
@@ -76,7 +82,7 @@ namespace QLNHAHANG
             lstStringTextBox = new List<string>();
             lstStringTextBox.Add(txtMaPNK.Text);
             lstStringTextBox.Add(txtMaNV.Text);
-            lstStringTextBox.Add(txtMaNCC.Text);
+            //lstStringTextBox.Add(txtMaNCC.Text);
             lstStringTextBox.Add(txt_NgayNhan.Text);
             lstStringTextBox.Add(txtTongTien.Text);
             lstStringTextBox.Add(txt_SoLuongNhap.Text);
@@ -89,7 +95,7 @@ namespace QLNHAHANG
             lstTextBox = new List<Guna2TextBox>();
             lstTextBox.Add(txtMaPNK);
             lstTextBox.Add(txtMaNV);
-            lstTextBox.Add(txtMaNCC);
+            //lstTextBox.Add(txtMaNCC);
             lstTextBox.Add(txtTongTien);
             lstTextBox.Add(txt_SoLuongNhap);
             lstTextBox.Add(txt_DonGiaNhap);
@@ -113,6 +119,7 @@ namespace QLNHAHANG
             setEnableTextBox(lstTextBox, false);
             databingding(0);
             databingding1(0);
+            loadCBLoai();
         }
 
         private void btnThemPNK_Click(object sender, EventArgs e)
@@ -123,7 +130,6 @@ namespace QLNHAHANG
             txtMaPNK.ReadOnly = true;
             txtMaNV.ReadOnly = true ;
             txtMaNV.Text = nv.MANV;
-            txtMaNCC.Clear();
             txtTongTien.Text = "0";
             setEnableTextBox(lstTextBox, true);
             txtTongTien.ReadOnly = true;
@@ -145,7 +151,7 @@ namespace QLNHAHANG
         {
                 if (qlnk.kT(txtMaPNK.Text) == true)
                 {
-                    qlnk.themPhieuNhapKho(txtMaPNK.Text,nv.MANV, txtMaNCC.Text, txt_NgayNhan.Value, Convert.ToInt32(txtTongTien.Text));
+                    qlnk.themPhieuNhapKho(txtMaPNK.Text,nv.MANV, cboNCC.SelectedValue.ToString(), txt_NgayNhan.Value, Convert.ToInt32(txtTongTien.Text));
                     MessageBox.Show("Thêm thành công");
                 frmNhapKho_Load(sender, e);
             }
@@ -192,12 +198,13 @@ namespace QLNHAHANG
             dataGridViewNguyenLieu.DataSource = nl.loadNguyenLieu();
 
             // load dgv phiếu nhận
-            dataGridViewPhieuNhanHang.DataSource = qlnk.loadDataGridViewPhieuNhapKho();
+            //dataGridViewPhieuNhanHang.DataSource = qlnk.loadDataGridViewPhieuNhapKho();
 
             // load dgv chi tiết
             dataGridViewChiTiet.DataSource = ctpnk.chiTietPhieuNhap(maPhieuDangChon);
 
         }
+        
 
         private void btnThemNL_Click(object sender, EventArgs e)
         {
