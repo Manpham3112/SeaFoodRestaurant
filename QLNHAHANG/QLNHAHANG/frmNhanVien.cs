@@ -258,7 +258,7 @@ namespace QLNHAHANG
             btnLuu.Enabled = true;
             txtHoTen.Enabled = true;
             txtDiaChi.Enabled = true;
-            txtMatKhau.Enabled = true;
+            txtMatKhau.Enabled = false;
             txtSoDienThoai.Enabled = true;
             cboLoaiNhanVien.Enabled = true;
             dateTimePickerNgaySinh.Enabled = true;
@@ -290,10 +290,10 @@ namespace QLNHAHANG
                 }
                 else
                 {
-
+                    string hashPW = Utils.Encrypt(txtMatKhau.Text);
                     qlnv.themNhanVien(txtMa.Text, txtHoTen.Text, txtSoDienThoai.Text, txtDiaChi.Text,
-                         dateTimePickerNgaySinh.Value, cboLoaiNhanVien.SelectedValue.ToString(),
-                        true, txtMatKhau.Text);
+                         dateTimePickerNgaySinh.Value,  cboLoaiNhanVien.SelectedValue.ToString(),
+                        true, hashPW);
                     MessageBox.Show("Thêm thành công");
                     loadDataGridViewNhanVien();
                     btnSua.Enabled = false;

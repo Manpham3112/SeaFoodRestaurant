@@ -6,16 +6,22 @@ using System.Threading.Tasks;
 
 namespace BLL_DAL
 {
- public class NhanVien_BLL_DAL
+    public class NhanVien_BLL_DAL
     {
         DataClasses1DataContext ff = new DataClasses1DataContext();
         public NhanVien_BLL_DAL()
-         {
+        {
 
-         }
+        }
         public IQueryable loadDataGridViewNhanVien()
         {
             return ff.NHANVIENs.Select(t => t);
+            //var x = ff.NHANVIENs
+            //  .Join(ff.NHOMQUYENs,
+            //     nhanvien => nhanvien.MANQ,
+            //     nhomquyen => nhomquyen.MANQ,
+            //     (nhanvien, nhomquyen) => new { manv = nhanvien.MANV, TenNV = nhanvien.TENNV, sdt = nhanvien.SDT, diachi = nhanvien.DIACHI, ngaysinh = nhanvien.NGAYSINH, nhomquyen.TENNQ });
+            //return x;
         }
         public IQueryable<NHOMQUYEN> layNhomQuyen()
         {
@@ -37,7 +43,7 @@ namespace BLL_DAL
         }
 
         public void themNhanVien(string ma, string tennv, string sdt, string diachi,
-            DateTime ngaysinnh,string manhom, bool tinhtrang, string matkhau)
+            DateTime ngaysinnh, string manhom, bool tinhtrang, string matkhau)
         {
             NHANVIEN nv = new NHANVIEN();
             nv.MANV = ma;
@@ -81,11 +87,11 @@ namespace BLL_DAL
         public IQueryable<NHANVIEN> loadGridViewTimKiemNhanVien(string txtTimKiem)
         {
             var nhanvien = from nv in ff.NHANVIENs
-                            where nv.MANV.Contains(txtTimKiem) ||
-                            nv.TENNV.Contains(txtTimKiem) ||
-                            nv.SDT.Contains(txtTimKiem) ||
-                            nv.DIACHI.Contains(txtTimKiem)
-                            select nv;
+                           where nv.MANV.Contains(txtTimKiem) ||
+                           nv.TENNV.Contains(txtTimKiem) ||
+                           nv.SDT.Contains(txtTimKiem) ||
+                           nv.DIACHI.Contains(txtTimKiem)
+                           select nv;
             return nhanvien;
         }
         public int demSoLuong()
@@ -110,7 +116,7 @@ namespace BLL_DAL
         public bool UpdatePassWord(string userID, string password)
         {
             NHANVIEN nv = ff.NHANVIENs.FirstOrDefault(n => n.MANV.Equals(userID));
-            if(nv != null)
+            if (nv != null)
             {
                 nv.MATKHAU = password;
                 submitChange();

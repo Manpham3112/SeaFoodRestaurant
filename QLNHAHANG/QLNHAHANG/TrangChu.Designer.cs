@@ -59,6 +59,8 @@ namespace QLNHAHANG
             this.pnTabResize = new Guna.UI2.WinForms.Guna2Panel();
             this.gunaPictureBox1 = new Guna.UI.WinForms.GunaPictureBox();
             this.pnLeft = new Guna.UI2.WinForms.Guna2Panel();
+            this.btnSaoLuu = new Guna.UI.WinForms.GunaAdvenceButton();
+            this.btnPhucHoi = new Guna.UI.WinForms.GunaAdvenceButton();
             this.pnMain.SuspendLayout();
             this.pnSubTaiKhoan.SuspendLayout();
             this.gunaGradient2Panel1.SuspendLayout();
@@ -186,6 +188,8 @@ namespace QLNHAHANG
             // gunaGradient2Panel1
             // 
             this.gunaGradient2Panel1.BackColor = System.Drawing.Color.Transparent;
+            this.gunaGradient2Panel1.Controls.Add(this.btnPhucHoi);
+            this.gunaGradient2Panel1.Controls.Add(this.btnSaoLuu);
             this.gunaGradient2Panel1.Controls.Add(this.guna2ControlBox6);
             this.gunaGradient2Panel1.Controls.Add(this.guna2ControlBox5);
             this.gunaGradient2Panel1.Controls.Add(this.guna2ControlBox4);
@@ -598,6 +602,70 @@ namespace QLNHAHANG
             this.pnLeft.Size = new System.Drawing.Size(282, 749);
             this.pnLeft.TabIndex = 13;
             // 
+            // btnSaoLuu
+            // 
+            this.btnSaoLuu.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnSaoLuu.AnimationHoverSpeed = 0.07F;
+            this.btnSaoLuu.AnimationSpeed = 0.03F;
+            this.btnSaoLuu.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(205)))), ((int)(((byte)(148)))));
+            this.btnSaoLuu.BorderColor = System.Drawing.Color.Black;
+            this.btnSaoLuu.CheckedBaseColor = System.Drawing.Color.Gray;
+            this.btnSaoLuu.CheckedBorderColor = System.Drawing.Color.Black;
+            this.btnSaoLuu.CheckedForeColor = System.Drawing.Color.White;
+            this.btnSaoLuu.CheckedImage = ((System.Drawing.Image)(resources.GetObject("btnSaoLuu.CheckedImage")));
+            this.btnSaoLuu.CheckedLineColor = System.Drawing.Color.DimGray;
+            this.btnSaoLuu.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnSaoLuu.FocusedColor = System.Drawing.Color.Empty;
+            this.btnSaoLuu.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnSaoLuu.ForeColor = System.Drawing.Color.White;
+            this.btnSaoLuu.Image = ((System.Drawing.Image)(resources.GetObject("btnSaoLuu.Image")));
+            this.btnSaoLuu.ImageSize = new System.Drawing.Size(20, 20);
+            this.btnSaoLuu.LineColor = System.Drawing.Color.Empty;
+            this.btnSaoLuu.Location = new System.Drawing.Point(479, 3);
+            this.btnSaoLuu.Name = "btnSaoLuu";
+            this.btnSaoLuu.OnHoverBaseColor = System.Drawing.Color.Empty;
+            this.btnSaoLuu.OnHoverBorderColor = System.Drawing.Color.Empty;
+            this.btnSaoLuu.OnHoverForeColor = System.Drawing.Color.DarkRed;
+            this.btnSaoLuu.OnHoverImage = null;
+            this.btnSaoLuu.OnHoverLineColor = System.Drawing.Color.Empty;
+            this.btnSaoLuu.OnPressedColor = System.Drawing.Color.Empty;
+            this.btnSaoLuu.Size = new System.Drawing.Size(225, 37);
+            this.btnSaoLuu.TabIndex = 33;
+            this.btnSaoLuu.Text = "Sao lưu dữ liệu";
+            this.btnSaoLuu.Click += new System.EventHandler(this.btnSaoLuu_Click);
+            // 
+            // btnPhucHoi
+            // 
+            this.btnPhucHoi.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnPhucHoi.AnimationHoverSpeed = 0.07F;
+            this.btnPhucHoi.AnimationSpeed = 0.03F;
+            this.btnPhucHoi.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(205)))), ((int)(((byte)(148)))));
+            this.btnPhucHoi.BorderColor = System.Drawing.Color.Black;
+            this.btnPhucHoi.CheckedBaseColor = System.Drawing.Color.Gray;
+            this.btnPhucHoi.CheckedBorderColor = System.Drawing.Color.Black;
+            this.btnPhucHoi.CheckedForeColor = System.Drawing.Color.White;
+            this.btnPhucHoi.CheckedImage = ((System.Drawing.Image)(resources.GetObject("btnPhucHoi.CheckedImage")));
+            this.btnPhucHoi.CheckedLineColor = System.Drawing.Color.DimGray;
+            this.btnPhucHoi.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnPhucHoi.FocusedColor = System.Drawing.Color.Empty;
+            this.btnPhucHoi.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnPhucHoi.ForeColor = System.Drawing.Color.White;
+            this.btnPhucHoi.Image = ((System.Drawing.Image)(resources.GetObject("btnPhucHoi.Image")));
+            this.btnPhucHoi.ImageSize = new System.Drawing.Size(20, 20);
+            this.btnPhucHoi.LineColor = System.Drawing.Color.Empty;
+            this.btnPhucHoi.Location = new System.Drawing.Point(705, 3);
+            this.btnPhucHoi.Name = "btnPhucHoi";
+            this.btnPhucHoi.OnHoverBaseColor = System.Drawing.Color.Empty;
+            this.btnPhucHoi.OnHoverBorderColor = System.Drawing.Color.Empty;
+            this.btnPhucHoi.OnHoverForeColor = System.Drawing.Color.DarkRed;
+            this.btnPhucHoi.OnHoverImage = null;
+            this.btnPhucHoi.OnHoverLineColor = System.Drawing.Color.Empty;
+            this.btnPhucHoi.OnPressedColor = System.Drawing.Color.Empty;
+            this.btnPhucHoi.Size = new System.Drawing.Size(225, 37);
+            this.btnPhucHoi.TabIndex = 34;
+            this.btnPhucHoi.Text = "Phục hồi dữ liệu";
+            this.btnPhucHoi.Click += new System.EventHandler(this.btnPhucHoi_Click);
+            // 
             // TrangChu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -654,5 +722,7 @@ namespace QLNHAHANG
         private Guna.UI2.WinForms.Guna2Panel pnTabResize;
         private Guna.UI.WinForms.GunaPictureBox gunaPictureBox1;
         private Guna.UI2.WinForms.Guna2Panel pnLeft;
+        private Guna.UI.WinForms.GunaAdvenceButton btnPhucHoi;
+        private Guna.UI.WinForms.GunaAdvenceButton btnSaoLuu;
     }
 }

@@ -74,7 +74,6 @@ namespace QLNHAHANG
             this.BtnND = new Guna.UI.WinForms.GunaAdvenceButton();
             this.RP_PNK = new Guna.UI.WinForms.GunaAdvenceButton();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.txtMaNCC = new Guna.UI2.WinForms.Guna2TextBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.txtMaNV = new Guna.UI2.WinForms.Guna2TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -94,9 +93,7 @@ namespace QLNHAHANG
             this.groupBox8 = new System.Windows.Forms.GroupBox();
             this.txt_SoLuongNhap = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
-            this.SOLUONG1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TENNL1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.MANL1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cboNCC = new Guna.UI.WinForms.GunaComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewNguyenLieu)).BeginInit();
             this.groupBox9.SuspendLayout();
             this.contextMenuStrip_chiTietPhieuDH.SuspendLayout();
@@ -725,9 +722,9 @@ namespace QLNHAHANG
             // 
             // groupBox5
             // 
-            this.groupBox5.Controls.Add(this.txtMaNCC);
-            this.groupBox5.Location = new System.Drawing.Point(9, 216);
-            this.groupBox5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.groupBox5.Controls.Add(this.cboNCC);
+            this.groupBox5.Location = new System.Drawing.Point(10, 270);
+            this.groupBox5.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.groupBox5.Name = "groupBox5";
             this.groupBox5.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.groupBox5.Size = new System.Drawing.Size(295, 52);
@@ -735,32 +732,7 @@ namespace QLNHAHANG
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Mã nhà cung cấp";
             // 
-            // txtMaNCC
-            // 
-            this.txtMaNCC.BackColor = System.Drawing.Color.Transparent;
-            this.txtMaNCC.BorderColor = System.Drawing.SystemColors.Control;
-            this.txtMaNCC.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtMaNCC.DefaultText = "";
-            this.txtMaNCC.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtMaNCC.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtMaNCC.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtMaNCC.DisabledState.Parent = this.txtMaNCC;
-            this.txtMaNCC.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtMaNCC.FillColor = System.Drawing.SystemColors.Control;
-            this.txtMaNCC.FocusedState.BorderColor = System.Drawing.SystemColors.Control;
-            this.txtMaNCC.FocusedState.Parent = this.txtMaNCC;
-            this.txtMaNCC.HoverState.BorderColor = System.Drawing.SystemColors.Control;
-            this.txtMaNCC.HoverState.Parent = this.txtMaNCC;
-            this.txtMaNCC.Location = new System.Drawing.Point(9, 18);
-            this.txtMaNCC.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
-            this.txtMaNCC.Name = "txtMaNCC";
-            this.txtMaNCC.PasswordChar = '\0';
-            this.txtMaNCC.PlaceholderText = "Mã nhà cung cấp";
-            this.txtMaNCC.SelectedText = "";
-            this.txtMaNCC.ShadowDecoration.Parent = this.txtMaNCC;
-            this.txtMaNCC.Size = new System.Drawing.Size(275, 27);
-            this.txtMaNCC.TabIndex = 2;
-            // 
+
             // groupBox4
             // 
             this.groupBox4.Controls.Add(this.txtMaNV);
@@ -1102,29 +1074,24 @@ namespace QLNHAHANG
             this.guna2ControlBox1.Size = new System.Drawing.Size(45, 28);
             this.guna2ControlBox1.TabIndex = 6;
             // 
-            // SOLUONG1
+            // cboNCC
             // 
-            this.SOLUONG1.DataPropertyName = "SOLUONG";
-            this.SOLUONG1.HeaderText = "Số lượng";
-            this.SOLUONG1.MinimumWidth = 6;
-            this.SOLUONG1.Name = "SOLUONG1";
-            this.SOLUONG1.ReadOnly = true;
-            // 
-            // TENNL1
-            // 
-            this.TENNL1.DataPropertyName = "TENNL";
-            this.TENNL1.HeaderText = "Tên Nguyên Liệu";
-            this.TENNL1.MinimumWidth = 6;
-            this.TENNL1.Name = "TENNL1";
-            this.TENNL1.ReadOnly = true;
-            // 
-            // MANL1
-            // 
-            this.MANL1.DataPropertyName = "MANL";
-            this.MANL1.HeaderText = "Mã Nguyên Liệu";
-            this.MANL1.MinimumWidth = 6;
-            this.MANL1.Name = "MANL1";
-            this.MANL1.ReadOnly = true;
+            this.cboNCC.BackColor = System.Drawing.Color.Transparent;
+            this.cboNCC.BaseColor = System.Drawing.SystemColors.Control;
+            this.cboNCC.BorderColor = System.Drawing.SystemColors.Control;
+            this.cboNCC.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.cboNCC.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cboNCC.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboNCC.FocusedColor = System.Drawing.Color.Empty;
+            this.cboNCC.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cboNCC.ForeColor = System.Drawing.Color.Black;
+            this.cboNCC.FormattingEnabled = true;
+            this.cboNCC.Location = new System.Drawing.Point(3, 24);
+            this.cboNCC.Name = "cboNCC";
+            this.cboNCC.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.cboNCC.OnHoverItemForeColor = System.Drawing.Color.White;
+            this.cboNCC.Size = new System.Drawing.Size(326, 36);
+            this.cboNCC.TabIndex = 1;
             // 
             // frmNhapKho
             // 
@@ -1191,7 +1158,6 @@ namespace QLNHAHANG
         private Guna.UI2.WinForms.Guna2DataGridView dataGridViewChiTiet;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
         private System.Windows.Forms.GroupBox groupBox5;
-        private Guna.UI2.WinForms.Guna2TextBox txtMaNCC;
         private System.Windows.Forms.GroupBox groupBox4;
         private Guna.UI2.WinForms.Guna2TextBox txtMaNV;
         private System.Windows.Forms.GroupBox groupBox1;
@@ -1223,5 +1189,6 @@ namespace QLNHAHANG
         private System.Windows.Forms.DataGridViewTextBoxColumn MANL1;
         private System.Windows.Forms.DataGridViewTextBoxColumn TENNL1;
         private System.Windows.Forms.DataGridViewTextBoxColumn SOLUONG1;
+        private Guna.UI.WinForms.GunaComboBox cboNCC;
     }
 }
