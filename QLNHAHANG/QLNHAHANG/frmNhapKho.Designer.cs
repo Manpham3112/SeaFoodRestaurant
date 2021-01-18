@@ -41,9 +41,6 @@ namespace QLNHAHANG
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dataGridViewNguyenLieu = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.MANL1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TENNL1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SOLUONG1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnThemNL = new Guna.UI2.WinForms.Guna2CircleButton();
             this.groupBox9 = new System.Windows.Forms.GroupBox();
             this.txt_DonGiaNhap = new Guna.UI2.WinForms.Guna2TextBox();
@@ -97,6 +94,9 @@ namespace QLNHAHANG
             this.groupBox8 = new System.Windows.Forms.GroupBox();
             this.txt_SoLuongNhap = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
+            this.SOLUONG1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TENNL1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.MANL1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewNguyenLieu)).BeginInit();
             this.groupBox9.SuspendLayout();
             this.contextMenuStrip_chiTietPhieuDH.SuspendLayout();
@@ -191,30 +191,6 @@ namespace QLNHAHANG
             this.dataGridViewNguyenLieu.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             this.dataGridViewNguyenLieu.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewNguyenLieu_CellClick);
             this.dataGridViewNguyenLieu.SelectionChanged += new System.EventHandler(this.dataGridViewNguyenLieu_SelectionChanged);
-            // 
-            // MANL1
-            // 
-            this.MANL1.DataPropertyName = "MANL";
-            this.MANL1.HeaderText = "Mã Nguyên Liệu";
-            this.MANL1.MinimumWidth = 6;
-            this.MANL1.Name = "MANL1";
-            this.MANL1.ReadOnly = true;
-            // 
-            // TENNL1
-            // 
-            this.TENNL1.DataPropertyName = "TENNL";
-            this.TENNL1.HeaderText = "Tên Nguyên Liệu";
-            this.TENNL1.MinimumWidth = 6;
-            this.TENNL1.Name = "TENNL1";
-            this.TENNL1.ReadOnly = true;
-            // 
-            // SOLUONG1
-            // 
-            this.SOLUONG1.DataPropertyName = "SOLUONG";
-            this.SOLUONG1.HeaderText = "Số lượng";
-            this.SOLUONG1.MinimumWidth = 6;
-            this.SOLUONG1.Name = "SOLUONG1";
-            this.SOLUONG1.ReadOnly = true;
             // 
             // btnThemNL
             // 
@@ -1125,6 +1101,30 @@ namespace QLNHAHANG
             this.guna2ControlBox1.ShadowDecoration.Parent = this.guna2ControlBox1;
             this.guna2ControlBox1.Size = new System.Drawing.Size(45, 28);
             this.guna2ControlBox1.TabIndex = 6;
+            // 
+            // SOLUONG1
+            // 
+            this.SOLUONG1.DataPropertyName = "SOLUONG";
+            this.SOLUONG1.HeaderText = "Số lượng";
+            this.SOLUONG1.MinimumWidth = 6;
+            this.SOLUONG1.Name = "SOLUONG1";
+            this.SOLUONG1.ReadOnly = true;
+            // 
+            // TENNL1
+            // 
+            this.TENNL1.DataPropertyName = "TENNL";
+            this.TENNL1.HeaderText = "Tên Nguyên Liệu";
+            this.TENNL1.MinimumWidth = 6;
+            this.TENNL1.Name = "TENNL1";
+            this.TENNL1.ReadOnly = true;
+            // 
+            // MANL1
+            // 
+            this.MANL1.DataPropertyName = "MANL";
+            this.MANL1.HeaderText = "Mã Nguyên Liệu";
+            this.MANL1.MinimumWidth = 6;
+            this.MANL1.Name = "MANL1";
+            this.MANL1.ReadOnly = true;
             // 
             // frmNhapKho
             // 

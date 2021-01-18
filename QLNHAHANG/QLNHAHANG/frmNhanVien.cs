@@ -126,12 +126,11 @@ namespace QLNHAHANG
         }
         public void setHeaderNV()
         {
-               dataGridViewNhanVien.Columns["MANV"].HeaderText = "Mã nhân viên";
-                dataGridViewNhanVien.Columns["TENNV"].HeaderText = "Họ tên";
-            dataGridViewNhanVien.Columns["DIACHI"].HeaderText = "Địa chỉ";
-            dataGridViewNhanVien.Columns["SDT"].HeaderText = "SDT";
             dataGridViewNhanVien.Columns["MANV"].HeaderText = "Mã nhân viên";
-
+            dataGridViewNhanVien.Columns["TENNV"].HeaderText = "Họ và tên";
+            dataGridViewNhanVien.Columns["DIACHI"].HeaderText = "Địa chỉ";
+            dataGridViewNhanVien.Columns["SDT"].HeaderText = "Số điện thoại";
+            dataGridViewNhanVien.Columns["MANV"].HeaderText = "Mã nhân viên";
             dataGridViewNhanVien.Columns["TINHTRANG"].Visible = false;
             dataGridViewNhanVien.Columns["NHOMQUYEN"].Visible = false;
 
@@ -242,7 +241,7 @@ namespace QLNHAHANG
             Random r = new Random();
             reset();
             int count = qlnv.demSoLuong() + 1;
-            txtMa.Text = "NV00" + count + r.Next(0,1000);
+            txtMa.Text = "NV00" + count + r.Next(0, 1000);
             btnLuu.Enabled = true;
             btnThem.Enabled = false;
             txtHoTen.Enabled = true;
@@ -293,7 +292,7 @@ namespace QLNHAHANG
                 {
 
                     qlnv.themNhanVien(txtMa.Text, txtHoTen.Text, txtSoDienThoai.Text, txtDiaChi.Text,
-                         dateTimePickerNgaySinh.Value,  cboLoaiNhanVien.SelectedValue.ToString(),
+                         dateTimePickerNgaySinh.Value, cboLoaiNhanVien.SelectedValue.ToString(),
                         true, txtMatKhau.Text);
                     MessageBox.Show("Thêm thành công");
                     loadDataGridViewNhanVien();

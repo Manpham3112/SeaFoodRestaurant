@@ -271,7 +271,7 @@ namespace QLNHAHANG
             dgrv_HienThiNguyenLieu.Columns["MANL"].HeaderText = "Mã nguyên liệu";
             dgrv_HienThiNguyenLieu.Columns["TENNL"].HeaderText = "Tên nguyên liệu";
             dgrv_HienThiNguyenLieu.Columns["DVT"].HeaderText = "Đơn vị tính";
-            dgrv_HienThiNguyenLieu.Columns["HSD"].HeaderText = "HSD";
+            dgrv_HienThiNguyenLieu.Columns["HSD"].HeaderText = "Hạn sử dụng";
             dgrv_HienThiNguyenLieu.Columns["SOLUONG"].HeaderText = "Số lượng";
             dgrv_HienThiNguyenLieu.Columns["TENLNL"].HeaderText = "Tên loại";
 
@@ -292,7 +292,7 @@ namespace QLNHAHANG
         //}
         private void btnRP_Click(object sender, EventArgs e)
         {
-            frmNguyenLieu rp = new frmNguyenLieu();
+            frm_rpNguyenLieu rp = new frm_rpNguyenLieu();
             rp.Show();
         }
 

@@ -52,6 +52,11 @@ namespace QLNHAHANG
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.gunaCircleButton1 = new Guna.UI.WinForms.GunaCircleButton();
             this.gvNL_SP = new System.Windows.Forms.DataGridView();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.MASP = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.MANL = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SOLUONG = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pnControlSP = new System.Windows.Forms.Panel();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.txtGia = new Guna.UI2.WinForms.Guna2TextBox();
@@ -67,21 +72,16 @@ namespace QLNHAHANG
             this.gbMSP = new System.Windows.Forms.GroupBox();
             this.txtMa = new Guna.UI2.WinForms.Guna2TextBox();
             this.gvNguyenLieu = new System.Windows.Forms.DataGridView();
-            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.guna2AnimateWindow1 = new Guna.UI2.WinForms.Guna2AnimateWindow(this.components);
             this.btnXoaNL = new Guna.UI.WinForms.GunaAdvenceButton();
             this.btnThemNL = new Guna.UI.WinForms.GunaAdvenceButton();
             this.gunaCircleButton3 = new Guna.UI.WinForms.GunaCircleButton();
             this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.MASP = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.MANL = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SOLUONG = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.guna2Panel1.SuspendLayout();
             this.btnThemSP.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gvSanPham)).BeginInit();
@@ -420,6 +420,48 @@ namespace QLNHAHANG
             this.gvNL_SP.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gvNL_SP_CellContentClick);
             this.gvNL_SP.RowPostPaint += new System.Windows.Forms.DataGridViewRowPostPaintEventHandler(this.gvNL_SP_RowPostPaint);
             // 
+            // Column5
+            // 
+            this.Column5.DataPropertyName = "QL_SanPham";
+            this.Column5.HeaderText = "QL_SanPham";
+            this.Column5.MinimumWidth = 8;
+            this.Column5.Name = "Column5";
+            this.Column5.ReadOnly = true;
+            this.Column5.Visible = false;
+            // 
+            // Column6
+            // 
+            this.Column6.DataPropertyName = "QL_NguyenLieu";
+            this.Column6.HeaderText = "QL_NguyenLieu";
+            this.Column6.MinimumWidth = 8;
+            this.Column6.Name = "Column6";
+            this.Column6.ReadOnly = true;
+            this.Column6.Visible = false;
+            // 
+            // MASP
+            // 
+            this.MASP.DataPropertyName = "MASP";
+            this.MASP.HeaderText = "Mã sản phẩm";
+            this.MASP.MinimumWidth = 6;
+            this.MASP.Name = "MASP";
+            this.MASP.ReadOnly = true;
+            // 
+            // MANL
+            // 
+            this.MANL.DataPropertyName = "MANL";
+            this.MANL.HeaderText = "Mã nguyên liệu";
+            this.MANL.MinimumWidth = 6;
+            this.MANL.Name = "MANL";
+            this.MANL.ReadOnly = true;
+            // 
+            // SOLUONG
+            // 
+            this.SOLUONG.DataPropertyName = "SOLUONG";
+            this.SOLUONG.HeaderText = "Số lượng";
+            this.SOLUONG.MinimumWidth = 6;
+            this.SOLUONG.Name = "SOLUONG";
+            this.SOLUONG.ReadOnly = true;
+            // 
             // pnControlSP
             // 
             this.pnControlSP.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -708,46 +750,6 @@ namespace QLNHAHANG
             this.gvNguyenLieu.TabIndex = 14;
             this.gvNguyenLieu.RowPostPaint += new System.Windows.Forms.DataGridViewRowPostPaintEventHandler(this.gvNguyenLieu_RowPostPaint);
             // 
-            // Column7
-            // 
-            this.Column7.DataPropertyName = "SoLuong";
-            this.Column7.HeaderText = "SoLuong";
-            this.Column7.MinimumWidth = 8;
-            this.Column7.Name = "Column7";
-            this.Column7.ReadOnly = true;
-            this.Column7.Visible = false;
-            this.Column7.Width = 150;
-            // 
-            // Column8
-            // 
-            this.Column8.DataPropertyName = "ThoiHan";
-            this.Column8.HeaderText = "ThoiHan";
-            this.Column8.MinimumWidth = 8;
-            this.Column8.Name = "Column8";
-            this.Column8.ReadOnly = true;
-            this.Column8.Visible = false;
-            this.Column8.Width = 150;
-            // 
-            // Column9
-            // 
-            this.Column9.DataPropertyName = "QL_LoaiNguyenLieu";
-            this.Column9.HeaderText = "QL_LoaiNguyenLieu";
-            this.Column9.MinimumWidth = 8;
-            this.Column9.Name = "Column9";
-            this.Column9.ReadOnly = true;
-            this.Column9.Visible = false;
-            this.Column9.Width = 150;
-            // 
-            // Column10
-            // 
-            this.Column10.DataPropertyName = "maLOAINL";
-            this.Column10.HeaderText = "MALOAINL";
-            this.Column10.MinimumWidth = 8;
-            this.Column10.Name = "Column10";
-            this.Column10.ReadOnly = true;
-            this.Column10.Visible = false;
-            this.Column10.Width = 150;
-            // 
             // btnXoaNL
             // 
             this.btnXoaNL.Anchor = System.Windows.Forms.AnchorStyles.Right;
@@ -888,47 +890,45 @@ namespace QLNHAHANG
             this.guna2Panel3.TabIndex = 21;
             this.guna2Panel3.UseTransparentBackground = true;
             // 
-            // Column5
+            // Column7
             // 
-            this.Column5.DataPropertyName = "QL_SanPham";
-            this.Column5.HeaderText = "QL_SanPham";
-            this.Column5.MinimumWidth = 8;
-            this.Column5.Name = "Column5";
-            this.Column5.ReadOnly = true;
-            this.Column5.Visible = false;
+            this.Column7.DataPropertyName = "SoLuong";
+            this.Column7.HeaderText = "SoLuong";
+            this.Column7.MinimumWidth = 8;
+            this.Column7.Name = "Column7";
+            this.Column7.ReadOnly = true;
+            this.Column7.Visible = false;
+            this.Column7.Width = 150;
             // 
-            // Column6
+            // Column8
             // 
-            this.Column6.DataPropertyName = "QL_NguyenLieu";
-            this.Column6.HeaderText = "QL_NguyenLieu";
-            this.Column6.MinimumWidth = 8;
-            this.Column6.Name = "Column6";
-            this.Column6.ReadOnly = true;
-            this.Column6.Visible = false;
+            this.Column8.DataPropertyName = "ThoiHan";
+            this.Column8.HeaderText = "ThoiHan";
+            this.Column8.MinimumWidth = 8;
+            this.Column8.Name = "Column8";
+            this.Column8.ReadOnly = true;
+            this.Column8.Visible = false;
+            this.Column8.Width = 150;
             // 
-            // MASP
+            // Column9
             // 
-            this.MASP.DataPropertyName = "MASP";
-            this.MASP.HeaderText = "Mã sản phẩm";
-            this.MASP.MinimumWidth = 6;
-            this.MASP.Name = "MASP";
-            this.MASP.ReadOnly = true;
+            this.Column9.DataPropertyName = "QL_LoaiNguyenLieu";
+            this.Column9.HeaderText = "QL_LoaiNguyenLieu";
+            this.Column9.MinimumWidth = 8;
+            this.Column9.Name = "Column9";
+            this.Column9.ReadOnly = true;
+            this.Column9.Visible = false;
+            this.Column9.Width = 150;
             // 
-            // MANL
+            // Column10
             // 
-            this.MANL.DataPropertyName = "MANL";
-            this.MANL.HeaderText = "Mã nguyên liệu";
-            this.MANL.MinimumWidth = 6;
-            this.MANL.Name = "MANL";
-            this.MANL.ReadOnly = true;
-            // 
-            // SOLUONG
-            // 
-            this.SOLUONG.DataPropertyName = "SOLUONG";
-            this.SOLUONG.HeaderText = "Số lượng";
-            this.SOLUONG.MinimumWidth = 6;
-            this.SOLUONG.Name = "SOLUONG";
-            this.SOLUONG.ReadOnly = true;
+            this.Column10.DataPropertyName = "maLOAINL";
+            this.Column10.HeaderText = "MALOAINL";
+            this.Column10.MinimumWidth = 8;
+            this.Column10.Name = "Column10";
+            this.Column10.ReadOnly = true;
+            this.Column10.Visible = false;
+            this.Column10.Width = 150;
             // 
             // frmSanPham
             // 
@@ -1005,10 +1005,6 @@ namespace QLNHAHANG
         private Guna.UI2.WinForms.Guna2TextBox txtMa;
         private Guna.UI.WinForms.GunaAdvenceButton btnThemNL;
         private System.Windows.Forms.DataGridView gvNguyenLieu;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column9;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column10;
         private Guna.UI2.WinForms.Guna2AnimateWindow guna2AnimateWindow1;
         private System.Windows.Forms.ToolStripButton btnReport;
         private Guna.UI.WinForms.GunaCircleButton gunaCircleButton3;
@@ -1023,5 +1019,9 @@ namespace QLNHAHANG
         private System.Windows.Forms.DataGridViewTextBoxColumn MASP;
         private System.Windows.Forms.DataGridViewTextBoxColumn MANL;
         private System.Windows.Forms.DataGridViewTextBoxColumn SOLUONG;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column9;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column10;
     }
 }

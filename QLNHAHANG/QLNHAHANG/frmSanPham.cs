@@ -477,9 +477,11 @@ namespace QLNHAHANG
         public void setHeaderNL()
         {
             gvNguyenLieu.Columns["MANL"].HeaderText = "Mã nguyên liệu";
+
             gvNguyenLieu.Columns["TENNL"].HeaderText = "Tên nguyên liệu";
             //gvNguyenLieu.Columns["SOLUONG"].HeaderText = "Số lượng";
             gvNguyenLieu.Columns["MALNL"].Visible = false;
+            gvNguyenLieu.Columns["MANL"].Visible = false;
             gvNguyenLieu.Columns["LOAINL"].Visible = false;
             gvNguyenLieu.Columns["HSD"].Visible = false;
 

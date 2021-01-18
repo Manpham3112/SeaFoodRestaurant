@@ -166,7 +166,7 @@ namespace QLNHAHANG
 
         private void btnRP_Click(object sender, EventArgs e)
         {
-            frmLoaiNguyenLieu rp = new frmLoaiNguyenLieu();
+            frm_rpLoaiNguyenLieu rp = new frm_rpLoaiNguyenLieu();
             rp.Show();
         }
 
@@ -174,6 +174,8 @@ namespace QLNHAHANG
         {
             btnSua.Enabled = true;
             btnXoa.Enabled = true;
+            txt_MaLNL.Enabled = false;
+            txt_TenLNL.Enabled = false;
             if (dgrv_HienThiLoaiNguyenLieu.Rows[e.RowIndex].Cells[e.ColumnIndex].Value != null)
             {
                 dgrv_HienThiLoaiNguyenLieu.CurrentRow.Selected = true;

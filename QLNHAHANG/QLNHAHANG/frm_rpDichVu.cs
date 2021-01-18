@@ -15,12 +15,14 @@ namespace QLNHAHANG
         public frm_rpDichVu()
         {
             InitializeComponent();
+
         }
         private void frm_rpDichVu_Load(object sender, EventArgs e)
         {
             rpDichVu rp = new rpDichVu();
+            rp.SetDatabaseLogon("sa", "sa2012", "DESKTOP-HHM5LAU", "QL_NHAHANG");
             crystalReportViewer1.ReportSource = rp;
-            rp.SetDatabaseLogon("sa", "sa2012", "DESKTOP-HHM5LAU", "QL_BANHANG");
+            
             crystalReportViewer1.Refresh();
             crystalReportViewer1.DisplayToolbar = false;
             crystalReportViewer1.DisplayStatusBar = false;

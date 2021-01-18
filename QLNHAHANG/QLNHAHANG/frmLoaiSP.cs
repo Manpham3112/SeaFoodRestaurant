@@ -165,7 +165,7 @@ namespace QLNHAHANG
 
         private void btnRP_Click(object sender, EventArgs e)
         {
-            frmLoaiSP rp = new frmLoaiSP();
+            frm_rpLoaiSanPham rp = new frm_rpLoaiSanPham();
             rp.Show();
         }
         public void databingding(int rowindex)

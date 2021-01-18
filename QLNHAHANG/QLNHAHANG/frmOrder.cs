@@ -324,11 +324,11 @@ namespace QLNHAHANG
                 MessageBox.Show("Chưa có sản phẩm nào");
                 return;
             }
-                DialogResult rs = MessageBox.Show("Lưu ý", "Xác nhận thanh toán", MessageBoxButtons.YesNo);
-                if (rs == DialogResult.No)
-                {
-                    return;
-                }
+                //DialogResult rs = MessageBox.Show("Lưu ý", "Xác nhận thanh toán", MessageBoxButtons.YesNo);
+                //if (rs == DialogResult.No)
+                //{
+                //    return;
+                //}
 
                 int tongtien = Convert.ToInt32(lbThanhTien.Text);
                 //double TongTien = ckDiem.Checked ? tongtien : tongtien;
@@ -339,7 +339,7 @@ namespace QLNHAHANG
 
                 if (check)
                 {
-                    MessageBox.Show("In hoá đơn thành công !");
+                    //MessageBox.Show("In hoá đơn thành công !");
                     xuatFileExcel();
                     veTrangThaiBD();
 
@@ -355,7 +355,7 @@ namespace QLNHAHANG
         }
         public void xuatFileExcel()
         {
-            frm_rpOrder rp = new frm_rpOrder();
+            frm_rpOrder rp = new frm_rpOrder(maHD);
             rp.Show();
         }
         private void veTrangThaiBD()
