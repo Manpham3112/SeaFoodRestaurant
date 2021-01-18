@@ -242,7 +242,7 @@ namespace QLNHAHANG
             Random r = new Random();
             reset();
             int count = qlnv.demSoLuong() + 1;
-            txtMa.Text = "NV00" + count + r.Next(0,1000);
+            txtMa.Text = "NV00" + count + r.Next(0,100);
             btnLuu.Enabled = true;
             btnThem.Enabled = false;
             txtHoTen.Enabled = true;
@@ -259,7 +259,7 @@ namespace QLNHAHANG
             btnLuu.Enabled = true;
             txtHoTen.Enabled = true;
             txtDiaChi.Enabled = true;
-            txtMatKhau.Enabled = true;
+            txtMatKhau.Enabled = false;
             txtSoDienThoai.Enabled = true;
             cboLoaiNhanVien.Enabled = true;
             dateTimePickerNgaySinh.Enabled = true;
@@ -288,10 +288,10 @@ namespace QLNHAHANG
                 }
                 else
                 {
-
+                    string hashPW = Utils.Encrypt(txtMatKhau.Text);
                     qlnv.themNhanVien(txtMa.Text, txtHoTen.Text, txtSoDienThoai.Text, txtDiaChi.Text,
                          dateTimePickerNgaySinh.Value,  cboLoaiNhanVien.SelectedValue.ToString(),
-                        true, txtMatKhau.Text);
+                        true, hashPW);
                     MessageBox.Show("Thêm thành công");
                     loadDataGridViewNhanVien();
                     btnSua.Enabled = false;

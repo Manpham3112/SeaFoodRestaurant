@@ -11,7 +11,12 @@ namespace BLL_DAL
         DataClasses1DataContext db = new DataClasses1DataContext();
         public IQueryable loadDataGridViewPhieuNhapKho()
         {
-            return db.PHIEUNHAPKHOs.Select(pnk => new { pnk.MAPNK, pnk.MANCC, pnk.MANV, pnk.NGAYNHAP, pnk.TONGTIEN });
+            //return db.PHIEUNHAPKHOs.Select(pnk => new { pnk.MAPNK, pnk.MANCC, pnk.MANV, pnk.NGAYNHAP, pnk.TONGTIEN });
+            return db.PHIEUNHAPKHOs
+               .Join(db.NHACUNGCAPs,
+                  phieunhap => phieunhap.MANCC,
+                  ncc => ncc.MANCC,
+                  (phieunhap, ncc) => new { mapnk = phieunhap.MAPNK, TenNCC = ncc.TENNCC, manv = phieunhap.MANV, NgayLap = phieunhap.NGAYNHAP , tongtien = phieunhap.TONGTIEN });
         }
         public int kiemtrakhoachinh(string mapnk)
         {
@@ -100,6 +105,15 @@ namespace BLL_DAL
         public int demSoLuong()
         {
             return db.PHIEUNHAPKHOs.Select(kh => kh).Count();
+        }
+
+        public IQueryable loadAllNCC()
+        {
+            return db.NHACUNGCAPs.Select(t => t);
+        }
+        public NHACUNGCAP layTenNCC(string manhom)
+        {
+            return db.NHACUNGCAPs.SingleOrDefault(t => t.MANCC == manhom);
         }
     }
 }
