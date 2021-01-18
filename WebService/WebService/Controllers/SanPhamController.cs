@@ -31,7 +31,7 @@ namespace WebService.Controllers
 
             return Ok(result);
         }
-
+        [EnableCors(origins: "*", headers: "*", methods: "*")]
         [Route("api/sanpham/{id}")]
         [HttpGet]
         public IHttpActionResult Get(string id)     
@@ -44,6 +44,7 @@ namespace WebService.Controllers
 
             return Ok(ctpdt);
         }
+        [EnableCors(origins: "*", headers: "*", methods: "*")]
         [Route("api/sanpham")]
         [HttpPost]
         public IHttpActionResult Post([FromBody] SANPHAM ctpdt)
@@ -63,7 +64,7 @@ namespace WebService.Controllers
         public void Put(int id, [FromBody] string value)
         {
         }
-
+        [EnableCors(origins: "*", headers: "*", methods: "*")]
         [Route("api/sanpham/{id}")]
         [HttpDelete]
         public IHttpActionResult Delete(string id)

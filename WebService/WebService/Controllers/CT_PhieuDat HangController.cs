@@ -4,6 +4,7 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
+using System.Web.Http.Cors;
 using WebService.GenericRepositories;
 using WebService.model;
 using WebService.Utils;
@@ -14,10 +15,11 @@ namespace WebService.Controllers
     public class ValuesController : ApiController
     {
         GenericRepository<CT_PHIEUDATHANG> service = new GenericRepository<CT_PHIEUDATHANG>();
-
+        [EnableCors(origins: "*", headers: "*", methods: "*")]
         [Route("api/chitietphieudathang")]
         [HttpGet]
-        // GET api/values
+        // GET api/
+
         public IHttpActionResult GetAll()
         {
             List<CT_PhieuDatHangVM> result = new List<CT_PhieuDatHangVM>();
@@ -33,7 +35,7 @@ namespace WebService.Controllers
 
             return Ok(result);
         }
-
+        [EnableCors(origins: "*", headers: "*", methods: "*")]
         [Route("api/chitietphieudathang/{id}")]
         [HttpGet]
         public IHttpActionResult Get(string id)
@@ -46,7 +48,7 @@ namespace WebService.Controllers
 
             return Ok(ctpdt);
         }
-
+        [EnableCors(origins: "*", headers: "*", methods: "*")]
         [Route("api/chitietphieudathang")]
         [HttpPost]
         public IHttpActionResult Post([FromBody] CT_PHIEUDATHANG ctpdt)
@@ -67,7 +69,7 @@ namespace WebService.Controllers
         public void Put(int id, [FromBody] string value)
         {
         }
-
+        [EnableCors(origins: "*", headers: "*", methods: "*")]
         [Route("api/chitietphieudathang/{id}")]
         [HttpDelete]
         public IHttpActionResult Delete(string id)

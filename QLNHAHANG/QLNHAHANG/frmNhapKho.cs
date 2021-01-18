@@ -323,7 +323,7 @@ namespace QLNHAHANG
                 txt_SoLuongNhap.Text = "";
                 txt_DonGiaNhap.Text = "";
                 int vitri = dataGridViewNguyenLieu.SelectedCells[0].RowIndex;
-                maNLDangChon = dataGridViewNguyenLieu.Rows[vitri].Cells["MANL1"].Value.ToString().Trim();
+                maNLDangChon = dataGridViewNguyenLieu.Rows[vitri].Cells["MANL"].Value.ToString().Trim();
                 tenNLDangChon = dataGridViewNguyenLieu.Rows[vitri].Cells[1].Value.ToString().Trim();
                 txt_DonViTinh.Text = dataGridViewNguyenLieu.Rows[vitri].Cells["DVT"].Value.ToString().Trim();
             }

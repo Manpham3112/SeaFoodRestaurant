@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Http;
+using System.Web.Http.Cors;
 using WebService.GenericRepositories;
 using WebService.model;
 using WebService.Utils;
@@ -13,6 +14,7 @@ namespace WebService.Controllers
     public class PhieuDatHangController : ApiController
     {
         GenericRepository<PHIEUDATHANG> service = new GenericRepository<PHIEUDATHANG>();
+        [EnableCors(origins: "*", headers: "*", methods: "*")]
         [Route("api/phieudathang")]
         [HttpGet]
         // GET api/values
@@ -31,7 +33,7 @@ namespace WebService.Controllers
 
             return Ok(result);
         }
-
+        [EnableCors(origins: "*", headers: "*", methods: "*")]
         [Route("api/phieudathang/{id}")]
         [HttpGet]
         public IHttpActionResult Get(string id)
@@ -44,6 +46,7 @@ namespace WebService.Controllers
 
             return Ok(ctpdt);
         }
+        [EnableCors(origins: "*", headers: "*", methods: "*")]
         [Route("api/phieudathang")]
         [HttpPost]
         public IHttpActionResult Post([FromBody] PHIEUDATHANG ctpdt)
@@ -63,7 +66,7 @@ namespace WebService.Controllers
         public void Put(int id, [FromBody] string value)
         {
         }
-
+        [EnableCors(origins: "*", headers: "*", methods: "*")]
         [Route("api/phieudathang/{id}")]
         [HttpDelete]
         public IHttpActionResult Delete(string id)

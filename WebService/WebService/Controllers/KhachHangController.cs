@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Http;
+using System.Web.Http.Cors;
 using WebService.GenericRepositories;
 using WebService.model;
 using WebService.Utils;
@@ -13,6 +14,8 @@ namespace WebService.Controllers
     public class KhachHangController: ApiController
     {
         GenericRepository<KHACHHANG> service = new GenericRepository<KHACHHANG>();
+        [EnableCors(origins: "*", headers: "*", methods: "*")]
+
         [Route("api/khachhang")]
         [HttpGet]
         // GET api/values
@@ -31,7 +34,7 @@ namespace WebService.Controllers
 
             return Ok(result);
         }
-
+        [EnableCors(origins: "*", headers: "*", methods: "*")]
         [Route("api/khachhang/{id}")]
         [HttpGet]
         public IHttpActionResult Get(string id)
@@ -44,6 +47,7 @@ namespace WebService.Controllers
 
             return Ok(ctpdt);
         }
+        [EnableCors(origins: "*", headers: "*", methods: "*")]
         [Route("api/khachhang")]
         [HttpPost]
         public IHttpActionResult Post([FromBody] KHACHHANG ctpdt)
@@ -65,7 +69,7 @@ namespace WebService.Controllers
         public void Put(int id, [FromBody] string value)
         {
         }
-
+        [EnableCors(origins: "*", headers: "*", methods: "*")]
         [Route("api/khachhang/{id}")]
         [HttpDelete]
         public IHttpActionResult Delete(string id)

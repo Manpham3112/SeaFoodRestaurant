@@ -139,10 +139,6 @@ namespace QLNHAHANG
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dataGridViewNguyenLieu.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridViewNguyenLieu.ColumnHeadersHeight = 92;
-            this.dataGridViewNguyenLieu.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.MANL1,
-            this.TENNL1,
-            this.SOLUONG1});
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
