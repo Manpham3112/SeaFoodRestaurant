@@ -70,6 +70,16 @@ namespace QLNHAHANG
         {
             thietlapThongTin();
             thietlapPhanQuyen();
+            if (this.tk.MANQ.Trim() == "NQ001")
+            {
+                btnSaoLuu.Visible = true;
+                btnPhucHoi.Visible = true;
+            }
+            else
+            {
+                btnSaoLuu.Visible = false;
+                btnPhucHoi.Visible = false;
+            }
         }
 
 
@@ -274,6 +284,43 @@ namespace QLNHAHANG
             frm.DangNhapNV(tk);
             frm.Show();
             this.Visible = false;
+        }
+
+        private void btnSaoLuu_Click(object sender, EventArgs e)
+        {
+            FolderBrowserDialog dlg = new FolderBrowserDialog();
+            if (dlg.ShowDialog() == DialogResult.OK)
+            {
+                bool isSuccess = HelperDB.BackupDatabase(dlg.SelectedPath);
+                if (isSuccess)
+                {
+                    MessageBox.Show("Backup thanh cong");
+                }
+                else
+                {
+                    MessageBox.Show("Backup that bai");
+                }
+
+            }
+        }
+
+        private void btnPhucHoi_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog dlg = new OpenFileDialog();
+            dlg.Filter = "SQL SERVER database backup files|*.bak";
+            dlg.Title = "Database restore";
+            if (dlg.ShowDialog() == DialogResult.OK)
+            {
+                bool isSuccess = HelperDB.RostoreDatabase(dlg.FileName);
+                if (isSuccess)
+                {
+                    MessageBox.Show("Restore thanh cong");
+                }
+                else
+                {
+                    MessageBox.Show("Restore that bai");
+                }
+            }
         }
 
         private void BtnTK_Click(object sender, EventArgs e)

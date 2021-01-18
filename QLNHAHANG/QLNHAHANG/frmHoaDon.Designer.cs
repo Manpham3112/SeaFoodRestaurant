@@ -56,7 +56,6 @@ namespace QLNHAHANG
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.gunaPanel1 = new Guna.UI.WinForms.GunaPanel();
             this.btnXuatReport = new Guna.UI.WinForms.GunaAdvenceButton();
-            this.btnXuatKho = new Guna.UI.WinForms.GunaAdvenceButton();
             this.txtTimKiem = new Guna.UI2.WinForms.Guna2TextBox();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewHoaDon)).BeginInit();
@@ -122,13 +121,14 @@ namespace QLNHAHANG
             this.dataGridViewHoaDon.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridViewHoaDon.EnableHeadersVisualStyles = false;
             this.dataGridViewHoaDon.GridColor = System.Drawing.SystemColors.Control;
-            this.dataGridViewHoaDon.Location = new System.Drawing.Point(3, 3);
+            this.dataGridViewHoaDon.Location = new System.Drawing.Point(3, 2);
+            this.dataGridViewHoaDon.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dataGridViewHoaDon.Name = "dataGridViewHoaDon";
             this.dataGridViewHoaDon.RowHeadersVisible = false;
             this.dataGridViewHoaDon.RowHeadersWidth = 51;
             this.dataGridViewHoaDon.RowTemplate.Height = 24;
             this.dataGridViewHoaDon.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridViewHoaDon.Size = new System.Drawing.Size(601, 484);
+            this.dataGridViewHoaDon.Size = new System.Drawing.Size(533, 388);
             this.dataGridViewHoaDon.TabIndex = 9;
             this.dataGridViewHoaDon.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
             this.dataGridViewHoaDon.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
@@ -233,13 +233,14 @@ namespace QLNHAHANG
             this.dataGridViewChiTietHD.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridViewChiTietHD.EnableHeadersVisualStyles = false;
             this.dataGridViewChiTietHD.GridColor = System.Drawing.SystemColors.Control;
-            this.dataGridViewChiTietHD.Location = new System.Drawing.Point(610, 3);
+            this.dataGridViewChiTietHD.Location = new System.Drawing.Point(542, 2);
+            this.dataGridViewChiTietHD.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dataGridViewChiTietHD.Name = "dataGridViewChiTietHD";
             this.dataGridViewChiTietHD.RowHeadersVisible = false;
             this.dataGridViewChiTietHD.RowHeadersWidth = 51;
             this.dataGridViewChiTietHD.RowTemplate.Height = 24;
             this.dataGridViewChiTietHD.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridViewChiTietHD.Size = new System.Drawing.Size(617, 484);
+            this.dataGridViewChiTietHD.Size = new System.Drawing.Size(548, 388);
             this.dataGridViewChiTietHD.TabIndex = 10;
             this.dataGridViewChiTietHD.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
             this.dataGridViewChiTietHD.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
@@ -272,20 +273,21 @@ namespace QLNHAHANG
             this.tableLayoutPanel3.Controls.Add(this.dataGridViewChiTietHD, 0, 0);
             this.tableLayoutPanel3.Controls.Add(this.dataGridViewHoaDon, 0, 0);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(3, 140);
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(3, 112);
+            this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 1;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(1230, 490);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(1093, 392);
             this.tableLayoutPanel3.TabIndex = 2;
             // 
             // gunaLabel3
             // 
             this.gunaLabel3.AutoSize = true;
             this.gunaLabel3.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Bold);
-            this.gunaLabel3.Location = new System.Drawing.Point(36, 17);
+            this.gunaLabel3.Location = new System.Drawing.Point(32, 14);
             this.gunaLabel3.Name = "gunaLabel3";
-            this.gunaLabel3.Size = new System.Drawing.Size(120, 36);
+            this.gunaLabel3.Size = new System.Drawing.Size(102, 30);
             this.gunaLabel3.TabIndex = 1;
             this.gunaLabel3.Text = "Hóa đơn";
             // 
@@ -302,7 +304,8 @@ namespace QLNHAHANG
             this.dateTimePickerFrom.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.dateTimePickerFrom.ForeColor = System.Drawing.Color.Black;
             this.dateTimePickerFrom.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePickerFrom.Location = new System.Drawing.Point(114, 6);
+            this.dateTimePickerFrom.Location = new System.Drawing.Point(101, 5);
+            this.dateTimePickerFrom.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dateTimePickerFrom.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.dateTimePickerFrom.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.dateTimePickerFrom.Name = "dateTimePickerFrom";
@@ -311,7 +314,7 @@ namespace QLNHAHANG
             this.dateTimePickerFrom.OnHoverForeColor = System.Drawing.Color.Tomato;
             this.dateTimePickerFrom.OnPressedColor = System.Drawing.Color.Black;
             this.dateTimePickerFrom.Radius = 4;
-            this.dateTimePickerFrom.Size = new System.Drawing.Size(455, 37);
+            this.dateTimePickerFrom.Size = new System.Drawing.Size(404, 30);
             this.dateTimePickerFrom.TabIndex = 1;
             this.dateTimePickerFrom.Text = "03/08/2020";
             this.dateTimePickerFrom.Value = new System.DateTime(2020, 8, 3, 0, 0, 0, 0);
@@ -322,18 +325,19 @@ namespace QLNHAHANG
             this.gunaPanel2.Controls.Add(this.dateTimePickerFrom);
             this.gunaPanel2.Controls.Add(this.gunaLabel1);
             this.gunaPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gunaPanel2.Location = new System.Drawing.Point(3, 3);
+            this.gunaPanel2.Location = new System.Drawing.Point(3, 2);
+            this.gunaPanel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.gunaPanel2.Name = "gunaPanel2";
-            this.gunaPanel2.Size = new System.Drawing.Size(572, 52);
+            this.gunaPanel2.Size = new System.Drawing.Size(508, 42);
             this.gunaPanel2.TabIndex = 0;
             // 
             // gunaLabel1
             // 
             this.gunaLabel1.AutoSize = true;
             this.gunaLabel1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gunaLabel1.Location = new System.Drawing.Point(12, 12);
+            this.gunaLabel1.Location = new System.Drawing.Point(11, 10);
             this.gunaLabel1.Name = "gunaLabel1";
-            this.gunaLabel1.Size = new System.Drawing.Size(76, 25);
+            this.gunaLabel1.Size = new System.Drawing.Size(62, 20);
             this.gunaLabel1.TabIndex = 0;
             this.gunaLabel1.Text = "Từ ngày";
             // 
@@ -350,7 +354,8 @@ namespace QLNHAHANG
             this.dateTimePickerTo.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.dateTimePickerTo.ForeColor = System.Drawing.Color.Black;
             this.dateTimePickerTo.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePickerTo.Location = new System.Drawing.Point(114, 6);
+            this.dateTimePickerTo.Location = new System.Drawing.Point(101, 5);
+            this.dateTimePickerTo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dateTimePickerTo.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.dateTimePickerTo.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.dateTimePickerTo.Name = "dateTimePickerTo";
@@ -359,7 +364,7 @@ namespace QLNHAHANG
             this.dateTimePickerTo.OnHoverForeColor = System.Drawing.Color.Tomato;
             this.dateTimePickerTo.OnPressedColor = System.Drawing.Color.Black;
             this.dateTimePickerTo.Radius = 4;
-            this.dateTimePickerTo.Size = new System.Drawing.Size(454, 37);
+            this.dateTimePickerTo.Size = new System.Drawing.Size(404, 30);
             this.dateTimePickerTo.TabIndex = 2;
             this.dateTimePickerTo.Text = "03/08/2020";
             this.dateTimePickerTo.Value = new System.DateTime(2020, 8, 3, 0, 0, 0, 0);
@@ -368,9 +373,9 @@ namespace QLNHAHANG
             // 
             this.gunaLabel2.AutoSize = true;
             this.gunaLabel2.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gunaLabel2.Location = new System.Drawing.Point(22, 12);
+            this.gunaLabel2.Location = new System.Drawing.Point(20, 10);
             this.gunaLabel2.Name = "gunaLabel2";
-            this.gunaLabel2.Size = new System.Drawing.Size(88, 25);
+            this.gunaLabel2.Size = new System.Drawing.Size(72, 20);
             this.gunaLabel2.TabIndex = 1;
             this.gunaLabel2.Text = "Đến ngày";
             // 
@@ -379,9 +384,10 @@ namespace QLNHAHANG
             this.gunaPanel3.Controls.Add(this.dateTimePickerTo);
             this.gunaPanel3.Controls.Add(this.gunaLabel2);
             this.gunaPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gunaPanel3.Location = new System.Drawing.Point(581, 3);
+            this.gunaPanel3.Location = new System.Drawing.Point(517, 2);
+            this.gunaPanel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.gunaPanel3.Name = "gunaPanel3";
-            this.gunaPanel3.Size = new System.Drawing.Size(572, 52);
+            this.gunaPanel3.Size = new System.Drawing.Size(508, 42);
             this.gunaPanel3.TabIndex = 1;
             // 
             // tableLayoutPanel2
@@ -393,24 +399,25 @@ namespace QLNHAHANG
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel2.Controls.Add(this.gunaPanel3, 1, 0);
             this.tableLayoutPanel2.Controls.Add(this.gunaPanel2, 0, 0);
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(33, 68);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(29, 54);
+            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(1156, 58);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(1028, 46);
             this.tableLayoutPanel2.TabIndex = 4;
             // 
             // gunaPanel1
             // 
             this.gunaPanel1.Controls.Add(this.btnXuatReport);
-            this.gunaPanel1.Controls.Add(this.btnXuatKho);
             this.gunaPanel1.Controls.Add(this.tableLayoutPanel2);
             this.gunaPanel1.Controls.Add(this.txtTimKiem);
             this.gunaPanel1.Controls.Add(this.gunaLabel3);
             this.gunaPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gunaPanel1.Location = new System.Drawing.Point(3, 3);
+            this.gunaPanel1.Location = new System.Drawing.Point(3, 2);
+            this.gunaPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.gunaPanel1.Name = "gunaPanel1";
-            this.gunaPanel1.Size = new System.Drawing.Size(1230, 131);
+            this.gunaPanel1.Size = new System.Drawing.Size(1093, 106);
             this.gunaPanel1.TabIndex = 1;
             // 
             // btnXuatReport
@@ -434,7 +441,8 @@ namespace QLNHAHANG
             this.btnXuatReport.Image = ((System.Drawing.Image)(resources.GetObject("btnXuatReport.Image")));
             this.btnXuatReport.ImageSize = new System.Drawing.Size(20, 20);
             this.btnXuatReport.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.btnXuatReport.Location = new System.Drawing.Point(1096, 9);
+            this.btnXuatReport.Location = new System.Drawing.Point(908, 7);
+            this.btnXuatReport.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnXuatReport.Name = "btnXuatReport";
             this.btnXuatReport.OnHoverBaseColor = System.Drawing.Color.MediumTurquoise;
             this.btnXuatReport.OnHoverBorderColor = System.Drawing.Color.Empty;
@@ -443,43 +451,9 @@ namespace QLNHAHANG
             this.btnXuatReport.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
             this.btnXuatReport.OnPressedColor = System.Drawing.Color.Black;
             this.btnXuatReport.Radius = 10;
-            this.btnXuatReport.Size = new System.Drawing.Size(134, 49);
+            this.btnXuatReport.Size = new System.Drawing.Size(146, 39);
             this.btnXuatReport.TabIndex = 18;
             this.btnXuatReport.Text = "Xuất Report";
-            // 
-            // btnXuatKho
-            // 
-            this.btnXuatKho.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnXuatKho.AnimationHoverSpeed = 0.07F;
-            this.btnXuatKho.AnimationSpeed = 0.03F;
-            this.btnXuatKho.BackColor = System.Drawing.Color.Transparent;
-            this.btnXuatKho.BaseColor = System.Drawing.Color.Transparent;
-            this.btnXuatKho.BorderColor = System.Drawing.Color.MediumTurquoise;
-            this.btnXuatKho.BorderSize = 2;
-            this.btnXuatKho.CheckedBaseColor = System.Drawing.Color.Gray;
-            this.btnXuatKho.CheckedBorderColor = System.Drawing.Color.Black;
-            this.btnXuatKho.CheckedForeColor = System.Drawing.Color.White;
-            this.btnXuatKho.CheckedImage = null;
-            this.btnXuatKho.CheckedLineColor = System.Drawing.Color.DimGray;
-            this.btnXuatKho.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btnXuatKho.FocusedColor = System.Drawing.Color.Empty;
-            this.btnXuatKho.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            this.btnXuatKho.ForeColor = System.Drawing.Color.MediumTurquoise;
-            this.btnXuatKho.Image = ((System.Drawing.Image)(resources.GetObject("btnXuatKho.Image")));
-            this.btnXuatKho.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnXuatKho.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.btnXuatKho.Location = new System.Drawing.Point(962, 9);
-            this.btnXuatKho.Name = "btnXuatKho";
-            this.btnXuatKho.OnHoverBaseColor = System.Drawing.Color.MediumTurquoise;
-            this.btnXuatKho.OnHoverBorderColor = System.Drawing.Color.Empty;
-            this.btnXuatKho.OnHoverForeColor = System.Drawing.Color.White;
-            this.btnXuatKho.OnHoverImage = ((System.Drawing.Image)(resources.GetObject("btnXuatKho.OnHoverImage")));
-            this.btnXuatKho.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.btnXuatKho.OnPressedColor = System.Drawing.Color.Black;
-            this.btnXuatKho.Radius = 10;
-            this.btnXuatKho.Size = new System.Drawing.Size(134, 49);
-            this.btnXuatKho.TabIndex = 18;
-            this.btnXuatKho.Text = "Xuất Kho";
             // 
             // txtTimKiem
             // 
@@ -501,14 +475,14 @@ namespace QLNHAHANG
             this.txtTimKiem.HoverState.Parent = this.txtTimKiem;
             this.txtTimKiem.IconRight = ((System.Drawing.Image)(resources.GetObject("txtTimKiem.IconRight")));
             this.txtTimKiem.IconRightSize = new System.Drawing.Size(22, 22);
-            this.txtTimKiem.Location = new System.Drawing.Point(174, 15);
-            this.txtTimKiem.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
+            this.txtTimKiem.Location = new System.Drawing.Point(155, 12);
+            this.txtTimKiem.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.txtTimKiem.Name = "txtTimKiem";
             this.txtTimKiem.PasswordChar = '\0';
             this.txtTimKiem.PlaceholderText = "Nhập hóa đơn cần tìm kiếm...";
             this.txtTimKiem.SelectedText = "";
             this.txtTimKiem.ShadowDecoration.Parent = this.txtTimKiem;
-            this.txtTimKiem.Size = new System.Drawing.Size(779, 43);
+            this.txtTimKiem.Size = new System.Drawing.Size(692, 34);
             this.txtTimKiem.TabIndex = 3;
             this.txtTimKiem.TextChanged += new System.EventHandler(this.txtTimKiem_TextChanged);
             // 
@@ -520,20 +494,22 @@ namespace QLNHAHANG
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel3, 0, 1);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 2;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 137F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 110F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1236, 633);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1099, 506);
             this.tableLayoutPanel1.TabIndex = 1;
             // 
             // frmHoaDon
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1236, 633);
+            this.ClientSize = new System.Drawing.Size(1099, 506);
             this.Controls.Add(this.tableLayoutPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "frmHoaDon";
             this.Text = "frmHoaDon";
             this.Load += new System.EventHandler(this.frmHoaDon_Load);
@@ -564,7 +540,6 @@ namespace QLNHAHANG
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private Guna.UI2.WinForms.Guna2DataGridView dataGridViewChiTietHD;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
-        private Guna.UI.WinForms.GunaAdvenceButton btnXuatKho;
         private Guna.UI.WinForms.GunaLabel gunaLabel3;
         private Guna.UI.WinForms.GunaDateTimePicker dateTimePickerFrom;
         private Guna.UI.WinForms.GunaPanel gunaPanel2;
