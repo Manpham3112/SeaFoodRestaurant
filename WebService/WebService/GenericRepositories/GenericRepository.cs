@@ -9,16 +9,16 @@ namespace WebService.GenericRepositories
 {
     public class GenericRepository<T> : IGenericRepository<T> where T : class
     {
-        QL_NHAHANGEntities2 _entity = null;
+        QL_NHAHANGEntities3 _entity = null;
         public DbSet<T> table = null;
 
         public GenericRepository()
         {
-            this._entity = new QL_NHAHANGEntities2();
+            this._entity = new QL_NHAHANGEntities3();
             table = _entity.Set<T>();
         }
 
-        public GenericRepository(QL_NHAHANGEntities2 _enitity)
+        public GenericRepository(QL_NHAHANGEntities3 _enitity)
         {
             this._entity = _entity;
             table = _enitity.Set<T>();

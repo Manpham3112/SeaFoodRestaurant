@@ -192,8 +192,9 @@ namespace QLNHAHANG
             {
                 tong += item.TongTien;
             }
-            double stg = tong * (pt/100);
+           
             lbTongTien.Text = tong + " ";
+            double stg = tong * (pt / 100);
             lbSoTienGiam.Text = stg + " ";
             lbThanhTien.Text = (tong-stg) + dv +" " ;
 
@@ -324,13 +325,13 @@ namespace QLNHAHANG
                 MessageBox.Show("Chưa có sản phẩm nào");
                 return;
             }
-                //DialogResult rs = MessageBox.Show("Lưu ý", "Xác nhận thanh toán", MessageBoxButtons.YesNo);
-                //if (rs == DialogResult.No)
-                //{
-                //    return;
-                //}
+            DialogResult rs = MessageBox.Show("Lưu ý", "Xác nhận thanh toán", MessageBoxButtons.YesNo);
+            if (rs == DialogResult.No)
+            {
+                return;
+            }
 
-                int tongtien = Convert.ToInt32(lbThanhTien.Text);
+            int tongtien = Convert.ToInt32(lbThanhTien.Text);
                 //double TongTien = ckDiem.Checked ? tongtien : tongtien;
 
                 maHD = hd_bll.taoMaHD();

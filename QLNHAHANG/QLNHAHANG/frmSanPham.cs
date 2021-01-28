@@ -260,7 +260,7 @@ namespace QLNHAHANG
         }
         private string taoMaSPMoi()
         {
-            return "SP00" + gvSanPham.Rows.Count.ToString();
+            return "SP000" + gvSanPham.Rows.Count.ToString();
         }
         private List<CT_SANPHAM_NGUYENLIEU> loadNL_SP()
         {

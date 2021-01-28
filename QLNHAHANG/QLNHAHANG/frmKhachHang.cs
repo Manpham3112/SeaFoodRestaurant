@@ -90,7 +90,7 @@ namespace QLNHAHANG
         {
             Random r = new Random();
             int count = qlkh.demSoLuong() + 1;
-            txtMaKhachHang.Text = "KH00" + count + r.Next(0, 1000);
+            txtMaKhachHang.Text = "KH00" + count + r.Next(0, 100);
             txtMaKhachHang.ReadOnly= true;
             txtTenKH.Clear();
             txtDiaChi.Clear();

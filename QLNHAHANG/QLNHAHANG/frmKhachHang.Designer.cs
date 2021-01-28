@@ -111,7 +111,7 @@ namespace QLNHAHANG
             this.txtMaKhachHang.PlaceholderText = "Mã khách hàng";
             this.txtMaKhachHang.SelectedText = "";
             this.txtMaKhachHang.ShadowDecoration.Parent = this.txtMaKhachHang;
-            this.txtMaKhachHang.Size = new System.Drawing.Size(292, 27);
+            this.txtMaKhachHang.Size = new System.Drawing.Size(291, 53);
             this.txtMaKhachHang.TabIndex = 0;
             // 
             // grbMaKhachHang
@@ -121,7 +121,7 @@ namespace QLNHAHANG
             this.grbMaKhachHang.Location = new System.Drawing.Point(5, 3);
             this.grbMaKhachHang.Margin = new System.Windows.Forms.Padding(5, 3, 5, 5);
             this.grbMaKhachHang.Name = "grbMaKhachHang";
-            this.grbMaKhachHang.Size = new System.Drawing.Size(307, 82);
+            this.grbMaKhachHang.Size = new System.Drawing.Size(306, 82);
             this.grbMaKhachHang.TabIndex = 7;
             this.grbMaKhachHang.TabStop = false;
             this.grbMaKhachHang.Text = "Mã khách hàng";
@@ -155,17 +155,17 @@ namespace QLNHAHANG
             this.txtSDT.PlaceholderText = "Số điện thoại";
             this.txtSDT.SelectedText = "";
             this.txtSDT.ShadowDecoration.Parent = this.txtSDT;
-            this.txtSDT.Size = new System.Drawing.Size(184, 27);
+            this.txtSDT.Size = new System.Drawing.Size(258, 53);
             this.txtSDT.TabIndex = 0;
             this.txtSDT.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtSDT_KeyPress);
             // 
             // grbHoTenKhachHang
             // 
             this.grbHoTenKhachHang.Controls.Add(this.txtSDT);
-            this.grbHoTenKhachHang.Location = new System.Drawing.Point(717, 3);
+            this.grbHoTenKhachHang.Location = new System.Drawing.Point(716, 3);
             this.grbHoTenKhachHang.Margin = new System.Windows.Forms.Padding(5, 3, 5, 5);
             this.grbHoTenKhachHang.Name = "grbHoTenKhachHang";
-            this.grbHoTenKhachHang.Size = new System.Drawing.Size(265, 59);
+            this.grbHoTenKhachHang.Size = new System.Drawing.Size(265, 82);
             this.grbHoTenKhachHang.TabIndex = 8;
             this.grbHoTenKhachHang.TabStop = false;
             this.grbHoTenKhachHang.Text = "Số điện thoại";
@@ -199,14 +199,14 @@ namespace QLNHAHANG
             this.txtTenKH.PlaceholderText = "Tên khách hàng";
             this.txtTenKH.SelectedText = "";
             this.txtTenKH.ShadowDecoration.Parent = this.txtTenKH;
-            this.txtTenKH.Size = new System.Drawing.Size(371, 27);
+            this.txtTenKH.Size = new System.Drawing.Size(371, 50);
             this.txtTenKH.TabIndex = 0;
             // 
             // grbSoDienThoai
             // 
             this.grbSoDienThoai.Controls.Add(this.txtTenKH);
             this.grbSoDienThoai.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.grbSoDienThoai.Location = new System.Drawing.Point(322, 3);
+            this.grbSoDienThoai.Location = new System.Drawing.Point(321, 3);
             this.grbSoDienThoai.Margin = new System.Windows.Forms.Padding(5, 3, 5, 5);
             this.grbSoDienThoai.Name = "grbSoDienThoai";
             this.grbSoDienThoai.Size = new System.Drawing.Size(385, 82);
@@ -219,7 +219,7 @@ namespace QLNHAHANG
             this.tableLayoutPanel3.ColumnCount = 3;
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 44.46721F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 55.53279F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 283F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 284F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 192F));
             this.tableLayoutPanel3.Controls.Add(this.grbSoDienThoai, 0, 0);
             this.tableLayoutPanel3.Controls.Add(this.grbHoTenKhachHang, 1, 0);
@@ -263,7 +263,7 @@ namespace QLNHAHANG
             this.txtMatKhau.PlaceholderText = "Mật khẩu";
             this.txtMatKhau.SelectedText = "";
             this.txtMatKhau.ShadowDecoration.Parent = this.txtMatKhau;
-            this.txtMatKhau.Size = new System.Drawing.Size(344, 27);
+            this.txtMatKhau.Size = new System.Drawing.Size(344, 53);
             this.txtMatKhau.TabIndex = 0;
             // 
             // txtDiaChi
@@ -295,7 +295,7 @@ namespace QLNHAHANG
             this.txtDiaChi.PlaceholderText = "Địa chỉ";
             this.txtDiaChi.SelectedText = "";
             this.txtDiaChi.ShadowDecoration.Parent = this.txtDiaChi;
-            this.txtDiaChi.Size = new System.Drawing.Size(314, 27);
+            this.txtDiaChi.Size = new System.Drawing.Size(314, 50);
             this.txtDiaChi.TabIndex = 0;
             // 
             // txtTaiKhoan
@@ -327,7 +327,7 @@ namespace QLNHAHANG
             this.txtTaiKhoan.PlaceholderText = "Tài khoản";
             this.txtTaiKhoan.SelectedText = "";
             this.txtTaiKhoan.ShadowDecoration.Parent = this.txtTaiKhoan;
-            this.txtTaiKhoan.Size = new System.Drawing.Size(268, 27);
+            this.txtTaiKhoan.Size = new System.Drawing.Size(268, 50);
             this.txtTaiKhoan.TabIndex = 0;
             // 
             // groupBox1

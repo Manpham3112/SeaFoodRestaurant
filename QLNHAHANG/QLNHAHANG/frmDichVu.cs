@@ -112,7 +112,7 @@ namespace QLNHAHANG
             btnChonHinh.Enabled = true;
             Random r = new Random();
             int count = qldv.demSoLuong() + 1;
-            txtMaDV.Text = "DV00" + count + r.Next(0, 99);
+            txtMaDV.Text = "DV00" + count + r.Next(0, 100);
             txtMaDV.ReadOnly = true;
             txtTenDV.Clear();
             txtGiaDV.Clear();

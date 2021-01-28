@@ -49,13 +49,6 @@ namespace QLNHAHANG
             this.toolStripSua = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripXoa = new System.Windows.Forms.ToolStripMenuItem();
             this.dataGridViewPhieuNhanHang = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.MAPNK = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.MANV = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.MANCC = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NGAYLAP = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TONGTIEN = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.KHÓA1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.KHÓA2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.contextMenuStrip_PhieuNhanHang = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.xóaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
@@ -74,6 +67,7 @@ namespace QLNHAHANG
             this.BtnND = new Guna.UI.WinForms.GunaAdvenceButton();
             this.RP_PNK = new Guna.UI.WinForms.GunaAdvenceButton();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.cboNCC = new Guna.UI.WinForms.GunaComboBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.txtMaNV = new Guna.UI2.WinForms.Guna2TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -93,7 +87,13 @@ namespace QLNHAHANG
             this.groupBox8 = new System.Windows.Forms.GroupBox();
             this.txt_SoLuongNhap = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
-            this.cboNCC = new Guna.UI.WinForms.GunaComboBox();
+            this.MAPNK = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.MANV = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.MANCC = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NGAYLAP = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TONGTIEN = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.KHÓA1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.KHÓA2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewNguyenLieu)).BeginInit();
             this.groupBox9.SuspendLayout();
             this.contextMenuStrip_chiTietPhieuDH.SuspendLayout();
@@ -350,64 +350,6 @@ namespace QLNHAHANG
             this.dataGridViewPhieuNhanHang.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             this.dataGridViewPhieuNhanHang.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewPhieuNhanHang_CellClick);
             this.dataGridViewPhieuNhanHang.SelectionChanged += new System.EventHandler(this.dataGridViewPhieuNhanHang_SelectionChanged);
-            // 
-            // MAPNK
-            // 
-            this.MAPNK.DataPropertyName = "MAPNK";
-            this.MAPNK.HeaderText = "Mã phiếu nhập kho";
-            this.MAPNK.MinimumWidth = 6;
-            this.MAPNK.Name = "MAPNK";
-            this.MAPNK.ReadOnly = true;
-            // 
-            // MANV
-            // 
-            this.MANV.DataPropertyName = "MANV";
-            this.MANV.HeaderText = "Mã nhân viên";
-            this.MANV.MinimumWidth = 6;
-            this.MANV.Name = "MANV";
-            this.MANV.ReadOnly = true;
-            // 
-            // MANCC
-            // 
-            this.MANCC.DataPropertyName = "MANCC";
-            this.MANCC.HeaderText = "Mã nhà cung cấp";
-            this.MANCC.MinimumWidth = 6;
-            this.MANCC.Name = "MANCC";
-            this.MANCC.ReadOnly = true;
-            // 
-            // NGAYLAP
-            // 
-            this.NGAYLAP.DataPropertyName = "NGAYNHAP";
-            this.NGAYLAP.HeaderText = "Ngày lập";
-            this.NGAYLAP.MinimumWidth = 6;
-            this.NGAYLAP.Name = "NGAYLAP";
-            this.NGAYLAP.ReadOnly = true;
-            // 
-            // TONGTIEN
-            // 
-            this.TONGTIEN.DataPropertyName = "TONGTIEN";
-            this.TONGTIEN.HeaderText = "Tổng tiền";
-            this.TONGTIEN.MinimumWidth = 6;
-            this.TONGTIEN.Name = "TONGTIEN";
-            this.TONGTIEN.ReadOnly = true;
-            // 
-            // KHÓA1
-            // 
-            this.KHÓA1.DataPropertyName = "NHACUNGCAP";
-            this.KHÓA1.HeaderText = "NHACUNGCAP1";
-            this.KHÓA1.MinimumWidth = 6;
-            this.KHÓA1.Name = "KHÓA1";
-            this.KHÓA1.ReadOnly = true;
-            this.KHÓA1.Visible = false;
-            // 
-            // KHÓA2
-            // 
-            this.KHÓA2.DataPropertyName = "NHANVIEN";
-            this.KHÓA2.HeaderText = "NHANVIEN1";
-            this.KHÓA2.MinimumWidth = 6;
-            this.KHÓA2.Name = "KHÓA2";
-            this.KHÓA2.ReadOnly = true;
-            this.KHÓA2.Visible = false;
             // 
             // contextMenuStrip_PhieuNhanHang
             // 
@@ -701,7 +643,7 @@ namespace QLNHAHANG
             this.RP_PNK.Image = ((System.Drawing.Image)(resources.GetObject("RP_PNK.Image")));
             this.RP_PNK.ImageSize = new System.Drawing.Size(20, 20);
             this.RP_PNK.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.RP_PNK.Location = new System.Drawing.Point(9, 413);
+            this.RP_PNK.Location = new System.Drawing.Point(9, 475);
             this.RP_PNK.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.RP_PNK.Name = "RP_PNK";
             this.RP_PNK.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(128)))), ((int)(((byte)(114)))));
@@ -719,24 +661,43 @@ namespace QLNHAHANG
             // groupBox5
             // 
             this.groupBox5.Controls.Add(this.cboNCC);
-            this.groupBox5.Location = new System.Drawing.Point(10, 270);
+            this.groupBox5.Location = new System.Drawing.Point(13, 254);
             this.groupBox5.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.groupBox5.Name = "groupBox5";
             this.groupBox5.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.groupBox5.Size = new System.Drawing.Size(295, 52);
+            this.groupBox5.Size = new System.Drawing.Size(295, 66);
             this.groupBox5.TabIndex = 18;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Mã nhà cung cấp";
+            this.groupBox5.Enter += new System.EventHandler(this.groupBox5_Enter);
             // 
-
+            // cboNCC
+            // 
+            this.cboNCC.BackColor = System.Drawing.Color.Transparent;
+            this.cboNCC.BaseColor = System.Drawing.SystemColors.Control;
+            this.cboNCC.BorderColor = System.Drawing.SystemColors.Control;
+            this.cboNCC.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.cboNCC.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cboNCC.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboNCC.FocusedColor = System.Drawing.Color.Empty;
+            this.cboNCC.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cboNCC.ForeColor = System.Drawing.Color.Black;
+            this.cboNCC.FormattingEnabled = true;
+            this.cboNCC.Location = new System.Drawing.Point(3, 19);
+            this.cboNCC.Name = "cboNCC";
+            this.cboNCC.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.cboNCC.OnHoverItemForeColor = System.Drawing.Color.White;
+            this.cboNCC.Size = new System.Drawing.Size(289, 31);
+            this.cboNCC.TabIndex = 1;
+            // 
             // groupBox4
             // 
             this.groupBox4.Controls.Add(this.txtMaNV);
-            this.groupBox4.Location = new System.Drawing.Point(10, 156);
+            this.groupBox4.Location = new System.Drawing.Point(11, 177);
             this.groupBox4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.groupBox4.Size = new System.Drawing.Size(296, 52);
+            this.groupBox4.Size = new System.Drawing.Size(296, 68);
             this.groupBox4.TabIndex = 17;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Mã nhân viên";
@@ -764,7 +725,7 @@ namespace QLNHAHANG
             this.txtMaNV.PlaceholderText = "Mã nhân viên";
             this.txtMaNV.SelectedText = "";
             this.txtMaNV.ShadowDecoration.Parent = this.txtMaNV;
-            this.txtMaNV.Size = new System.Drawing.Size(275, 27);
+            this.txtMaNV.Size = new System.Drawing.Size(275, 40);
             this.txtMaNV.TabIndex = 2;
             // 
             // groupBox1
@@ -774,7 +735,7 @@ namespace QLNHAHANG
             this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.groupBox1.Size = new System.Drawing.Size(297, 52);
+            this.groupBox1.Size = new System.Drawing.Size(297, 73);
             this.groupBox1.TabIndex = 16;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Mã phiếu nhập kho";
@@ -802,7 +763,7 @@ namespace QLNHAHANG
             this.txtMaPNK.PlaceholderText = "Mã phiếu nhập kho";
             this.txtMaPNK.SelectedText = "";
             this.txtMaPNK.ShadowDecoration.Parent = this.txtMaPNK;
-            this.txtMaPNK.Size = new System.Drawing.Size(275, 27);
+            this.txtMaPNK.Size = new System.Drawing.Size(275, 45);
             this.txtMaPNK.TabIndex = 2;
             // 
             // btnLuuPNK
@@ -816,7 +777,7 @@ namespace QLNHAHANG
             this.btnLuuPNK.ForeColor = System.Drawing.Color.White;
             this.btnLuuPNK.HoverState.Parent = this.btnLuuPNK;
             this.btnLuuPNK.Image = ((System.Drawing.Image)(resources.GetObject("btnLuuPNK.Image")));
-            this.btnLuuPNK.Location = new System.Drawing.Point(252, 410);
+            this.btnLuuPNK.Location = new System.Drawing.Point(252, 472);
             this.btnLuuPNK.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnLuuPNK.Name = "btnLuuPNK";
             this.btnLuuPNK.ShadowDecoration.Enabled = true;
@@ -839,7 +800,7 @@ namespace QLNHAHANG
             this.btnThemPNK.ForeColor = System.Drawing.Color.White;
             this.btnThemPNK.HoverState.Parent = this.btnThemPNK;
             this.btnThemPNK.Image = ((System.Drawing.Image)(resources.GetObject("btnThemPNK.Image")));
-            this.btnThemPNK.Location = new System.Drawing.Point(188, 410);
+            this.btnThemPNK.Location = new System.Drawing.Point(188, 472);
             this.btnThemPNK.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnThemPNK.Name = "btnThemPNK";
             this.btnThemPNK.ShadowDecoration.Enabled = true;
@@ -853,7 +814,7 @@ namespace QLNHAHANG
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.txtTongTien);
-            this.groupBox3.Location = new System.Drawing.Point(9, 338);
+            this.groupBox3.Location = new System.Drawing.Point(12, 406);
             this.groupBox3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -892,11 +853,11 @@ namespace QLNHAHANG
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.txt_NgayNhan);
-            this.groupBox2.Location = new System.Drawing.Point(9, 278);
+            this.groupBox2.Location = new System.Drawing.Point(13, 329);
             this.groupBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.groupBox2.Size = new System.Drawing.Size(295, 52);
+            this.groupBox2.Size = new System.Drawing.Size(295, 69);
             this.groupBox2.TabIndex = 9;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Ngày nhận";
@@ -914,7 +875,7 @@ namespace QLNHAHANG
             this.txt_NgayNhan.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txt_NgayNhan.ForeColor = System.Drawing.Color.Black;
             this.txt_NgayNhan.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.txt_NgayNhan.Location = new System.Drawing.Point(0, 20);
+            this.txt_NgayNhan.Location = new System.Drawing.Point(-2, 18);
             this.txt_NgayNhan.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txt_NgayNhan.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.txt_NgayNhan.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
@@ -923,7 +884,7 @@ namespace QLNHAHANG
             this.txt_NgayNhan.OnHoverBorderColor = System.Drawing.SystemColors.Control;
             this.txt_NgayNhan.OnHoverForeColor = System.Drawing.Color.Black;
             this.txt_NgayNhan.OnPressedColor = System.Drawing.Color.Empty;
-            this.txt_NgayNhan.Size = new System.Drawing.Size(295, 26);
+            this.txt_NgayNhan.Size = new System.Drawing.Size(295, 43);
             this.txt_NgayNhan.TabIndex = 3;
             this.txt_NgayNhan.Text = "03/08/2020";
             this.txt_NgayNhan.Value = new System.DateTime(2020, 8, 3, 0, 0, 0, 0);
@@ -1070,24 +1031,65 @@ namespace QLNHAHANG
             this.guna2ControlBox1.Size = new System.Drawing.Size(45, 28);
             this.guna2ControlBox1.TabIndex = 6;
             // 
-            // cboNCC
+            // MAPNK
             // 
-            this.cboNCC.BackColor = System.Drawing.Color.Transparent;
-            this.cboNCC.BaseColor = System.Drawing.SystemColors.Control;
-            this.cboNCC.BorderColor = System.Drawing.SystemColors.Control;
-            this.cboNCC.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.cboNCC.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cboNCC.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboNCC.FocusedColor = System.Drawing.Color.Empty;
-            this.cboNCC.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cboNCC.ForeColor = System.Drawing.Color.Black;
-            this.cboNCC.FormattingEnabled = true;
-            this.cboNCC.Location = new System.Drawing.Point(3, 24);
-            this.cboNCC.Name = "cboNCC";
-            this.cboNCC.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.cboNCC.OnHoverItemForeColor = System.Drawing.Color.White;
-            this.cboNCC.Size = new System.Drawing.Size(326, 36);
-            this.cboNCC.TabIndex = 1;
+            this.MAPNK.DataPropertyName = "MAPNK";
+            this.MAPNK.HeaderText = "Mã phiếu nhập kho";
+            this.MAPNK.MinimumWidth = 6;
+            this.MAPNK.Name = "MAPNK";
+            this.MAPNK.ReadOnly = true;
+            // 
+            // MANV
+            // 
+            this.MANV.DataPropertyName = "MANV";
+            this.MANV.HeaderText = "Mã nhân viên";
+            this.MANV.MinimumWidth = 6;
+            this.MANV.Name = "MANV";
+            this.MANV.ReadOnly = true;
+            // 
+            // MANCC
+            // 
+            this.MANCC.DataPropertyName = "MANCC";
+            this.MANCC.HeaderText = "Mã nhà cung cấp";
+            this.MANCC.MinimumWidth = 6;
+            this.MANCC.Name = "MANCC";
+            this.MANCC.ReadOnly = true;
+            this.MANCC.Visible = false;
+            // 
+            // NGAYLAP
+            // 
+            this.NGAYLAP.DataPropertyName = "NGAYNHAP";
+            this.NGAYLAP.HeaderText = "Ngày lập";
+            this.NGAYLAP.MinimumWidth = 6;
+            this.NGAYLAP.Name = "NGAYLAP";
+            this.NGAYLAP.ReadOnly = true;
+            this.NGAYLAP.Visible = false;
+            // 
+            // TONGTIEN
+            // 
+            this.TONGTIEN.DataPropertyName = "TONGTIEN";
+            this.TONGTIEN.HeaderText = "Tổng tiền";
+            this.TONGTIEN.MinimumWidth = 6;
+            this.TONGTIEN.Name = "TONGTIEN";
+            this.TONGTIEN.ReadOnly = true;
+            // 
+            // KHÓA1
+            // 
+            this.KHÓA1.DataPropertyName = "NHACUNGCAP";
+            this.KHÓA1.HeaderText = "NHACUNGCAP1";
+            this.KHÓA1.MinimumWidth = 6;
+            this.KHÓA1.Name = "KHÓA1";
+            this.KHÓA1.ReadOnly = true;
+            this.KHÓA1.Visible = false;
+            // 
+            // KHÓA2
+            // 
+            this.KHÓA2.DataPropertyName = "NHANVIEN";
+            this.KHÓA2.HeaderText = "NHANVIEN1";
+            this.KHÓA2.MinimumWidth = 6;
+            this.KHÓA2.Name = "KHÓA2";
+            this.KHÓA2.ReadOnly = true;
+            this.KHÓA2.Visible = false;
             // 
             // frmNhapKho
             // 
@@ -1138,13 +1140,6 @@ namespace QLNHAHANG
         private System.Windows.Forms.ToolStripMenuItem toolStripSua;
         private System.Windows.Forms.ToolStripMenuItem toolStripXoa;
         private Guna.UI2.WinForms.Guna2DataGridView dataGridViewPhieuNhanHang;
-        private System.Windows.Forms.DataGridViewTextBoxColumn MAPNK;
-        private System.Windows.Forms.DataGridViewTextBoxColumn MANV;
-        private System.Windows.Forms.DataGridViewTextBoxColumn MANCC;
-        private System.Windows.Forms.DataGridViewTextBoxColumn NGAYLAP;
-        private System.Windows.Forms.DataGridViewTextBoxColumn TONGTIEN;
-        private System.Windows.Forms.DataGridViewTextBoxColumn KHÓA1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn KHÓA2;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip_PhieuNhanHang;
         private System.Windows.Forms.ToolStripMenuItem xóaToolStripMenuItem;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
@@ -1186,5 +1181,12 @@ namespace QLNHAHANG
         private System.Windows.Forms.DataGridViewTextBoxColumn TENNL1;
         private System.Windows.Forms.DataGridViewTextBoxColumn SOLUONG1;
         private Guna.UI.WinForms.GunaComboBox cboNCC;
+        private System.Windows.Forms.DataGridViewTextBoxColumn MAPNK;
+        private System.Windows.Forms.DataGridViewTextBoxColumn MANV;
+        private System.Windows.Forms.DataGridViewTextBoxColumn MANCC;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NGAYLAP;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TONGTIEN;
+        private System.Windows.Forms.DataGridViewTextBoxColumn KHÓA1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn KHÓA2;
     }
 }

@@ -29,6 +29,8 @@ namespace QLNHAHANG
             //Application.Run(new frmKhuyenMai());
             Application.Run(new frmLogin());
             //Application.Run(new frmThongKe());
+            //Application.Run(new frmNhanVien());
+
         }
     }
 }

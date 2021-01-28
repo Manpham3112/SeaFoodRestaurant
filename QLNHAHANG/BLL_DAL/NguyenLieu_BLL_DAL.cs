@@ -88,7 +88,7 @@ namespace BLL_DAL
         {
             int so = ff.NGUYENLIEUs.Select(t => t.MANL).Count() + 1;
 
-            if (so < 10)
+            if (so < 100)
             {
                 return "NL00" + so;
             }

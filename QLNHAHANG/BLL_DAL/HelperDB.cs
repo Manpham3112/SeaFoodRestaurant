@@ -10,7 +10,7 @@ namespace BLL_DAL
 {
     public static class HelperDB
     {
-        static SqlConnection con = new SqlConnection(@"Data Source=LAPTOP-GDJOSL0P\MANPHAM;Initial Catalog=QL_NHAHANG;Integrated Security=True");
+        static SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-HHM5LAU;Initial Catalog=QL_NHAHANG;Integrated Security=True");
 
         public static bool BackupDatabase(string fileName)
         {

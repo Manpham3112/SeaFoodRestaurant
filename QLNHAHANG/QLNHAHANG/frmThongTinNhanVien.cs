@@ -33,10 +33,11 @@ namespace QLNHAHANG
 
         private void btnBackToManager_Click(object sender, EventArgs e)
         {
+            this.Hide();
             TrangChu frm = new TrangChu();
             frm.DangNhapNV(nv);
             frm.WindowState = FormWindowState.Maximized;
-            frm.Show();
+            //frm.Show();
             this.Close();
         }
 

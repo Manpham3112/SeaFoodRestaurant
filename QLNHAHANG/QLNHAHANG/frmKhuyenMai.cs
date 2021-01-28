@@ -102,7 +102,7 @@ namespace QLNHAHANG
             btnSua.Enabled = false;
             Random r = new Random();
             int count = qlkm.demSoLuong() + 1;
-            txtMAKM.Text = "KM00" + count + r.Next(0, 99);
+            txtMAKM.Text = "KM00" + count + r.Next(0, 100);
             txtMAKM.ReadOnly = true;
             txtTENKM.Clear();
             txtPTKM.Clear();

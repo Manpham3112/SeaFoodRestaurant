@@ -283,7 +283,7 @@ namespace QLNHAHANG
             frmThongTinNhanVien frm = new frmThongTinNhanVien(true);
             frm.DangNhapNV(tk);
             frm.Show();
-            this.Visible = false;
+            //this.Visible = false;
         }
 
         private void btnSaoLuu_Click(object sender, EventArgs e)

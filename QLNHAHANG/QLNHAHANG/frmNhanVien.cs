@@ -241,7 +241,7 @@ namespace QLNHAHANG
             Random r = new Random();
             reset();
             int count = qlnv.demSoLuong() + 1;
-            txtMa.Text = "NV00" + count + r.Next(0, 1000);
+            txtMa.Text = "NV00" + count + r.Next(0, 100);
             btnLuu.Enabled = true;
             btnThem.Enabled = false;
             txtHoTen.Enabled = true;

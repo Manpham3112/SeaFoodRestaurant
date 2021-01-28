@@ -32,13 +32,13 @@ namespace QLNHAHANG
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmThongTinNhanVien));
             this.gunaPanel1 = new Guna.UI.WinForms.GunaPanel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btnLuu = new Guna.UI.WinForms.GunaAdvenceButton();
             this.btnDoiMK = new Guna.UI.WinForms.GunaAdvenceButton();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.txtNhomQuyen = new Guna.UI2.WinForms.Guna2TextBox();
             this.grbNgaySinh = new System.Windows.Forms.GroupBox();
+            this.txtNgaySinh = new Guna.UI2.WinForms.Guna2TextBox();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -54,7 +54,6 @@ namespace QLNHAHANG
             this.btnBackToManager = new Guna.UI.WinForms.GunaAdvenceButton();
             this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.txtNgaySinh = new Guna.UI2.WinForms.Guna2TextBox();
             this.gunaPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
@@ -76,56 +75,22 @@ namespace QLNHAHANG
             this.gunaPanel1.Controls.Add(this.panel1);
             this.gunaPanel1.Controls.Add(this.pnHeader);
             this.gunaPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gunaPanel1.Location = new System.Drawing.Point(3, 3);
+            this.gunaPanel1.Location = new System.Drawing.Point(3, 2);
+            this.gunaPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.gunaPanel1.Name = "gunaPanel1";
-            this.gunaPanel1.Size = new System.Drawing.Size(1132, 548);
+            this.gunaPanel1.Size = new System.Drawing.Size(1006, 1098);
             this.gunaPanel1.TabIndex = 10;
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.btnLuu);
             this.panel1.Controls.Add(this.btnDoiMK);
             this.panel1.Controls.Add(this.tableLayoutPanel2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(0, 78);
+            this.panel1.Location = new System.Drawing.Point(0, 62);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1132, 470);
+            this.panel1.Size = new System.Drawing.Size(1006, 1036);
             this.panel1.TabIndex = 2;
-            // 
-            // btnLuu
-            // 
-            this.btnLuu.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnLuu.AnimationHoverSpeed = 0.07F;
-            this.btnLuu.AnimationSpeed = 0.03F;
-            this.btnLuu.BackColor = System.Drawing.Color.Transparent;
-            this.btnLuu.BaseColor = System.Drawing.Color.Transparent;
-            this.btnLuu.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(205)))), ((int)(((byte)(148)))));
-            this.btnLuu.BorderSize = 2;
-            this.btnLuu.CheckedBaseColor = System.Drawing.Color.Gray;
-            this.btnLuu.CheckedBorderColor = System.Drawing.Color.Black;
-            this.btnLuu.CheckedForeColor = System.Drawing.Color.White;
-            this.btnLuu.CheckedImage = null;
-            this.btnLuu.CheckedLineColor = System.Drawing.Color.DimGray;
-            this.btnLuu.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btnLuu.FocusedColor = System.Drawing.Color.Empty;
-            this.btnLuu.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            this.btnLuu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(205)))), ((int)(((byte)(148)))));
-            this.btnLuu.Image = ((System.Drawing.Image)(resources.GetObject("btnLuu.Image")));
-            this.btnLuu.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnLuu.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.btnLuu.Location = new System.Drawing.Point(571, 403);
-            this.btnLuu.Name = "btnLuu";
-            this.btnLuu.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(205)))), ((int)(((byte)(148)))));
-            this.btnLuu.OnHoverBorderColor = System.Drawing.Color.Empty;
-            this.btnLuu.OnHoverForeColor = System.Drawing.Color.White;
-            this.btnLuu.OnHoverImage = ((System.Drawing.Image)(resources.GetObject("btnLuu.OnHoverImage")));
-            this.btnLuu.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.btnLuu.OnPressedColor = System.Drawing.Color.Black;
-            this.btnLuu.Radius = 10;
-            this.btnLuu.Size = new System.Drawing.Size(161, 60);
-            this.btnLuu.TabIndex = 36;
-            this.btnLuu.Text = "Lưu";
-            this.btnLuu.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // btnDoiMK
             // 
@@ -148,7 +113,8 @@ namespace QLNHAHANG
             this.btnDoiMK.Image = ((System.Drawing.Image)(resources.GetObject("btnDoiMK.Image")));
             this.btnDoiMK.ImageSize = new System.Drawing.Size(20, 20);
             this.btnDoiMK.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.btnDoiMK.Location = new System.Drawing.Point(404, 403);
+            this.btnDoiMK.Location = new System.Drawing.Point(388, 331);
+            this.btnDoiMK.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnDoiMK.Name = "btnDoiMK";
             this.btnDoiMK.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(205)))), ((int)(((byte)(148)))));
             this.btnDoiMK.OnHoverBorderColor = System.Drawing.Color.Empty;
@@ -157,7 +123,7 @@ namespace QLNHAHANG
             this.btnDoiMK.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
             this.btnDoiMK.OnPressedColor = System.Drawing.Color.Black;
             this.btnDoiMK.Radius = 10;
-            this.btnDoiMK.Size = new System.Drawing.Size(161, 60);
+            this.btnDoiMK.Size = new System.Drawing.Size(170, 48);
             this.btnDoiMK.TabIndex = 35;
             this.btnDoiMK.Text = "Đổi mật khẩu";
             this.btnDoiMK.Click += new System.EventHandler(this.btnDoiMK_Click);
@@ -172,14 +138,15 @@ namespace QLNHAHANG
             this.tableLayoutPanel2.Controls.Add(this.tableLayoutPanel5, 0, 2);
             this.tableLayoutPanel2.Controls.Add(this.tableLayoutPanel4, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.tableLayoutPanel3, 0, 1);
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(30, 28);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(27, 22);
+            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 3;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 49.72376F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.27624F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 95F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 90F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(1071, 372);
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 76F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 72F));
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(952, 298);
             this.tableLayoutPanel2.TabIndex = 34;
             // 
             // tableLayoutPanel6
@@ -190,22 +157,24 @@ namespace QLNHAHANG
             this.tableLayoutPanel6.Controls.Add(this.groupBox5, 0, 0);
             this.tableLayoutPanel6.Controls.Add(this.grbNgaySinh, 0, 0);
             this.tableLayoutPanel6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel6.Location = new System.Drawing.Point(3, 189);
+            this.tableLayoutPanel6.Location = new System.Drawing.Point(3, 151);
+            this.tableLayoutPanel6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel6.Name = "tableLayoutPanel6";
             this.tableLayoutPanel6.RowCount = 1;
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 89F));
-            this.tableLayoutPanel6.Size = new System.Drawing.Size(1065, 89);
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 72F));
+            this.tableLayoutPanel6.Size = new System.Drawing.Size(946, 72);
             this.tableLayoutPanel6.TabIndex = 3;
             // 
             // groupBox5
             // 
             this.groupBox5.Controls.Add(this.txtNhomQuyen);
             this.groupBox5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupBox5.Location = new System.Drawing.Point(538, 3);
-            this.groupBox5.Margin = new System.Windows.Forms.Padding(6, 3, 6, 6);
+            this.groupBox5.Location = new System.Drawing.Point(478, 2);
+            this.groupBox5.Margin = new System.Windows.Forms.Padding(5, 2, 5, 5);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(521, 80);
+            this.groupBox5.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox5.Size = new System.Drawing.Size(463, 65);
             this.groupBox5.TabIndex = 11;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Nhóm quyền";
@@ -232,27 +201,60 @@ namespace QLNHAHANG
             this.txtNhomQuyen.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
             this.txtNhomQuyen.HoverState.BorderColor = System.Drawing.SystemColors.Control;
             this.txtNhomQuyen.HoverState.Parent = this.txtNhomQuyen;
-            this.txtNhomQuyen.Location = new System.Drawing.Point(8, 28);
-            this.txtNhomQuyen.Margin = new System.Windows.Forms.Padding(8, 12, 8, 12);
+            this.txtNhomQuyen.Location = new System.Drawing.Point(7, 22);
+            this.txtNhomQuyen.Margin = new System.Windows.Forms.Padding(7, 10, 7, 10);
             this.txtNhomQuyen.Name = "txtNhomQuyen";
             this.txtNhomQuyen.PasswordChar = '\0';
             this.txtNhomQuyen.PlaceholderText = "";
             this.txtNhomQuyen.SelectedText = "";
             this.txtNhomQuyen.ShadowDecoration.Parent = this.txtNhomQuyen;
-            this.txtNhomQuyen.Size = new System.Drawing.Size(504, 34);
+            this.txtNhomQuyen.Size = new System.Drawing.Size(448, 27);
             this.txtNhomQuyen.TabIndex = 0;
             // 
             // grbNgaySinh
             // 
             this.grbNgaySinh.Controls.Add(this.txtNgaySinh);
             this.grbNgaySinh.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.grbNgaySinh.Location = new System.Drawing.Point(6, 3);
-            this.grbNgaySinh.Margin = new System.Windows.Forms.Padding(6, 3, 6, 6);
+            this.grbNgaySinh.Location = new System.Drawing.Point(5, 2);
+            this.grbNgaySinh.Margin = new System.Windows.Forms.Padding(5, 2, 5, 5);
             this.grbNgaySinh.Name = "grbNgaySinh";
-            this.grbNgaySinh.Size = new System.Drawing.Size(520, 80);
+            this.grbNgaySinh.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.grbNgaySinh.Size = new System.Drawing.Size(463, 65);
             this.grbNgaySinh.TabIndex = 10;
             this.grbNgaySinh.TabStop = false;
             this.grbNgaySinh.Text = "Ngày sinh";
+            // 
+            // txtNgaySinh
+            // 
+            this.txtNgaySinh.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtNgaySinh.BackColor = System.Drawing.Color.Transparent;
+            this.txtNgaySinh.BorderColor = System.Drawing.SystemColors.Control;
+            this.txtNgaySinh.BorderRadius = 3;
+            this.txtNgaySinh.BorderThickness = 0;
+            this.txtNgaySinh.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtNgaySinh.DefaultText = "";
+            this.txtNgaySinh.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtNgaySinh.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtNgaySinh.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtNgaySinh.DisabledState.Parent = this.txtNgaySinh;
+            this.txtNgaySinh.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtNgaySinh.FillColor = System.Drawing.SystemColors.Control;
+            this.txtNgaySinh.FocusedState.BorderColor = System.Drawing.SystemColors.Control;
+            this.txtNgaySinh.FocusedState.Parent = this.txtNgaySinh;
+            this.txtNgaySinh.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.txtNgaySinh.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
+            this.txtNgaySinh.HoverState.BorderColor = System.Drawing.SystemColors.Control;
+            this.txtNgaySinh.HoverState.Parent = this.txtNgaySinh;
+            this.txtNgaySinh.Location = new System.Drawing.Point(7, 22);
+            this.txtNgaySinh.Margin = new System.Windows.Forms.Padding(7, 10, 7, 10);
+            this.txtNgaySinh.Name = "txtNgaySinh";
+            this.txtNgaySinh.PasswordChar = '\0';
+            this.txtNgaySinh.PlaceholderText = "";
+            this.txtNgaySinh.SelectedText = "";
+            this.txtNgaySinh.ShadowDecoration.Parent = this.txtNgaySinh;
+            this.txtNgaySinh.Size = new System.Drawing.Size(448, 27);
+            this.txtNgaySinh.TabIndex = 0;
             // 
             // tableLayoutPanel5
             // 
@@ -260,12 +262,13 @@ namespace QLNHAHANG
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel5.Location = new System.Drawing.Point(3, 284);
+            this.tableLayoutPanel5.Location = new System.Drawing.Point(3, 227);
+            this.tableLayoutPanel5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel5.Name = "tableLayoutPanel5";
             this.tableLayoutPanel5.RowCount = 1;
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 85F));
-            this.tableLayoutPanel5.Size = new System.Drawing.Size(1065, 85);
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 69F));
+            this.tableLayoutPanel5.Size = new System.Drawing.Size(946, 69);
             this.tableLayoutPanel5.TabIndex = 2;
             // 
             // tableLayoutPanel4
@@ -276,21 +279,23 @@ namespace QLNHAHANG
             this.tableLayoutPanel4.Controls.Add(this.groupBox1, 0, 0);
             this.tableLayoutPanel4.Controls.Add(this.grbMa, 0, 0);
             this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel4.Location = new System.Drawing.Point(3, 3);
+            this.tableLayoutPanel4.Location = new System.Drawing.Point(3, 2);
+            this.tableLayoutPanel4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
             this.tableLayoutPanel4.RowCount = 1;
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(1065, 86);
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(946, 70);
             this.tableLayoutPanel4.TabIndex = 1;
             // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.txtHoTen);
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupBox1.Location = new System.Drawing.Point(537, 3);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(6, 3, 6, 6);
+            this.groupBox1.Location = new System.Drawing.Point(477, 2);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(5, 2, 5, 5);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(522, 77);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox1.Size = new System.Drawing.Size(464, 63);
             this.groupBox1.TabIndex = 10;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Họ tên";
@@ -317,24 +322,25 @@ namespace QLNHAHANG
             this.txtHoTen.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
             this.txtHoTen.HoverState.BorderColor = System.Drawing.SystemColors.Control;
             this.txtHoTen.HoverState.Parent = this.txtHoTen;
-            this.txtHoTen.Location = new System.Drawing.Point(4, 28);
-            this.txtHoTen.Margin = new System.Windows.Forms.Padding(8, 12, 8, 12);
+            this.txtHoTen.Location = new System.Drawing.Point(4, 22);
+            this.txtHoTen.Margin = new System.Windows.Forms.Padding(7, 10, 7, 10);
             this.txtHoTen.Name = "txtHoTen";
             this.txtHoTen.PasswordChar = '\0';
             this.txtHoTen.PlaceholderText = "";
             this.txtHoTen.SelectedText = "";
             this.txtHoTen.ShadowDecoration.Parent = this.txtHoTen;
-            this.txtHoTen.Size = new System.Drawing.Size(507, 34);
+            this.txtHoTen.Size = new System.Drawing.Size(451, 27);
             this.txtHoTen.TabIndex = 0;
             // 
             // grbMa
             // 
             this.grbMa.Controls.Add(this.txtMaNV);
             this.grbMa.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.grbMa.Location = new System.Drawing.Point(6, 3);
-            this.grbMa.Margin = new System.Windows.Forms.Padding(6, 3, 6, 6);
+            this.grbMa.Location = new System.Drawing.Point(5, 2);
+            this.grbMa.Margin = new System.Windows.Forms.Padding(5, 2, 5, 5);
             this.grbMa.Name = "grbMa";
-            this.grbMa.Size = new System.Drawing.Size(519, 77);
+            this.grbMa.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.grbMa.Size = new System.Drawing.Size(462, 63);
             this.grbMa.TabIndex = 9;
             this.grbMa.TabStop = false;
             this.grbMa.Text = "Mã nhân viên";
@@ -361,14 +367,14 @@ namespace QLNHAHANG
             this.txtMaNV.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
             this.txtMaNV.HoverState.BorderColor = System.Drawing.SystemColors.Control;
             this.txtMaNV.HoverState.Parent = this.txtMaNV;
-            this.txtMaNV.Location = new System.Drawing.Point(8, 28);
-            this.txtMaNV.Margin = new System.Windows.Forms.Padding(8, 12, 8, 12);
+            this.txtMaNV.Location = new System.Drawing.Point(7, 22);
+            this.txtMaNV.Margin = new System.Windows.Forms.Padding(7, 10, 7, 10);
             this.txtMaNV.Name = "txtMaNV";
             this.txtMaNV.PasswordChar = '\0';
             this.txtMaNV.PlaceholderText = "";
             this.txtMaNV.SelectedText = "";
             this.txtMaNV.ShadowDecoration.Parent = this.txtMaNV;
-            this.txtMaNV.Size = new System.Drawing.Size(504, 34);
+            this.txtMaNV.Size = new System.Drawing.Size(449, 27);
             this.txtMaNV.TabIndex = 0;
             // 
             // tableLayoutPanel3
@@ -379,22 +385,24 @@ namespace QLNHAHANG
             this.tableLayoutPanel3.Controls.Add(this.groupBox2, 0, 0);
             this.tableLayoutPanel3.Controls.Add(this.grbDiaChi, 0, 0);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(3, 95);
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(3, 76);
+            this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 1;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 88F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(1065, 88);
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 71F));
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(946, 71);
             this.tableLayoutPanel3.TabIndex = 0;
             // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.txtSDT);
             this.groupBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupBox2.Location = new System.Drawing.Point(538, 3);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(6, 3, 6, 6);
+            this.groupBox2.Location = new System.Drawing.Point(478, 2);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(5, 2, 5, 5);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(521, 79);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox2.Size = new System.Drawing.Size(463, 64);
             this.groupBox2.TabIndex = 11;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "SDT";
@@ -421,24 +429,25 @@ namespace QLNHAHANG
             this.txtSDT.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
             this.txtSDT.HoverState.BorderColor = System.Drawing.SystemColors.Control;
             this.txtSDT.HoverState.Parent = this.txtSDT;
-            this.txtSDT.Location = new System.Drawing.Point(8, 28);
-            this.txtSDT.Margin = new System.Windows.Forms.Padding(8, 12, 8, 12);
+            this.txtSDT.Location = new System.Drawing.Point(7, 22);
+            this.txtSDT.Margin = new System.Windows.Forms.Padding(7, 10, 7, 10);
             this.txtSDT.Name = "txtSDT";
             this.txtSDT.PasswordChar = '\0';
             this.txtSDT.PlaceholderText = "";
             this.txtSDT.SelectedText = "";
             this.txtSDT.ShadowDecoration.Parent = this.txtSDT;
-            this.txtSDT.Size = new System.Drawing.Size(504, 34);
+            this.txtSDT.Size = new System.Drawing.Size(448, 27);
             this.txtSDT.TabIndex = 0;
             // 
             // grbDiaChi
             // 
             this.grbDiaChi.Controls.Add(this.txtDiaChi);
             this.grbDiaChi.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.grbDiaChi.Location = new System.Drawing.Point(6, 3);
-            this.grbDiaChi.Margin = new System.Windows.Forms.Padding(6, 3, 6, 6);
+            this.grbDiaChi.Location = new System.Drawing.Point(5, 2);
+            this.grbDiaChi.Margin = new System.Windows.Forms.Padding(5, 2, 5, 5);
             this.grbDiaChi.Name = "grbDiaChi";
-            this.grbDiaChi.Size = new System.Drawing.Size(520, 79);
+            this.grbDiaChi.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.grbDiaChi.Size = new System.Drawing.Size(463, 64);
             this.grbDiaChi.TabIndex = 10;
             this.grbDiaChi.TabStop = false;
             this.grbDiaChi.Text = "Địa chỉ";
@@ -465,14 +474,14 @@ namespace QLNHAHANG
             this.txtDiaChi.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
             this.txtDiaChi.HoverState.BorderColor = System.Drawing.SystemColors.Control;
             this.txtDiaChi.HoverState.Parent = this.txtDiaChi;
-            this.txtDiaChi.Location = new System.Drawing.Point(8, 28);
-            this.txtDiaChi.Margin = new System.Windows.Forms.Padding(8, 12, 8, 12);
+            this.txtDiaChi.Location = new System.Drawing.Point(7, 22);
+            this.txtDiaChi.Margin = new System.Windows.Forms.Padding(7, 10, 7, 10);
             this.txtDiaChi.Name = "txtDiaChi";
             this.txtDiaChi.PasswordChar = '\0';
             this.txtDiaChi.PlaceholderText = "";
             this.txtDiaChi.SelectedText = "";
             this.txtDiaChi.ShadowDecoration.Parent = this.txtDiaChi;
-            this.txtDiaChi.Size = new System.Drawing.Size(503, 34);
+            this.txtDiaChi.Size = new System.Drawing.Size(448, 27);
             this.txtDiaChi.TabIndex = 0;
             // 
             // pnHeader
@@ -481,8 +490,9 @@ namespace QLNHAHANG
             this.pnHeader.Controls.Add(this.gunaLabel1);
             this.pnHeader.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnHeader.Location = new System.Drawing.Point(0, 0);
+            this.pnHeader.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnHeader.Name = "pnHeader";
-            this.pnHeader.Size = new System.Drawing.Size(1132, 78);
+            this.pnHeader.Size = new System.Drawing.Size(1006, 62);
             this.pnHeader.TabIndex = 0;
             // 
             // btnBackToManager
@@ -504,7 +514,8 @@ namespace QLNHAHANG
             this.btnBackToManager.Image = ((System.Drawing.Image)(resources.GetObject("btnBackToManager.Image")));
             this.btnBackToManager.ImageSize = new System.Drawing.Size(20, 20);
             this.btnBackToManager.LineColor = System.Drawing.Color.Empty;
-            this.btnBackToManager.Location = new System.Drawing.Point(898, 22);
+            this.btnBackToManager.Location = new System.Drawing.Point(798, 18);
+            this.btnBackToManager.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnBackToManager.Name = "btnBackToManager";
             this.btnBackToManager.OnHoverBaseColor = System.Drawing.Color.Empty;
             this.btnBackToManager.OnHoverBorderColor = System.Drawing.Color.Empty;
@@ -512,7 +523,7 @@ namespace QLNHAHANG
             this.btnBackToManager.OnHoverImage = null;
             this.btnBackToManager.OnHoverLineColor = System.Drawing.Color.Empty;
             this.btnBackToManager.OnPressedColor = System.Drawing.Color.Empty;
-            this.btnBackToManager.Size = new System.Drawing.Size(225, 37);
+            this.btnBackToManager.Size = new System.Drawing.Size(200, 30);
             this.btnBackToManager.TabIndex = 33;
             this.btnBackToManager.Text = "Trở về trang chủ";
             this.btnBackToManager.Visible = false;
@@ -522,9 +533,9 @@ namespace QLNHAHANG
             // 
             this.gunaLabel1.AutoSize = true;
             this.gunaLabel1.Font = new System.Drawing.Font("Segoe UI", 12.8F, System.Drawing.FontStyle.Bold);
-            this.gunaLabel1.Location = new System.Drawing.Point(431, 22);
+            this.gunaLabel1.Location = new System.Drawing.Point(383, 18);
             this.gunaLabel1.Name = "gunaLabel1";
-            this.gunaLabel1.Size = new System.Drawing.Size(256, 36);
+            this.gunaLabel1.Size = new System.Drawing.Size(215, 30);
             this.gunaLabel1.TabIndex = 0;
             this.gunaLabel1.Text = "Thông tin tài khoản";
             this.gunaLabel1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -536,52 +547,23 @@ namespace QLNHAHANG
             this.tableLayoutPanel1.Controls.Add(this.gunaPanel1, 0, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 312F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1138, 554);
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 1102F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1012, 443);
             this.tableLayoutPanel1.TabIndex = 2;
-            // 
-            // txtNgaySinh
-            // 
-            this.txtNgaySinh.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtNgaySinh.BackColor = System.Drawing.Color.Transparent;
-            this.txtNgaySinh.BorderColor = System.Drawing.SystemColors.Control;
-            this.txtNgaySinh.BorderRadius = 3;
-            this.txtNgaySinh.BorderThickness = 0;
-            this.txtNgaySinh.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtNgaySinh.DefaultText = "";
-            this.txtNgaySinh.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtNgaySinh.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtNgaySinh.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtNgaySinh.DisabledState.Parent = this.txtNgaySinh;
-            this.txtNgaySinh.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtNgaySinh.FillColor = System.Drawing.SystemColors.Control;
-            this.txtNgaySinh.FocusedState.BorderColor = System.Drawing.SystemColors.Control;
-            this.txtNgaySinh.FocusedState.Parent = this.txtNgaySinh;
-            this.txtNgaySinh.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.txtNgaySinh.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
-            this.txtNgaySinh.HoverState.BorderColor = System.Drawing.SystemColors.Control;
-            this.txtNgaySinh.HoverState.Parent = this.txtNgaySinh;
-            this.txtNgaySinh.Location = new System.Drawing.Point(8, 28);
-            this.txtNgaySinh.Margin = new System.Windows.Forms.Padding(8, 12, 8, 12);
-            this.txtNgaySinh.Name = "txtNgaySinh";
-            this.txtNgaySinh.PasswordChar = '\0';
-            this.txtNgaySinh.PlaceholderText = "";
-            this.txtNgaySinh.SelectedText = "";
-            this.txtNgaySinh.ShadowDecoration.Parent = this.txtNgaySinh;
-            this.txtNgaySinh.Size = new System.Drawing.Size(503, 34);
-            this.txtNgaySinh.TabIndex = 0;
             // 
             // frmThongTinNhanVien
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1138, 554);
+            this.ClientSize = new System.Drawing.Size(1012, 443);
             this.Controls.Add(this.tableLayoutPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "frmThongTinNhanVien";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmThongTinNhanVien";
             this.Load += new System.EventHandler(this.frmThongTinNhanVien_Load);
             this.gunaPanel1.ResumeLayout(false);
@@ -626,7 +608,6 @@ namespace QLNHAHANG
         private Guna.UI2.WinForms.Guna2TextBox txtNhomQuyen;
         private System.Windows.Forms.GroupBox grbNgaySinh;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel5;
-        private Guna.UI.WinForms.GunaAdvenceButton btnLuu;
         private Guna.UI.WinForms.GunaAdvenceButton btnDoiMK;
         private Guna.UI.WinForms.GunaAdvenceButton btnBackToManager;
         private Guna.UI2.WinForms.Guna2TextBox txtNgaySinh;

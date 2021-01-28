@@ -106,7 +106,7 @@ namespace QLNHAHANG
         private void btnThem_Click(object sender, EventArgs e)
         {
             reset();
-           
+            txtMaNhaCungCap.Text = qlncc.taoMaNhaCungCap();
             setEnableTextBox(lstTextBox, true);
             txtMaNhaCungCap.Enabled = false;
             //int count = 0;

@@ -77,6 +77,17 @@ namespace BLL_DAL
 
 
         }
+        public String taoMaNhaCungCap()
+        {
+            int so = db.NHACUNGCAPs.Select(t => t.MANCC).Count() + 1;
+
+            if (so < 100)
+            {
+                return "NCC00" + so;
+            }
+            else
+                return "NCC" + so;
+        }
     }
 
 }

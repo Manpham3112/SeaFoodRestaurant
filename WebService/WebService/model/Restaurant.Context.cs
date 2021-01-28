@@ -13,10 +13,10 @@ namespace WebService.model
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class QL_NHAHANGEntities2 : DbContext
+    public partial class QL_NHAHANGEntities3 : DbContext
     {
-        public QL_NHAHANGEntities2()
-            : base("name=QL_NHAHANGEntities2")
+        public QL_NHAHANGEntities3()
+            : base("name=QL_NHAHANGEntities3")
         {
         }
     
@@ -44,6 +44,5 @@ namespace WebService.model
         public virtual DbSet<PHIEUDATHANG> PHIEUDATHANGs { get; set; }
         public virtual DbSet<PHIEUNHAPKHO> PHIEUNHAPKHOes { get; set; }
         public virtual DbSet<SANPHAM> SANPHAMs { get; set; }
-        public virtual DbSet<sysdiagram> sysdiagrams { get; set; }
     }
 }

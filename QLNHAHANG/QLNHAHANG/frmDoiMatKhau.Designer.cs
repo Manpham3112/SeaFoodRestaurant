@@ -50,11 +50,10 @@ namespace QLNHAHANG
             this.guna2ControlBox1.FillColor = System.Drawing.Color.White;
             this.guna2ControlBox1.HoverState.Parent = this.guna2ControlBox1;
             this.guna2ControlBox1.IconColor = System.Drawing.Color.Black;
-            this.guna2ControlBox1.Location = new System.Drawing.Point(338, 13);
-            this.guna2ControlBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.guna2ControlBox1.Location = new System.Drawing.Point(300, 10);
             this.guna2ControlBox1.Name = "guna2ControlBox1";
             this.guna2ControlBox1.ShadowDecoration.Parent = this.guna2ControlBox1;
-            this.guna2ControlBox1.Size = new System.Drawing.Size(51, 36);
+            this.guna2ControlBox1.Size = new System.Drawing.Size(45, 29);
             this.guna2ControlBox1.TabIndex = 16;
             // 
             // imgList
@@ -85,24 +84,23 @@ namespace QLNHAHANG
             this.txtPassword.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
             this.txtPassword.HoverState.BorderColor = System.Drawing.SystemColors.Control;
             this.txtPassword.HoverState.Parent = this.txtPassword;
-            this.txtPassword.Location = new System.Drawing.Point(-8, 28);
-            this.txtPassword.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtPassword.Location = new System.Drawing.Point(-7, 22);
+            this.txtPassword.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PasswordChar = '\0';
             this.txtPassword.PlaceholderText = "Mật khẩu";
             this.txtPassword.SelectedText = "";
             this.txtPassword.ShadowDecoration.Parent = this.txtPassword;
-            this.txtPassword.Size = new System.Drawing.Size(292, 34);
+            this.txtPassword.Size = new System.Drawing.Size(260, 27);
             this.txtPassword.TabIndex = 0;
             // 
             // grbMatKhau
             // 
             this.grbMatKhau.Controls.Add(this.txtPassword);
-            this.grbMatKhau.Location = new System.Drawing.Point(47, 214);
-            this.grbMatKhau.Margin = new System.Windows.Forms.Padding(6, 4, 6, 6);
+            this.grbMatKhau.Location = new System.Drawing.Point(42, 171);
+            this.grbMatKhau.Margin = new System.Windows.Forms.Padding(5, 3, 5, 5);
             this.grbMatKhau.Name = "grbMatKhau";
-            this.grbMatKhau.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.grbMatKhau.Size = new System.Drawing.Size(308, 70);
+            this.grbMatKhau.Size = new System.Drawing.Size(274, 56);
             this.grbMatKhau.TabIndex = 19;
             this.grbMatKhau.TabStop = false;
             this.grbMatKhau.Text = "Mật khẩu";
@@ -111,9 +109,10 @@ namespace QLNHAHANG
             // 
             this.gunaCirclePictureBox1.BaseColor = System.Drawing.Color.White;
             this.gunaCirclePictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("gunaCirclePictureBox1.Image")));
-            this.gunaCirclePictureBox1.Location = new System.Drawing.Point(156, 53);
+            this.gunaCirclePictureBox1.Location = new System.Drawing.Point(139, 42);
+            this.gunaCirclePictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.gunaCirclePictureBox1.Name = "gunaCirclePictureBox1";
-            this.gunaCirclePictureBox1.Size = new System.Drawing.Size(120, 120);
+            this.gunaCirclePictureBox1.Size = new System.Drawing.Size(107, 96);
             this.gunaCirclePictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.gunaCirclePictureBox1.TabIndex = 20;
             this.gunaCirclePictureBox1.TabStop = false;
@@ -132,7 +131,8 @@ namespace QLNHAHANG
             this.btnLuu.ForeColor = System.Drawing.Color.White;
             this.btnLuu.Image = ((System.Drawing.Image)(resources.GetObject("btnLuu.Image")));
             this.btnLuu.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnLuu.Location = new System.Drawing.Point(47, 388);
+            this.btnLuu.Location = new System.Drawing.Point(42, 310);
+            this.btnLuu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnLuu.Name = "btnLuu";
             this.btnLuu.OnHoverBaseColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(145)))), ((int)(((byte)(221)))));
             this.btnLuu.OnHoverBaseColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(85)))), ((int)(((byte)(255)))));
@@ -140,7 +140,7 @@ namespace QLNHAHANG
             this.btnLuu.OnHoverForeColor = System.Drawing.Color.White;
             this.btnLuu.OnHoverImage = null;
             this.btnLuu.OnPressedColor = System.Drawing.Color.Black;
-            this.btnLuu.Size = new System.Drawing.Size(308, 58);
+            this.btnLuu.Size = new System.Drawing.Size(274, 46);
             this.btnLuu.TabIndex = 17;
             this.btnLuu.Text = "Đổi mật khẩu";
             this.btnLuu.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -149,11 +149,10 @@ namespace QLNHAHANG
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.txtMatKhauMoi);
-            this.groupBox1.Location = new System.Drawing.Point(46, 297);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(6, 4, 6, 6);
+            this.groupBox1.Location = new System.Drawing.Point(41, 238);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(5, 3, 5, 5);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.groupBox1.Size = new System.Drawing.Size(308, 70);
+            this.groupBox1.Size = new System.Drawing.Size(274, 56);
             this.groupBox1.TabIndex = 21;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Mật khẩu mới";
@@ -179,28 +178,30 @@ namespace QLNHAHANG
             this.txtMatKhauMoi.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
             this.txtMatKhauMoi.HoverState.BorderColor = System.Drawing.SystemColors.Control;
             this.txtMatKhauMoi.HoverState.Parent = this.txtMatKhauMoi;
-            this.txtMatKhauMoi.Location = new System.Drawing.Point(-8, 28);
-            this.txtMatKhauMoi.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtMatKhauMoi.Location = new System.Drawing.Point(-7, 22);
+            this.txtMatKhauMoi.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtMatKhauMoi.Name = "txtMatKhauMoi";
             this.txtMatKhauMoi.PasswordChar = '\0';
             this.txtMatKhauMoi.PlaceholderText = "Mật khẩu mới";
             this.txtMatKhauMoi.SelectedText = "";
             this.txtMatKhauMoi.ShadowDecoration.Parent = this.txtMatKhauMoi;
-            this.txtMatKhauMoi.Size = new System.Drawing.Size(293, 34);
+            this.txtMatKhauMoi.Size = new System.Drawing.Size(260, 27);
             this.txtMatKhauMoi.TabIndex = 0;
             // 
             // frmDoiMatKhau
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(401, 496);
+            this.ClientSize = new System.Drawing.Size(356, 397);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.guna2ControlBox1);
             this.Controls.Add(this.grbMatKhau);
             this.Controls.Add(this.gunaCirclePictureBox1);
             this.Controls.Add(this.btnLuu);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "frmDoiMatKhau";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmDoiMatKhau";
             this.grbMatKhau.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gunaCirclePictureBox1)).EndInit();

@@ -126,7 +126,7 @@ namespace QLNHAHANG
         {
             Random r = new Random();
             int count = qlnk.demSoLuong() + 1;
-            txtMaPNK.Text = "PNK0" + count + r.Next(0, 99);
+            txtMaPNK.Text = "PNK00" + count + r.Next(0, 100);
             txtMaPNK.ReadOnly = true;
             txtMaNV.ReadOnly = true;
             txtMaNV.Text = nv.MANV;
@@ -219,6 +219,7 @@ namespace QLNHAHANG
                     //qlnk.capNhatTong(maPhieuDangChon, (int)tong);
                     MessageBox.Show("Thêm thành công");
                     load_DataGridView();
+                    frmNhapKho_Load(sender, e);
                 }
             }
             else
@@ -327,6 +328,11 @@ namespace QLNHAHANG
                 tenNLDangChon = dataGridViewNguyenLieu.Rows[vitri].Cells[1].Value.ToString().Trim();
                 txt_DonViTinh.Text = dataGridViewNguyenLieu.Rows[vitri].Cells["DVT"].Value.ToString().Trim();
             }
+        }
+
+        private void groupBox5_Enter(object sender, EventArgs e)
+        {
+
         }
         //private void xoaToolStripMenuItem_Click(object sender, EventArgs e)
         //{

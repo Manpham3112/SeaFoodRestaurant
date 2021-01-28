@@ -146,6 +146,7 @@ namespace QLNHAHANG
 
         private void btnSua_Click(object sender, EventArgs e)
         {
+            btnLuu.Enabled = true;
             txt_MaNguyenLieu.Enabled = false;
             txt_TenNguyenLieu.Focus();
             btnXoa.Enabled = false;
@@ -203,6 +204,8 @@ namespace QLNHAHANG
                 MessageBox.Show("Nguyên liệu " + txt_MaNguyenLieu.Text + " không đạt điều kiện để xóa");
             }
             frmNguyenLieu_Load(sender, e);
+            btnThem.Enabled = true;
+            btnXoa.Enabled = btnLuu.Enabled = btnSua.Enabled = false;
 
 
         }
@@ -227,6 +230,8 @@ namespace QLNHAHANG
                 }
             }
             frmNguyenLieu_Load(sender, e);
+            btnThem.Enabled = true;
+            btnXoa.Enabled = btnLuu.Enabled = btnSua.Enabled = false;
         }
 
         private void txtTimKiem_TextChanged(object sender, EventArgs e)

@@ -68,7 +68,7 @@ namespace BLL_DAL
         {
             int so = ff.LOAINLs.Select(t => t.MALNL).Count() + 1;
 
-            if (so < 10)
+            if (so < 100)
             {
                 return "LNL00" + so;
             }

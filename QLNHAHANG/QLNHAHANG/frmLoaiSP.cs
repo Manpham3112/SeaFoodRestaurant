@@ -79,7 +79,7 @@ namespace QLNHAHANG
         {
             Random r = new Random();
             int count = lsp.demSoLuong() + 1;
-            txt_MaLSP.Text = "LSP00" + count + r.Next(0, 99);
+            txt_MaLSP.Text = "LSP00" + count + r.Next(0, 100);
             load_AllGrid();
             txt_MaLSP.Enabled = false;
             txt_TenLSP.Enabled = true;

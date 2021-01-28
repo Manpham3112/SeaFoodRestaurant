@@ -4,7 +4,7 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="dfda8bb7457d49c5b2be14eea1c17675" Name="Diagram1">
+      <Diagram DiagramId="3daa728b88174f488dc47796859d5e82" Name="Diagram1">
         <EntityTypeShape EntityType="QL_NHAHANGModel.CT_HOADON" Width="1.5" PointX="5.25" PointY="5" IsExpanded="true" />
         <EntityTypeShape EntityType="QL_NHAHANGModel.CT_PHIEUDATHANG" Width="1.5" PointX="5.25" PointY="2.125" IsExpanded="true" />
         <EntityTypeShape EntityType="QL_NHAHANGModel.CT_PHIEUNHAPKHO" Width="1.5" PointX="6.25" PointY="19.875" IsExpanded="true" />
@@ -24,7 +24,6 @@
         <EntityTypeShape EntityType="QL_NHAHANGModel.PHIEUDATHANG" Width="1.5" PointX="3" PointY="12.125" IsExpanded="true" />
         <EntityTypeShape EntityType="QL_NHAHANGModel.PHIEUNHAPKHO" Width="1.5" PointX="3" PointY="16.375" IsExpanded="true" />
         <EntityTypeShape EntityType="QL_NHAHANGModel.SANPHAM" Width="1.5" PointX="3" PointY="4.625" IsExpanded="true" />
-        <EntityTypeShape EntityType="QL_NHAHANGModel.sysdiagram" Width="1.5" PointX="7.75" PointY="1.875" IsExpanded="true" />
         <AssociationConnector Association="QL_NHAHANGModel.FK_CTHD_HD" ManuallyRouted="false" />
         <AssociationConnector Association="QL_NHAHANGModel.FK_CTHD_SP" ManuallyRouted="false" />
         <AssociationConnector Association="QL_NHAHANGModel.FK_CTPDH_PDH" ManuallyRouted="false" />
